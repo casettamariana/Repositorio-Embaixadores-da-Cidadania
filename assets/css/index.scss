@@ -1,0 +1,38 @@
+@import url('./index_content-size.css');
+
+body{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    display: grid;
+    grid-template-areas: 
+        "nav"
+        "body-content"
+        "footer"
+    ;
+    grid-template-rows: 10% auto 10%;
+    grid-template-columns: none;
+    
+}
+nav{
+    grid-area: nav;
+    display: grid;
+    grid-template-areas: "nav_logo nav_btn-home nav_btn-pilulas nav_btn-atividades";
+    grid-template-rows: none;
+    grid-template-columns: 65% auto auto auto;
+
+}
+footer{
+    grid-area: footer;
+}
+#body-content{
+    grid-area: body-content;
+}
+.nav_logo{grid-area: nav_logo;}
+.nav_btn-home{grid-area: nav_btn-home;}
+.nav_btn-pilulas{grid-area: nav_btn-pilulas;}

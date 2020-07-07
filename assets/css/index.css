@@ -1,0 +1,65 @@
+@import url("./index_content-size.css");
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "nav" "body-content" "footer";
+  -ms-grid-rows: 10% auto 10%;
+      grid-template-rows: 10% auto 10%;
+  -ms-grid-columns: none;
+      grid-template-columns: none;
+}
+
+nav {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: nav;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "nav_logo nav_btn-home nav_btn-pilulas nav_btn-atividades";
+  -ms-grid-rows: none;
+      grid-template-rows: none;
+  -ms-grid-columns: 65% auto auto auto;
+      grid-template-columns: 65% auto auto auto;
+}
+
+footer {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: footer;
+}
+
+#body-content {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: body-content;
+}
+
+.nav_logo {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: nav_logo;
+}
+
+.nav_btn-home {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: nav_btn-home;
+}
+
+.nav_btn-pilulas {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: nav_btn-pilulas;
+}
+/*# sourceMappingURL=index.css.map */
