@@ -1,14 +1,14 @@
+@import url('../fonts/Roboto_Mono/static/RobotoMono-Regular.ttf');
 @import url('./index_content-size.css');
+@import url('./index_style.css');
 
 body{
     margin: 0;
     padding: 0;
     width: 100vw;
     height: 100vh;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-
+    background: url('../img/fundo2.png');
+    background-size: cover;
     display: grid;
     grid-template-areas: 
         "nav"
@@ -17,22 +17,78 @@ body{
     ;
     grid-template-rows: 10% auto 10%;
     grid-template-columns: none;
-    
+    overflow-x: hidden;
 }
 nav{
+    width: 100vw;
     grid-area: nav;
     display: grid;
-    grid-template-areas: "nav_logo nav_btn-home nav_btn-pilulas nav_btn-atividades";
-    grid-template-rows: none;
-    grid-template-columns: 65% auto auto auto;
-
+    grid-template-areas: "nav_logo nav_btn";
+    grid-template-rows: 1fr;
+    grid-template-columns: 80% 20%;
 }
+
+.nav_logo{
+    grid-area: nav_logo;
+    justify-self: center;
+}
+.nav_btn{
+    grid-area: nav_btn;
+}
+.nav_btn__btn{
+    display: grid;
+    grid-template-areas: "menu-btn slidebar";
+    grid-template-rows: none;
+    grid-template-columns: 50% 50%;
+    justify-self: self-end;
+    justify-items: self-end;
+}
+
+
+//opições da navbar
+.slidebar{
+    max-width: 200px;
+    display: flex;
+    flex-flow: column wrap;
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;
+    font-size: large;
+    transition-duration: 1.5s;
+    right: 0;
+}
+
+.slidebar a{
+    padding: 15px 30px;
+    text-decoration: none;
+    transition-duration: .5s;
+    color: white;
+}
+.slidebar a:hover{
+    transform: scale(1.05);
+    transition-duration: .5s;
+}
+
+
+//corpo do site
+#body-content{
+    justify-self: center;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 90vw;
+    display: grid;
+    grid-template-areas: "container-video separa option-video";
+    grid-template-rows: none;
+    grid-template-columns: 80% auto 18%;
+}
+
+.separa{grid-area: separa;}
+
+//rodapé do site
 footer{
+    justify-self: center;
+    align-self: center;
+    text-align: center;
     grid-area: footer;
 }
-#body-content{
-    grid-area: body-content;
-}
-.nav_logo{grid-area: nav_logo;}
-.nav_btn-home{grid-area: nav_btn-home;}
-.nav_btn-pilulas{grid-area: nav_btn-pilulas;}

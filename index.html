@@ -3,24 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Repositório Embaixadores da Cidadania</title>
+    <title>Repositório Embaixadores da Cidadania</title>    
 
     <link rel="stylesheet" href="./assets/css/index.css">
 </head>
 <body>
     <nav>
-        <div class="nav_logo"><img class="logo" src="./assets/img/logo_embaixadores.png" alt=""></div>
-        <div class="nav_btn-home"></div>
-        <div class="nav_btn-pilulas"></div>
-        <div class="nav_btn-atividades"></div>
+        <div class="nav_logo"><img class="logo" src="./assets/img/logo_embaixadores-branca.png" alt=""></div>
+        
+        <div class="nav_btn">
+            <div class="nav_btn__btn">
+
+                <div id="menu-btn-id" class="menu-btn">
+                    <div class="menu-btn__slidebar"></div>
+                </div>
+                <div class="slidebar">
+                    <a href="#">HOME</a>
+                    <span class="tracinho"></span>
+                    <a href="#">ATIVIDADES</a>
+                    <span class="tracinho"></span>
+                    <a href="#">PÍLULAS</a>
+                </div>  
+
+            </div>
+        </div>
     </nav>
     <div id="body-content">
-        BODY CONTENT
+        <div class="container-video">
+
+        </div>
+        <span class="separa"></span>
+        <div class="option-video">
+            <div class="pilula-1">
+                <video src="./"></video>
+            </div>
+            <div class="pilula-2"></div>
+            <div class="pilula-3"></div>
+        </div>
     </div>
     <footer>
         FOOTER
     </footer>
 
+
+    <script src="./assets/js/index.js"></script>
+    
     <script src="./node_modules/gsap/dist/gsap.min.js"></script>
+    <script src="./assets/js/gsap-animation.js"></script>
 </body>
 </html>
