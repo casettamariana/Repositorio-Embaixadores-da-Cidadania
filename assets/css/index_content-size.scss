@@ -1,6 +1,7 @@
 .logo{
-    width: 250px;
+    width: 350px;
     margin-left: 350px;
+    padding-top: 5px;
 }
 
 .menu-btn {
@@ -60,3 +61,4 @@
 .menu-btn.open .menu-btn__slidebar::after {
     transform: rotate(-45deg) translate(35px, 35px);
 }
+

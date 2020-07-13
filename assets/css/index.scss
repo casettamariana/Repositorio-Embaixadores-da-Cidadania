@@ -1,4 +1,5 @@
 @import url('../fonts/Roboto_Mono/static/RobotoMono-Regular.ttf');
+@import url('../fonts/Roboto/Roboto-Regular.ttf');
 @import url('./index_content-size.css');
 @import url('./index_style.css');
 
@@ -91,4 +92,34 @@ footer{
     align-self: center;
     text-align: center;
     grid-area: footer;
+}
+
+.pilula-1{
+    display: grid;
+    grid-template-areas: "pilula-1-id";
+    grid-template-rows: none;
+    grid-template-columns: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.option-video{
+    grid-area: option-video;
+    display: grid;
+    grid-template-areas: 
+    "opition_pilula-1"
+    "opition_pilula-2"
+    "opition_pilula-3";
+    grid-template-rows: auto auto auto;
+    grid-template-columns: 100%;
+    justify-content: center;
+    align-content: space-around;
+    // align-content: space-between;
+}
+.option_grid{
+    display: grid;
+    grid-template-areas: "indicate_ball indicate_text";
+    grid-template-rows: none;
+    grid-template-columns: 25% 75%;
+    justify-content: center;
 }

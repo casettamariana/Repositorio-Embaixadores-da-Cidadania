@@ -15,5 +15,3 @@ btn_navbar__click.addEventListener('click', () => {
     }
 });
 
-
-
