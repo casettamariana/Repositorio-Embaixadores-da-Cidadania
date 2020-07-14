@@ -1,15 +1,15 @@
-@import url("../fonts/Roboto_Mono/static/RobotoMono-Regular.ttf");
-@import url("../fonts/Roboto/Roboto-Regular.ttf");
+@import url("../../fonts/Roboto_Mono/static/RobotoMono-Regular.ttf");
+@import url("../../fonts/Roboto/Roboto-Regular.ttf");
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
-@import url("./index_content-size.css");
-@import url("./index_style.css");
+@import url("./pilulas_content-size.css");
+@import url("./pilulas_style.css");
 body {
   margin: 0;
   padding: 0;
   width: 100vw;
   height: 100vh;
-  background: url("../img/fundo2.png");
+  background: url("../../img/fundo2.png");
   background-size: cover;
   display: -ms-grid;
   display: grid;
@@ -180,4 +180,4 @@ footer {
       -ms-flex-pack: center;
           justify-content: center;
 }
-/*# sourceMappingURL=index.css.map */
+/*# sourceMappingURL=pilulas.css.map */
