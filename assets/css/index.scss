@@ -1,5 +1,8 @@
 @import url('../fonts/Roboto_Mono/static/RobotoMono-Regular.ttf');
 @import url('../fonts/Roboto/Roboto-Regular.ttf');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+// @import url('../fonts/Ubuntu/Ubuntu-Regular.ttf');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 @import url('./index_content-size.css');
 @import url('./index_style.css');
 
@@ -63,6 +66,7 @@ nav{
     text-decoration: none;
     transition-duration: .5s;
     color: white;
+    font-weight: 700;
 }
 .slidebar a:hover{
     transform: scale(1.05);
