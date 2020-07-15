@@ -1,17 +1,17 @@
-@import url('../../fonts/Roboto_Mono/static/RobotoMono-Regular.ttf');
-@import url('../../fonts/Roboto/Roboto-Regular.ttf');
+@import url('../fonts/Roboto_Mono/static/RobotoMono-Regular.ttf');
+@import url('../fonts/Roboto/Roboto-Regular.ttf');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 // @import url('../fonts/Ubuntu/Ubuntu-Regular.ttf');
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
-@import url('./pilulas_content-size.css');
-@import url('./pilulas_style.css');
+@import url('./index_content-size.css');
+@import url('./index_style.css');
 
 body{
     margin: 0;
     padding: 0;
     width: 100vw;
     height: 100vh;
-    background: url('../../img/fundo2.png');
+    background: url('../img/fundo2.png');
     background-size: cover;
     display: grid;
     grid-template-areas: 
