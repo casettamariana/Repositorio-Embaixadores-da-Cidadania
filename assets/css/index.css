@@ -13,7 +13,7 @@ body {
   background-size: cover;
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "nav" "body-content" "footer";
+      grid-template-areas: "nav" "container-pilulas" "footer";
   -ms-grid-rows: 10% auto 10%;
       grid-template-rows: 10% auto 10%;
   -ms-grid-columns: none;
@@ -95,7 +95,7 @@ nav {
           transition-duration: .5s;
 }
 
-#body-content {
+#container-pilulas {
   -ms-grid-column-align: center;
       justify-self: center;
   justify-items: center;

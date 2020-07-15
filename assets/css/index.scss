@@ -16,7 +16,7 @@ body{
     display: grid;
     grid-template-areas: 
         "nav"
-        "body-content"
+        "container-pilulas"
         "footer"
     ;
     grid-template-rows: 10% auto 10%;
@@ -75,7 +75,7 @@ nav{
 
 
 //corpo do site
-#body-content{
+#container-pilulas{
     justify-self: center;
     justify-items: center;
     justify-content: center;
