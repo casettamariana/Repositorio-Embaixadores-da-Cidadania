@@ -16,13 +16,14 @@ body{
     display: grid;
     grid-template-areas: 
         "nav"
-        "container-pilulas"
+        "container"
         "footer"
     ;
     grid-template-rows: 10% auto 10%;
     grid-template-columns: none;
     overflow-x: hidden;
 }
+.container{grid-area: container;}
 nav{
     width: 100vw;
     grid-area: nav;
@@ -127,3 +128,12 @@ footer{
     grid-template-columns: 25% 75%;
     justify-content: center;
 }
+#opition_pilula-1{grid-area: opition_pilula-1;}
+#opition_pilula-2{grid-area: opition_pilula-2;}
+#opition_pilula-3{grid-area: opition_pilula-3;}
+#pilula-1-id{grid-area: pilula-1-id;}
+.indicate_ball{grid-area: indicate_ball;}
+.indicate_text{grid-area: indicate_text;}
+.menu-btn{grid-area: menu-btn;}
+.slidebar{grid-area: slidebar;}
+.container-video{grid-area: container-video;}
