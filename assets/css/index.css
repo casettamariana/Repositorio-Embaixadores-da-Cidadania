@@ -188,56 +188,50 @@ footer {
 }
 
 #container-atividades {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  width: 100vw;
+  height: 100%;
+  -ms-flex-line-pack: center;
+      align-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -ms-flex-item-align: center;
-      align-self: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  justify-items: center;
 }
 
 .container-atividades-1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
-  -ms-flex-line-pack: distribute;
-      align-content: space-around;
-  -ms-flex-item-align: center;
-      align-self: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  grid-area: cont1;
+  width: 90%;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: ". area-atividade-1 divisoria_ativ-1 area-atividade-2 divisoria_ativ-2 area-atividade-3 divisoria_ativ-3 area-atividade-4. ";
+  -ms-grid-rows: none;
+      grid-template-rows: none;
+  -ms-grid-columns: 10px 1fr 10px 1fr 10px 1fr 10px 1fr 10px;
+      grid-template-columns: 10px 1fr 10px 1fr 10px 1fr 10px 1fr 10px;
+  justify-items: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2% 1% 2% 1%;
+  border-radius: 40px;
 }
 
 .area-atividade {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "disco texto_ativ";
+      grid-template-areas: ". disco . texto_ativ .";
   -ms-grid-rows: auto;
       grid-template-rows: auto;
-  -ms-grid-columns: 35% 65%;
-      grid-template-columns: 35% 65%;
+  -ms-grid-columns: 2% auto 5% auto 1%;
+      grid-template-columns: 2% auto 5% auto 1%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #opition_pilula-1 {
@@ -296,13 +290,53 @@ footer {
 
 .disco {
   -ms-grid-row: 1;
-  -ms-grid-column: 1;
+  -ms-grid-column: 2;
   grid-area: disco;
 }
 
 .texto_ativ {
   -ms-grid-row: 1;
-  -ms-grid-column: 2;
+  -ms-grid-column: 4;
   grid-area: texto_ativ;
+}
+
+.area-atividade-1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: area-atividade-1;
+}
+
+.area-atividade-2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 4;
+  grid-area: area-atividade-2;
+}
+
+.area-atividade-3 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 6;
+  grid-area: area-atividade-3;
+}
+
+.area-atividade-4 {
+  grid-area: area-atividade-4;
+}
+
+.divisoria_ativ-1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: divisoria_ativ-1;
+}
+
+.divisoria_ativ-2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 5;
+  grid-area: divisoria_ativ-2;
+}
+
+.divisoria_ativ-3 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 7;
+  grid-area: divisoria_ativ-3;
 }
 /*# sourceMappingURL=index.css.map */

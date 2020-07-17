@@ -83,3 +83,29 @@
 .container-atividades-1{
     background: #ffffff; 
 }
+.titulo_ativ{
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 1.5px;
+}
+.descricao_ativ{
+    font-family: 'Ubuntu', sans-serif;
+
+}
+.disco{
+    :hover{
+        transform: scale(1.1);
+        transition-duration: 1s;
+    }
+    :after{
+        transition-duration: 1s;
+    }
+
+    
+}
+.titulo_ativ{
+    :hover{
+        & .disco{
+            transform: scale(1.1);
+        }
+    }
+}
