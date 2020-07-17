@@ -128,6 +128,32 @@ footer{
     grid-template-columns: 25% 75%;
     justify-content: center;
 }
+
+#container-atividades{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    justify-content: center;
+}
+.container-atividades-1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    align-content: space-around;
+    align-self: center;
+    justify-content: space-around;
+}
+.area-atividade{
+    display: grid;
+    grid-template-areas: "disco texto_ativ";
+    grid-template-rows: auto;
+    grid-template-columns: 35% 65%;
+}
+
 #opition_pilula-1{grid-area: opition_pilula-1;}
 #opition_pilula-2{grid-area: opition_pilula-2;}
 #opition_pilula-3{grid-area: opition_pilula-3;}
@@ -137,3 +163,5 @@ footer{
 .menu-btn{grid-area: menu-btn;}
 .slidebar{grid-area: slidebar;}
 .container-video{grid-area: container-video;}
+.disco{grid-area: disco;}
+.texto_ativ{grid-area: texto_ativ;}
