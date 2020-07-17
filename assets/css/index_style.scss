@@ -91,21 +91,9 @@
     font-family: 'Ubuntu', sans-serif;
 
 }
-.disco{
-    :hover{
-        transform: scale(1.1);
-        transition-duration: 1s;
-    }
-    :after{
-        transition-duration: 1s;
-    }
-
-    
+.area-atividade{
+    transition-duration: 0.8s;
 }
-.titulo_ativ{
-    :hover{
-        & .disco{
-            transform: scale(1.1);
-        }
-    }
-}
+.area-atividade:hover{
+    transform: scale(1.05);
+}   

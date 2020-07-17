@@ -113,20 +113,13 @@
   font-family: 'Ubuntu', sans-serif;
 }
 
-.disco :hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  -webkit-transition-duration: 1s;
-          transition-duration: 1s;
+.area-atividade {
+  -webkit-transition-duration: 0.8s;
+          transition-duration: 0.8s;
 }
 
-.disco :after {
-  -webkit-transition-duration: 1s;
-          transition-duration: 1s;
-}
-
-.titulo_ativ :hover .disco {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+.area-atividade:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 /*# sourceMappingURL=index_style.css.map */
