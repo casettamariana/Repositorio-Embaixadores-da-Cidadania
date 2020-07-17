@@ -159,6 +159,30 @@ footer{
     align-items: center;
     
 }
+
+#container-podcast{
+    justify-content: center;
+    justify-items: center;
+    justify-self: center;
+    align-items: center;
+    align-content: center;
+    height: 80vh;
+    width: 100vw;
+    flex-direction: column;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 575.98px) {
 
 }
@@ -178,6 +202,12 @@ footer{
 @media (min-width: 1200px) {
 
 }
+
+
+
+
+
+
 
 #opition_pilula-1{grid-area: opition_pilula-1;}
 #opition_pilula-2{grid-area: opition_pilula-2;}
