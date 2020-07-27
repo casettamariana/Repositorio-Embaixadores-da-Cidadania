@@ -1,0 +1,99 @@
+#container-atividades {
+  width: 100vw;
+  height: 100%;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  justify-items: center;
+}
+
+.container-atividades-1 {
+  grid-area: cont1;
+  width: 90%;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: ". area-atividade-1 divisoria_ativ-1 area-atividade-2 divisoria_ativ-2 area-atividade-3 divisoria_ativ-3 area-atividade-4. ";
+  -ms-grid-rows: none;
+      grid-template-rows: none;
+  -ms-grid-columns: 10px 1fr 10px 1fr 10px 1fr 10px 1fr 10px;
+      grid-template-columns: 10px 1fr 10px 1fr 10px 1fr 10px 1fr 10px;
+  justify-items: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2% 1% 2% 1%;
+  border-radius: 40px;
+}
+
+.area-atividade {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: ". disco . texto_ativ .";
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  -ms-grid-columns: 2% auto 5% auto 1%;
+      grid-template-columns: 2% auto 5% auto 1%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container-atividades-1 {
+  background: #ffffff;
+}
+
+.titulo_ativ {
+  font-family: 'Bebas Neue', cursive;
+  letter-spacing: 1.5px;
+}
+
+.descricao_ativ {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.area-atividade {
+  -webkit-transition-duration: 0.8s;
+          transition-duration: 0.8s;
+}
+
+.area-atividade:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.tracinho {
+  height: 0;
+  min-width: 70px;
+  max-width: 100px;
+  color: #be991d;
+  font-weight: 800;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  border-radius: 5px;
+  border: solid 0.01px #be991d;
+}
+
+.divisoria_ativ {
+  height: 150px;
+  width: 0px;
+  color: #be991d;
+  font-weight: 800;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  border-radius: 5px;
+  border: solid 0.01px #be991d;
+}
+/*# sourceMappingURL=style_atividades.css.map */

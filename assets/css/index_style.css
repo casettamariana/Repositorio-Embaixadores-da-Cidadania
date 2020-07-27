@@ -2,7 +2,7 @@
   height: 0;
   min-width: 70px;
   max-width: 100px;
-  color: #be991d;
+  color: #FFCC33;
   font-weight: 800;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
@@ -10,14 +10,14 @@
   -ms-grid-column-align: center;
       justify-self: center;
   border-radius: 5px;
-  border: solid 0.01px #be991d;
+  border: solid 0.01px #FFCC33;
 }
 
 .separa_option {
   height: 0;
   min-width: 150px;
   max-width: 300px;
-  color: #be991d;
+  color: #ffffff;
   font-weight: 800;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
@@ -25,16 +25,16 @@
   -ms-grid-column-align: center;
       justify-self: center;
   border-radius: 5px;
-  border: solid 0.01px #be991d;
+  border: solid 0.01px #ffffff;
 }
 
 .container-video {
   grid-area: container-video;
-  border: solid 3px #ffffff;
+  border: solid 3px #FFCC33;
   border-radius: 8px;
   width: 95%;
   height: 85%;
-  background: white;
+  background: url("../img/fundo2.png");
   display: -ms-grid;
   display: grid;
   -webkit-box-pack: center;
@@ -45,9 +45,9 @@
 }
 
 .option-video {
-  border: solid 3px #ffffff;
+  border: solid 3px #FFCC33;
   border-radius: 8px;
-  background: white;
+  background: url("../img/fundo2.png");
   width: 95%;
   height: 85%;
 }
@@ -84,5 +84,15 @@
   text-align: start;
   font-size: small;
   width: 80%;
+}
+
+.option_grid {
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+}
+
+.option_grid:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 /*# sourceMappingURL=index_style.css.map */

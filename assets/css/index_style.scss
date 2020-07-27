@@ -1,43 +1,46 @@
+$amarelo_oficial: #FFCC33;
+// @import "vars.scss";
+
 .tracinho{
     height: 0;
     min-width: 70px;
     max-width: 100px;
-    color: #be991d;
+    color: $amarelo_oficial;
     font-weight: 800;
     align-self: center;
     justify-self: center;
     border-radius: 5px;
-    border: solid 0.01px #be991d;
+    border: solid 0.01px $amarelo_oficial;
 }
 
 .separa_option{
     height: 0;
     min-width: 150px;
     max-width: 300px;
-    color: #be991d;
+    color: #ffffff;
     font-weight: 800;
     align-self: center;
     justify-self: center;
     border-radius: 5px;
-    border: solid 0.01px #be991d;
+    border: solid 0.01px #ffffff;
 }
 
 .container-video{
     grid-area: container-video;
-    border: solid 3px #ffffff;
+    border: solid 3px $amarelo_oficial;
     border-radius: 8px;
     width: 95%;
     height: 85%;
-    background: white;
+    background: url('../img/fundo2.png');
     display: grid;
     justify-content: center;
     align-content: center;
 }
 
 .option-video{
-    border: solid 3px #ffffff;
+    border: solid 3px $amarelo_oficial;
     border-radius: 8px;
-    background: white;
+    background: url('../img/fundo2.png');
     width: 95%;
     height: 85%;
 }
@@ -71,3 +74,9 @@
     width: 80%;
 }
 
+.option_grid{
+    transition-duration: 1s;
+}
+.option_grid:hover{
+    transform: scale(1.05);
+}
