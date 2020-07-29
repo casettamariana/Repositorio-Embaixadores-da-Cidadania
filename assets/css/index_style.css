@@ -28,35 +28,6 @@
   border: solid 0.01px #ffffff;
 }
 
-.container-video {
-  grid-area: container-video;
-  border: solid 3px #FFCC33;
-  border-radius: 8px;
-  width: 95%;
-  height: 85%;
-  background: url("../img/fundo2.png");
-  display: -ms-grid;
-  display: grid;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
-}
-
-.option-video {
-  border: solid 3px #FFCC33;
-  border-radius: 8px;
-  background: url("../img/fundo2.png");
-  width: 95%;
-  height: 85%;
-}
-
-#pilula-1-id {
-  width: 100%;
-  border-radius: 20px;
-}
-
 #logo_organizacao {
   width: 35%;
 }

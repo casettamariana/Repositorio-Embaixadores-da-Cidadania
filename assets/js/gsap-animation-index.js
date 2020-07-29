@@ -2,6 +2,7 @@
 const btn_navbar__click = document.querySelector("#menu-btn-id");
 var opition_navbar = gsap.to(".slidebar", {x: 250, duration: .5});
 var btn_navbar = gsap.to(".menu-btn", {x: '100%', duration: .6});
+var text_menu = gsap.to(".menu_menu", {x: '60%', duration: .5}, 1);
 let controlMenu_navbar = false;
 //Animação de troca de páginas
 var container_introducao = document.querySelector("#container-introducao");
@@ -16,9 +17,6 @@ const btn_podcast = document.querySelector(".nav_op_podcast");
 
 //                 princ, pilula, ativ, podcast
 let controlPage = [false, false, false, true];
-
-//Animação Pílulas
-var btn_pil = document.querySelector(".nav_op_pilulas");
 
 
 //Animação troca de conteiners
@@ -47,7 +45,6 @@ btn_atividades.addEventListener('click', () => {
     container_atividades.style.display = 'flex';
 });
 btn_podcast.addEventListener('click', () => {
-    console.log('Clicou Podcast');
     menuBtn.click();
 
     desapareceContainer();
@@ -55,33 +52,10 @@ btn_podcast.addEventListener('click', () => {
 });
 
 function desapareceContainer(){
-    // for(var i=0; i<4; i++){
-    //     if(controlPage[i] == true){
-    //         switch(i){
-    //             case 0: //conteiner introdução
-    //                 container_introducao.style.display = "none";
-    //                 controlPage[i] = false;
-    //                 break;
-    //             case 1: //conteiner pílulas
-    //                 container_pilulas.style.display = "none";
-    //                 controlPage[i] = false;
-    //                 break;
-    //             case 2: //conteiner atividades
-    //                 container_atividades.style.display = "none";
-    //                 controlPage[i] = false;
-    //                 break;
-    //             case 3: //conteiner podcast
-    //                 container_podcast.style.display = "none";
-    //                 controlPage[i] = false;
-    //                 break;
-    //         }
-    //     }
-    // }
     container_podcast.style.display = "none";
     container_atividades.style.display = "none";
     container_pilulas.style.display = "none";
     container_introducao.style.display = "none";
-
 }
 
 
@@ -90,16 +64,16 @@ function desapareceContainer(){
 //Animação navbar
 btn_navbar__click.addEventListener('click', () => {
     if(!controlMenu_navbar){
+        text_menu.reverse();
         opition_navbar.reverse();
         btn_navbar.reverse();
         controlMenu_navbar = true;
     } else {
+        text_menu.play();
         opition_navbar.play();
         btn_navbar.play();
         controlMenu_navbar = false;
     }
 });
-
-//Animação Pílulas
 
 

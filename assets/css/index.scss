@@ -13,7 +13,7 @@ body{
     padding: 0;
     width: 100vw;
     height: 100vh;
-    background: url('../img/fundo2.png');
+    background: transparent;
     background-size: cover;
     display: grid;
     grid-template-areas: 
@@ -24,7 +24,27 @@ body{
     grid-template-rows: 10% auto 10%;
     grid-template-columns: none;
     overflow-x: hidden;
+    
 }
+
+//scroolbar
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 80px;
+    border-radius: 16px;
+  }
+  
+  ::-webkit-scrollbar-track-piece {
+    background-color: #ffffff;
+    border-radius: 3px;
+  }
+  
+  ::-webkit-scrollbar-thumb:vertical {
+    background-color: #949393;
+    border-radius: 3px;
+  }
+
 nav{
     width: 100vw;
     grid-area: nav;
@@ -52,13 +72,13 @@ nav{
 }
 .nav_btn__btn{
     display: grid;
-    grid-template-areas: "menu-btn slidebar";
+    grid-template-areas: "menu_menu menu-btn slidebar";
     grid-template-rows: none;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 30% 30% auto;
     justify-self: self-end;
     justify-items: self-end;
 }
-
+.menu_menu{grid-area: menu_menu;}
 
 //opições da navbar
 .slidebar{
@@ -77,7 +97,6 @@ nav{
     padding: 15px 30px;
     text-decoration: none;
     transition-duration: .5s;
-    color: white;
     font-weight: 700;
 }
 .slidebar .nav_op_style:hover{

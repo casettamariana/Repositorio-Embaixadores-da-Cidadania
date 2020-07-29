@@ -11,16 +11,32 @@ body {
   padding: 0;
   width: 100vw;
   height: 100vh;
-  background: url("../img/fundo2.png");
+  background: transparent;
   background-size: cover;
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "nav" "container" "footer";
+      grid-template-areas: "nav" "container" "footer";
   -ms-grid-rows: 10% auto 10%;
       grid-template-rows: 10% auto 10%;
   -ms-grid-columns: none;
       grid-template-columns: none;
   overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 80px;
+  border-radius: 16px;
+}
+
+::-webkit-scrollbar-track-piece {
+  background-color: #ffffff;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+  background-color: #949393;
+  border-radius: 3px;
 }
 
 nav {
@@ -69,14 +85,20 @@ nav {
 .nav_btn__btn {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "menu-btn slidebar";
+      grid-template-areas: "menu_menu menu-btn slidebar";
   -ms-grid-rows: none;
       grid-template-rows: none;
-  -ms-grid-columns: 50% 50%;
-      grid-template-columns: 50% 50%;
+  -ms-grid-columns: 30% 30% auto;
+      grid-template-columns: 30% 30% auto;
   -ms-grid-column-align: self-end;
       justify-self: self-end;
   justify-items: self-end;
+}
+
+.menu_menu {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: menu_menu;
 }
 
 .slidebar {
@@ -102,7 +124,6 @@ nav {
   text-decoration: none;
   -webkit-transition-duration: .5s;
           transition-duration: .5s;
-  color: white;
   font-weight: 700;
 }
 
@@ -161,13 +182,13 @@ footer {
 
 .menu-btn {
   -ms-grid-row: 1;
-  -ms-grid-column: 1;
+  -ms-grid-column: 2;
   grid-area: menu-btn;
 }
 
 .slidebar {
   -ms-grid-row: 1;
-  -ms-grid-column: 2;
+  -ms-grid-column: 3;
   grid-area: slidebar;
 }
 

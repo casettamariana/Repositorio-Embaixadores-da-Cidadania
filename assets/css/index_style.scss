@@ -25,30 +25,7 @@ $amarelo_oficial: #FFCC33;
     border: solid 0.01px #ffffff;
 }
 
-.container-video{
-    grid-area: container-video;
-    border: solid 3px $amarelo_oficial;
-    border-radius: 8px;
-    width: 95%;
-    height: 85%;
-    background: url('../img/fundo2.png');
-    display: grid;
-    justify-content: center;
-    align-content: center;
-}
 
-.option-video{
-    border: solid 3px $amarelo_oficial;
-    border-radius: 8px;
-    background: url('../img/fundo2.png');
-    width: 95%;
-    height: 85%;
-}
-
-#pilula-1-id{
-    width: 100%;
-    border-radius: 20px;
-}
 
 #logo_organizacao{
     width: 35%;
