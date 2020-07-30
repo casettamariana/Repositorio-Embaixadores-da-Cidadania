@@ -31,39 +31,4 @@
 #logo_organizacao {
   width: 35%;
 }
-
-.ball {
-  -ms-grid-column-align: start;
-      justify-self: start;
-  width: 80%;
-}
-
-.indicate_text {
-  padding-left: 10px;
-}
-
-.title_indicate {
-  font-family: 'Bebas Neue', cursive;
-  letter-spacing: 3px;
-  font-weight: 700;
-  font-size: x-large;
-  text-align: start;
-}
-
-.description_indicate {
-  font-family: 'Ubuntu', sans-serif;
-  text-align: start;
-  font-size: small;
-  width: 80%;
-}
-
-.option_grid {
-  -webkit-transition-duration: 1s;
-          transition-duration: 1s;
-}
-
-.option_grid:hover {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
-}
 /*# sourceMappingURL=index_style.css.map */

@@ -25,35 +25,6 @@ $amarelo_oficial: #FFCC33;
     border: solid 0.01px #ffffff;
 }
 
-
-
 #logo_organizacao{
     width: 35%;
-}
-.ball{
-    justify-self: start;
-    width: 80%;
-}
-.indicate_text{
-    padding-left: 10px;
-}
-.title_indicate{
-    font-family: 'Bebas Neue', cursive;
-    letter-spacing: 3px;
-    font-weight: 700;
-    font-size: x-large;
-    text-align: start;
-}
-.description_indicate{
-    font-family: 'Ubuntu', sans-serif;
-    text-align: start;
-    font-size: small;
-    width: 80%;
-}
-
-.option_grid{
-    transition-duration: 1s;
-}
-.option_grid:hover{
-    transform: scale(1.05);
 }

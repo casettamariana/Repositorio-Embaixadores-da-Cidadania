@@ -1,9 +1,10 @@
 //Animação navbar
 const btn_navbar__click = document.querySelector("#menu-btn-id");
-var opition_navbar = gsap.to(".slidebar", {x: 250, duration: .5});
+
+var opition_navbar = gsap.to(".slidebar", {x: '95%', duration: .5});
 var btn_navbar = gsap.to(".menu-btn", {x: '100%', duration: .6});
-var text_menu = gsap.to(".menu_menu", {x: '60%', duration: .5}, 1);
 let controlMenu_navbar = false;
+
 //Animação de troca de páginas
 var container_introducao = document.querySelector("#container-introducao");
 var container_pilulas = document.querySelector("#container-pilulas");
@@ -64,12 +65,10 @@ function desapareceContainer(){
 //Animação navbar
 btn_navbar__click.addEventListener('click', () => {
     if(!controlMenu_navbar){
-        text_menu.reverse();
         opition_navbar.reverse();
         btn_navbar.reverse();
         controlMenu_navbar = true;
     } else {
-        text_menu.play();
         opition_navbar.play();
         btn_navbar.play();
         controlMenu_navbar = false;

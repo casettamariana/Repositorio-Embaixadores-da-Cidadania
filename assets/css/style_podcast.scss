@@ -1,11 +1,40 @@
 //CONTAINER PODCAST
 #container-podcast{
-    justify-content: center;
-    justify-items: center;
+    width: 90vw;
+    grid-template-areas: "container-podcast . option-podcast";
+    grid-template-rows: 100%;
+    grid-template-columns: 60% 5% 18%;
     justify-self: center;
+    justify-items: center;
+    justify-content: center;
     align-items: center;
+    text-align: center;
+}
+.container-podcast{
+    grid-area: container-podcast;
+    background: url('../img/fundo2.png');
+    width: 100%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
     align-content: center;
-    height: 80vh;
-    width: 100vw;
+    align-items: center;
+    justify-items: center;
+    border-radius: 20px;
+
+}
+
+.option-podcast{
+    grid-area: option-podcast;
+    background: url('../img/fundo2.png');
+    width: 100%;
+    height: 60%;
+    display: flex;
     flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    justify-content: space-around;
+    border-radius: 20px;
+
 }

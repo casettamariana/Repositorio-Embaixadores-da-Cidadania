@@ -96,4 +96,9 @@
   border-radius: 5px;
   border: solid 0.01px #be991d;
 }
+
+.disco_img {
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
 /*# sourceMappingURL=style_atividades.css.map */

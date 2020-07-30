@@ -13,7 +13,6 @@
         
         <div class="nav_btn">
             <div class="nav_btn__btn">
-                <div class="menu_menu">MENU</div>
                 <div id="menu-btn-id" class="menu-btn">
                     <div class="menu-btn__slidebar"></div>
                 </div>
@@ -47,7 +46,7 @@
 
     <!-- PÍLULAS -->
     <!-- <div id="container-pilulas" class="container"  style="display: grid;"> -->
-    <div id="container-pilulas" class="container"  style="display: grid;">
+    <div id="container-pilulas" class="container"  style="display: none;">
         <div class="container-video">
             <div class="div_pil pilula-1">
                 <div class="div_pil_vd">
@@ -66,9 +65,8 @@
             <div class="div_pil pilula-3">
                 <div class="div_pil_vd">
                     <iframe id="pilula-3-id" width="560" height="315" style="display: none;"
-                    src="https://www.youtube.com/embed/BeweyC0uM_M" frameborder="0" 
-                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-                    allowfullscreen></iframe>
+                    src="https://www.youtube.com/embed/axFl6MG84ts" frameborder="0" 
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
 
@@ -106,8 +104,8 @@
     <!-- <div id="container-atividades" style="display: flex;"> -->
     <div id="container-atividades" class="container" style="display: none;">
         <div class="container-atividades-1">
-            <div class="area-atividade area-atividade-1">
-                <div class="disco disco_1"><img src="./assets/img/disco-pilula-1_preto.png" alt="Imagem ilustrativa para demarcação de atividades"></div>
+            <div class="area-atividade area-atividade-1" onclick="pdf('atividade1')">
+                <div class="disco disco_1"><img class="disco_img" src="./assets/img/disco-pilula-1_preto.png" alt="Imagem ilustrativa para demarcação de atividades"></div>
                 <div class="texto_ativ">
                     <div class="titulo_ativ titulo-ativ_1">ATIVIDADE 1</div>
                     <div class="descricao_ativ descricao-ativ_1">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
@@ -115,8 +113,8 @@
 
             </div>
             <div class="divisoria_ativ divisoria_ativ-1"></div>
-            <div class="area-atividade area-atividade-2">
-                <div class="disco disco_2"><img src="./assets/img/disco-pilula-2_preto.png" alt="Imagem ilustrativa para demarcação de atividades"></div>
+            <div class="area-atividade area-atividade-2" onclick="pdf('atividade2')">
+                <div class="disco disco_2"><img class="disco_img" src="./assets/img/disco-pilula-2_preto.png" alt="Imagem ilustrativa para demarcação de atividades"></div>
                 <div class="texto_ativ">
                     <div class="titulo_ativ titulo-ativ_2">ATIVIDADE 2</div>
                     <div class="descricao_ativ descricao-ativ_2">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
@@ -124,8 +122,8 @@
             </div>
             <div class="divisoria_ativ divisoria_ativ-2"></div>
 
-            <div class="area-atividade area-atividade-3">
-                <div class="disco disco_3"><img src="./assets/img/disco-pilula-3_preto.png" alt="Imagem ilustrativa para demarcação de atividades"></div>
+            <div class="area-atividade area-atividade-3" onclick="pdf('atividade3')">
+                <div class="disco disco_3"><img class="disco_img" src="./assets/img/disco-pilula-3_preto.png" alt="Imagem ilustrativa para demarcação de atividades"></div>
                 <div class="texto_ativ">
                     <div class="titulo_ativ titulo-ativ_3">ATIVIDADE 3</div>
                     <div class="descricao_ativ descricao-ativ_3">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
@@ -133,8 +131,8 @@
             </div>
             <div class="divisoria_ativ divisoria_ativ-3"></div>
 
-            <div class="area-atividade area-atividade-4">
-                <div class="disco disco_4"><img src="./assets/img/disco-pilula-4_preto.png" alt="Imagem ilustrativa para demarcação de atividades"></div>
+            <div class="area-atividade area-atividade-4" onclick="pdf('atividade4')">
+                <div class="disco disco_4"><img class="disco_img" src="./assets/img/disco-pilula-4_preto.png" alt="Imagem ilustrativa para demarcação de atividades"></div>
                 <div class="texto_ativ">
                     <div class="titulo_ativ titulo-ativ_4">ATIVIDADE 4</div>
                     <div class="descricao_ativ descricao-ativ_4">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
@@ -145,16 +143,45 @@
 
     <!-- PODCAST -->
     <!-- <div id="container-podcast" class="container" style="display: flex;"> -->
-    <div id="container-podcast" class="container" style="display: none;">
-        <div class="spotify">
-            <iframe id="podcast-1" src="https://open.spotify.com/embed-podcast/episode/5UnRYtIpIkZpitCUtYeUFE" 
-            width="49.7%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media" SameSite=None; Secure></iframe>
-
-            <iframe id="podcast-2" src="https://open.spotify.com/embed-podcast/episode/1445FLqnS1UfO8NXF9ucgs" 
-            width="49.7%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media" SameSite=None; Secure></iframe>
-
-            <iframe id="podcast-3" src="https://open.spotify.com/embed-podcast/episode/4Yy3oPGuN6OsYfk8RSqjkm" 
-            width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media" SameSite=None; Secure></iframe>
+    <div id="container-podcast" class="container" style="display: grid;">
+        <div class="container-podcast">
+            <div class="podcast_1" style="display: flex;">
+                <iframe id="podcast-1" src="https://open.spotify.com/embed-podcast/episode/5UnRYtIpIkZpitCUtYeUFE" 
+                width="150%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media" SameSite=None; Secure></iframe>
+            </div>
+            <div class="podcast_2" style="display: none;">
+                <iframe id="podcast-2" src="https://open.spotify.com/embed-podcast/episode/1445FLqnS1UfO8NXF9ucgs" 
+                width="150%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media" SameSite=None; Secure></iframe>
+            </div>
+            <div class="podcast_3" style="display: none;">
+                <iframe id="podcast-3" src="https://open.spotify.com/embed-podcast/episode/4Yy3oPGuN6OsYfk8RSqjkm" 
+                width="150%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media" SameSite=None; Secure></iframe>
+            </div>
+        </div>
+        <div class="option-podcast">
+            <div class="option_grid" id="opition_podcast-1" onclick="spotifyOption('podcast1')">
+                <div class="indicate_ball"><img class="ball" src="./assets/img/bola-pilula-1_preto.png" alt=""></div>
+                <div class="indicate_text">
+                    <div class="title_indicate">Podcast 1</div>
+                    <div class="description_indicate">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</div>
+                </div>
+            </div>
+            <div class="separa_option"></div>
+            <div class="option_grid" id="opition_podcast-2" onclick="spotifyOption('podcast2')">
+               <div class="indicate_ball"><img class="ball" src="./assets/img/bola-pilula-2_preto.png" alt=""></div>
+                <div class="indicate_text">
+                    <div class="title_indicate">Podcast 2</div>
+                    <div class="description_indicate">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</div>
+                </div>
+            </div>
+            <div class="separa_option"></div>
+            <div class="option_grid" id="opition_podcast-3" onclick="spotifyOption('podcast3')">
+                <div class="indicate_ball"><img class="ball" src="./assets/img/bola-pilula-3_preto.png" alt=""></div>
+                <div class="indicate_text">
+                    <div class="title_indicate">Podcast 3</div>
+                    <div class="description_indicate">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</div>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -170,5 +197,6 @@
     <script src="./assets/js/index.js"></script>
     <script src="./assets/js/gsap-animation-index.js"></script>
     <script src="./assets/js/gsap-animation-pilulas.js"></script>
+    <script src="./assets/js/gsap-animation-podcast.js"></script>
 </body>
 </html>
