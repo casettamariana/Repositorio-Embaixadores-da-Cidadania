@@ -26,7 +26,15 @@ body{
     overflow-x: hidden;
     overflow-y: auto;
 }
-
+.tracinho{
+  height: 0;
+  color: #be991d;
+  font-weight: 800;
+  align-self: center;
+  justify-self: center;
+  border-radius: 5px;
+  border: solid 0.01px #be991d;
+}
 //scroolbar
 
 ::-webkit-scrollbar {
@@ -51,7 +59,7 @@ nav{
     display: grid;
     grid-template-areas: ". nav_logo . nav_btn";
     grid-template-rows: 1fr;
-    grid-template-columns: auto 20% auto 20%;
+    grid-template-columns: 2f 20% 1f 20%;
     align-content: center;
     align-items: center;
     justify-content: center;
@@ -59,8 +67,110 @@ nav{
     position: fixed;
     top: 0;
 }
+.logo{
+  padding-top: 5px;
+}
+
+.menu-btn {
+  grid-area: menu-btn;
+  position: relative;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: all .5s ease-in-out;
+  /* border: 3px solid #fff; */
+}
+
+.menu-btn__slidebar {
+  background: white;
+  border-radius: 5px;
+  box-shadow: 0 2px 2px #be991d;
+  transition: all .5s ease-in-out;
+}
+
+.menu-btn__slidebar::before,
+.menu-btn__slidebar::after {
+  content: '';
+  position: absolute;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 0 2px 2px #be991d;
+  transition: all .5s ease-in-out;
+}
+
+.menu-btn__slidebar::before {
+  transform: translateY(-16px);
+}
+
+.menu-btn__slidebar::after {
+  transform: translateY(16px);
+}
 
 
+/* ANIMATION */
+.menu-btn.open .menu-btn__slidebar {
+  transform: translateX(-50px);
+  background: transparent;
+  box-shadow: none;
+}
+
+.menu-btn.open .menu-btn__slidebar::before {
+  transform: rotate(45deg) translate(35px, -35px);
+}
+
+.menu-btn.open .menu-btn__slidebar::after {
+  transform: rotate(-45deg) translate(35px, 35px);
+}
+
+.nav_logo{
+  grid-area: nav_logo;
+  justify-self: center;
+}
+.nav_btn{
+  padding-top: 1%;
+  grid-area: nav_btn;
+  position: fixed;
+  right: 0;
+  align-self: flex-end;
+}
+.nav_btn__btn{
+  display: grid;
+  grid-template-areas: "menu-btn . slidebar .";
+  grid-template-rows: none;
+  grid-template-columns: 45% 5% 45% 5%;
+  justify-self: self-end;
+  justify-items: self-end;
+}
+
+//opições da navbar
+.slidebar{
+  display: flex;
+  flex-flow: column wrap;
+  text-align: center;
+  font-family: 'Roboto Mono', monospace;
+  font-size: large;
+  transition-duration: 1.5s;
+  right: 0;
+}
+
+.slidebar .nav_op_style{
+  cursor: pointer;
+  text-decoration: none;
+  transition-duration: .5s;
+  font-weight: 700;
+}
+.slidebar .nav_op_style:hover{
+  transform: scale(1.05);
+  transition-duration: .5s;
+}
+
+footer{
+  padding-bottom: 5px;
+  justify-self: center;
+  align-self: center;
+  text-align: center;
+  grid-area: footer;
+}
 
 @media (max-width: 575.98px) {
 
@@ -81,21 +191,6 @@ nav{
 @media (min-width: 1200px) {
 
 }
-
-
-
-//rodapé do site
-#logo_organizacao{
-    width: 35%;
-}
-footer{
-    padding-bottom: 5px;
-    justify-self: center;
-    align-self: center;
-    text-align: center;
-    grid-area: footer;
-}
-
 
 
 #opition_pilula-1{grid-area: opition_pilula-1;}

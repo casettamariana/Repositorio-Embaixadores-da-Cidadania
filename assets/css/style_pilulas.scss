@@ -22,18 +22,12 @@
     justify-content: center;
     align-items: center;
 }
-.div_pil_vd{
-    grid-area: div_pil_vd;
-}
-#pilula-1-id{
-    border-radius: 20px;
-}
-#pilula-2-id{
-    border-radius: 20px;
-}
-#pilula-3-id{
-    border-radius: 20px;
-}
+
+.div_pil_vd{grid-area: div_pil_vd;}
+#pilula-1-id{border-radius: 20px;}
+#pilula-2-id{border-radius: 20px;}
+#pilula-3-id{border-radius: 20px;}
+
 .option-video{
     background: url('../img/fundo2.png');
     grid-area: option-video;
@@ -58,9 +52,7 @@
     padding-left: 5%;
     transition-duration: 0.8s;
 }
-.option_grid:hover{
-    transform: scale(1.05);
-}
+.option_grid:hover{transform: scale(1.05);}
 .separa_option{
     height: 0;
     width: 50%;

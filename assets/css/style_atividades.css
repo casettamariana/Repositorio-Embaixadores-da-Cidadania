@@ -68,21 +68,6 @@
           transform: scale(1.05);
 }
 
-.tracinho {
-  height: 0;
-  min-width: 70px;
-  max-width: 100px;
-  color: #be991d;
-  font-weight: 800;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  -ms-grid-column-align: center;
-      justify-self: center;
-  border-radius: 5px;
-  border: solid 0.01px #be991d;
-}
-
 .divisoria_ativ {
   height: 150px;
   width: 0px;

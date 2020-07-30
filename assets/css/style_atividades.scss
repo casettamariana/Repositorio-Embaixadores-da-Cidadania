@@ -7,6 +7,7 @@
     justify-content: center;
     justify-items: center;
 }
+
 .container-atividades-1{
     grid-area: cont1;
     width: 90%;
@@ -21,44 +22,28 @@
     padding: 2% 1% 2% 1%;
     border-radius: 40px;
 }
+
 .area-atividade{
     display: grid;
     grid-template-areas: ". disco . texto_ativ .";
     grid-template-rows: auto;
     grid-template-columns: 2% auto 5% auto 1%;
-    align-items: center;
-    
+    align-items: center; 
 }
-
 
 .container-atividades-1{
     background: url('../img/fundo2.png'); 
 }
+
 .titulo_ativ{
     font-family: 'Bebas Neue', cursive;
     letter-spacing: 1.5px;
 }
-.descricao_ativ{
-    font-family: 'Ubuntu', sans-serif;
 
-}
-.area-atividade{
-    transition-duration: 0.8s;
-}
-.area-atividade:hover{
-    transform: scale(1.05);
-}   
-.tracinho{
-    height: 0;
-    min-width: 70px;
-    max-width: 100px;
-    color: #be991d;
-    font-weight: 800;
-    align-self: center;
-    justify-self: center;
-    border-radius: 5px;
-    border: solid 0.01px #be991d;
-}
+.descricao_ativ{font-family: 'Ubuntu', sans-serif;}
+
+.area-atividade{transition-duration: 0.8s;}
+.area-atividade:hover{transform: scale(1.05);}
 
 .divisoria_ativ{
     height: 150px;
@@ -70,6 +55,4 @@
     border-radius: 5px;
     border: solid 0.01px #be991d;
 }
-.disco_img{
-    transform: scale(0.8);
-}
+.disco_img{transform: scale(0.8);}
