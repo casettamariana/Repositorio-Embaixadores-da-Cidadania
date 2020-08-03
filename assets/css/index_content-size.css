@@ -15,14 +15,7 @@
     width: 35px;
     height: 6px;
   }
-  .tracinho {
-    min-width: 45px;
-    max-width: 100px;
-  }
-  .slidebar {
-    max-width: 120px;
-  }
-  .slidebar .nav_op_style {
+  .nav_op_style {
     padding: 8px;
     font-size: xx-small;
   }
@@ -48,14 +41,7 @@
     width: 40px;
     height: 6px;
   }
-  .tracinho {
-    min-width: 50px;
-    max-width: 100px;
-  }
-  .slidebar {
-    max-width: 100px;
-  }
-  .slidebar .nav_op_style {
+  .nav_op_style {
     padding: 10px 20px;
     font-size: x-small;
   }
@@ -81,14 +67,7 @@
     width: 40px;
     height: 6px;
   }
-  .tracinho {
-    min-width: 70px;
-    max-width: 90px;
-  }
-  .slidebar {
-    max-width: 100px;
-  }
-  .slidebar .nav_op_style {
+  .nav_op_style {
     padding: 10px 20px;
     font-size: small;
   }
@@ -114,14 +93,7 @@
     width: 45px;
     height: 6px;
   }
-  .tracinho {
-    min-width: 70px;
-    max-width: 100px;
-  }
-  .slidebar {
-    max-width: 150px;
-  }
-  .slidebar .nav_op_style {
+  .nav_op_style {
     padding: 15px 30px;
     font-size: medium;
   }
@@ -147,14 +119,7 @@
     width: 50px;
     height: 6px;
   }
-  .tracinho {
-    min-width: 70px;
-    max-width: 100px;
-  }
-  .slidebar {
-    max-width: 150px;
-  }
-  .slidebar .nav_op_style {
+  .nav_op_style {
     padding: 15px 30px;
     font-size: medium;
   }
@@ -180,14 +145,7 @@
     width: 50px;
     height: 6px;
   }
-  .tracinho {
-    min-width: 70px;
-    max-width: 100px;
-  }
-  .slidebar {
-    max-width: 200px;
-  }
-  .slidebar .nav_op_style {
+  .nav_op_style {
     padding: 15px 30px;
     font-size: medium;
   }

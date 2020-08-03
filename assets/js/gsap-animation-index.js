@@ -25,29 +25,21 @@ let controlPage = [false, false, false, true];
 
 btn_home.addEventListener('click', () => {
     console.log('Clicou Home');
-    menuBtn.click();
-
     desapareceContainer();
     container_introducao.style.display = 'grid';
 });
 btn_pilulas.addEventListener('click', () => {
     console.log('Clicou Pilulas');
-    menuBtn.click();
-
     desapareceContainer();
     container_pilulas.style.display = 'grid';
 
 });
 btn_atividades.addEventListener('click', () => {
     console.log('Clicou Atividades');
-    menuBtn.click();
-
     desapareceContainer();
     container_atividades.style.display = 'flex';
 });
 btn_podcast.addEventListener('click', () => {
-    menuBtn.click();
-
     desapareceContainer();
     container_podcast.style.display = 'grid';
 });

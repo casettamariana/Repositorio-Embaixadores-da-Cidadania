@@ -56,14 +56,16 @@ body{
 
 nav{
     width: 100vw;
+    position: fixed;
+    top: 0;
     grid-area: nav;
     display: grid;
-    grid-template-areas: ". nav_logo . nav_btn";
-    grid-template-rows: 1fr;
-    grid-template-columns: 2f 20% 1f 20%;
+    grid-template-areas: "nav_logo . nav_btn";
+    grid-template-rows: none;
+    grid-template-columns: 20% 1fr 50%;
     align-content: center;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     justify-items: center;
     position: fixed;
     top: 0;
@@ -72,101 +74,24 @@ nav{
   padding-top: 5px;
 }
 
-.menu-btn {
-  grid-area: menu-btn;
-  position: relative;
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-  transition: all .5s ease-in-out;
-  /* border: 3px solid #fff; */
-}
-
-.menu-btn__slidebar {
-  background: white;
-  border-radius: 5px;
-  box-shadow: 0 2px 2px #be991d;
-  transition: all .5s ease-in-out;
-}
-
-.menu-btn__slidebar::before,
-.menu-btn__slidebar::after {
-  content: '';
-  position: absolute;
-  background: white;
-  border-radius: 5px;
-  box-shadow: 0 2px 2px #be991d;
-  transition: all .5s ease-in-out;
-}
-
-.menu-btn__slidebar::before {
-  transform: translateY(-16px);
-}
-
-.menu-btn__slidebar::after {
-  transform: translateY(16px);
-}
-
-
-/* ANIMATION */
-.menu-btn.open .menu-btn__slidebar {
-  transform: translateX(-50px);
-  background: transparent;
-  box-shadow: none;
-}
-
-.menu-btn.open .menu-btn__slidebar::before {
-  transform: rotate(45deg) translate(35px, -35px);
-}
-
-.menu-btn.open .menu-btn__slidebar::after {
-  transform: rotate(-45deg) translate(35px, 35px);
-}
-
 .nav_logo{
   grid-area: nav_logo;
-  justify-self: center;
 }
+
 .nav_btn{
   padding-top: 1%;
   grid-area: nav_btn;
   position: fixed;
   right: 0;
-  align-self: flex-end;
-}
-.nav_btn__btn{
-  display: grid;
-  grid-template-areas: "menu-btn . slidebar .";
-  grid-template-rows: none;
-  grid-template-columns: 45% 5% 45% 5%;
-  justify-self: self-end;
-  justify-items: self-end;
-}
-
-//opições da navbar
-.slidebar{
   display: flex;
-  flex-flow: column wrap;
-  text-align: center;
-  font-family: 'Roboto Mono', monospace;
-  font-size: large;
-  transition-duration: 1.5s;
-  right: 0;
-}
-
-.slidebar .nav_op_style{
-  cursor: pointer;
-  text-decoration: none;
-  transition-duration: .5s;
-  font-weight: 700;
-}
-.slidebar .nav_op_style:hover{
-  transform: scale(1.05);
-  transition-duration: .5s;
+  flex-direction: row;
+  flex-wrap: nowrap;
 }
 
 footer{
   padding-bottom: 5px;
+  position: fixed;
+  bottom: 0;
   justify-self: center;
   align-self: center;
   text-align: center;
