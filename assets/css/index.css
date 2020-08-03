@@ -6,6 +6,7 @@
 @import url("./style_pilulas.css");
 @import url("./style_atividades.css");
 @import url("./style_podcast.css");
+@import url("./style_introducao.css");
 body {
   margin: 0;
   padding: 0;

@@ -28,7 +28,7 @@ btn_home.addEventListener('click', () => {
     menuBtn.click();
 
     desapareceContainer();
-    container_introducao.style.display = 'flex';
+    container_introducao.style.display = 'grid';
 });
 btn_pilulas.addEventListener('click', () => {
     console.log('Clicou Pilulas');
