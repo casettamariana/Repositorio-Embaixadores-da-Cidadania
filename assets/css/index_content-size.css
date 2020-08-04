@@ -1,77 +1,156 @@
-.logo {
-  width: 350px;
-  margin-left: 350px;
-  padding-top: 5px;
+@media (max-width: 375.98px) {
+  .logo {
+    width: 180px;
+  }
+  .menu-btn {
+    width: 35px;
+    height: 35px;
+  }
+  .menu-btn__slidebar {
+    width: 35px;
+    height: 6px;
+  }
+  .menu-btn__slidebar::before,
+  .menu-btn__slidebar::after {
+    width: 35px;
+    height: 6px;
+  }
+  .nav_op_style {
+    padding: 8px;
+    font-size: xx-small;
+  }
+  #logo_organizacao {
+    width: 55%;
+  }
 }
 
-.menu-btn {
-  grid-area: menu-btn;
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 80px;
-  height: 80px;
-  cursor: pointer;
-  -webkit-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out;
-  /* border: 3px solid #fff; */
+@media (min-width: 376px) and (max-width: 575.98px) {
+  .logo {
+    width: 180px;
+  }
+  .menu-btn {
+    width: 40px;
+    height: 40px;
+  }
+  .menu-btn__slidebar {
+    width: 40px;
+    height: 6px;
+  }
+  .menu-btn__slidebar::before,
+  .menu-btn__slidebar::after {
+    width: 40px;
+    height: 6px;
+  }
+  .nav_op_style {
+    padding: 10px 20px;
+    font-size: x-small;
+  }
+  #logo_organizacao {
+    width: 55%;
+  }
 }
 
-.menu-btn__slidebar {
-  width: 50px;
-  height: 6px;
-  background: white;
-  border-radius: 5px;
-  -webkit-box-shadow: 0 2px 2px #be991d;
-          box-shadow: 0 2px 2px #be991d;
-  -webkit-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out;
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .logo {
+    width: 230px;
+  }
+  .menu-btn {
+    width: 45px;
+    height: 45px;
+  }
+  .menu-btn__slidebar {
+    width: 40px;
+    height: 6px;
+  }
+  .menu-btn__slidebar::before,
+  .menu-btn__slidebar::after {
+    width: 40px;
+    height: 6px;
+  }
+  .nav_op_style {
+    padding: 10px 20px;
+    font-size: small;
+  }
+  #logo_organizacao {
+    width: 40%;
+  }
 }
 
-.menu-btn__slidebar::before,
-.menu-btn__slidebar::after {
-  content: '';
-  position: absolute;
-  width: 50px;
-  height: 6px;
-  background: white;
-  border-radius: 5px;
-  -webkit-box-shadow: 0 2px 2px #be991d;
-          box-shadow: 0 2px 2px #be991d;
-  -webkit-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out;
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .logo {
+    width: 250px;
+  }
+  .menu-btn {
+    width: 45px;
+    height: 45px;
+  }
+  .menu-btn__slidebar {
+    width: 45px;
+    height: 6px;
+  }
+  .menu-btn__slidebar::before,
+  .menu-btn__slidebar::after {
+    width: 45px;
+    height: 6px;
+  }
+  .nav_op_style {
+    padding: 15px 30px;
+    font-size: medium;
+  }
+  #logo_organizacao {
+    width: 35%;
+  }
 }
 
-.menu-btn__slidebar::before {
-  -webkit-transform: translateY(-16px);
-          transform: translateY(-16px);
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .logo {
+    width: 300px;
+  }
+  .menu-btn {
+    width: 50px;
+    height: 50px;
+  }
+  .menu-btn__slidebar {
+    width: 50px;
+    height: 6px;
+  }
+  .menu-btn__slidebar::before,
+  .menu-btn__slidebar::after {
+    width: 50px;
+    height: 6px;
+  }
+  .nav_op_style {
+    padding: 15px 30px;
+    font-size: medium;
+  }
+  #logo_organizacao {
+    width: 30%;
+  }
 }
 
-.menu-btn__slidebar::after {
-  -webkit-transform: translateY(16px);
-          transform: translateY(16px);
-}
-
-/* ANIMATION */
-.menu-btn.open .menu-btn__slidebar {
-  -webkit-transform: translateX(-50px);
-          transform: translateX(-50px);
-  background: transparent;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-}
-
-.menu-btn.open .menu-btn__slidebar::before {
-  -webkit-transform: rotate(45deg) translate(35px, -35px);
-          transform: rotate(45deg) translate(35px, -35px);
-}
-
-.menu-btn.open .menu-btn__slidebar::after {
-  -webkit-transform: rotate(-45deg) translate(35px, 35px);
-          transform: rotate(-45deg) translate(35px, 35px);
+@media (min-width: 1200px) {
+  .logo {
+    width: 350px;
+  }
+  .menu-btn {
+    width: 80px;
+    height: 80px;
+  }
+  .menu-btn__slidebar {
+    width: 50px;
+    height: 6px;
+  }
+  .menu-btn__slidebar::before,
+  .menu-btn__slidebar::after {
+    width: 50px;
+    height: 6px;
+  }
+  .nav_op_style {
+    padding: 15px 30px;
+    font-size: medium;
+  }
+  #logo_organizacao {
+    width: 25%;
+  }
 }
 /*# sourceMappingURL=index_content-size.css.map */
