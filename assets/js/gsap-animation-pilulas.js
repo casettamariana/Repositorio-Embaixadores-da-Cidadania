@@ -1,6 +1,6 @@
-var video_1 = document.querySelector("#pilula-1-id");
-var video_2 = document.querySelector("#pilula-2-id");
-var video_3 = document.querySelector("#pilula-3-id");
+var video_1 = document.querySelector(".pilula-1");
+var video_2 = document.querySelector(".pilula-2");
+var video_3 = document.querySelector(".pilula-3");
 
 function displayVideo(video){
     var tl = gsap.timeline();
@@ -22,20 +22,20 @@ var img_op_2 = document.getElementById('ball_2');
 var img_op_3 = document.getElementById('ball_3');
 function btnHover(op){
     if(op == 'op_1'){
-        img_op_1.src = "./assets/img/play-100px.png";
+        img_op_1.src = "./assets/img/marcador/play-100px.png";
     }else if(op == 'op_2'){
-        img_op_2.src = "./assets/img/play-100px.png";
+        img_op_2.src = "./assets/img/marcador/play-100px.png";
     }else if(op == 'op_3'){
-        img_op_3.src = "./assets/img/play-100px.png";
+        img_op_3.src = "./assets/img/marcador/play-100px.png";
     }
 }
 
 function btnBack(op){
     if(op == 'op_1'){
-        img_op_1.src = "./assets/img/1-100px.png";
+        img_op_1.src = "./assets/img/marcador/1-100px.png";
     }else if(op == 'op_2'){
-        img_op_2.src = "./assets/img/2-100px.png";
+        img_op_2.src = "./assets/img/marcador/2-100px.png";
     }else if(op == 'op_3'){
-        img_op_3.src = "./assets/img/3-100px.png";
+        img_op_3.src = "./assets/img/marcador/3-100px.png";
     }
 }

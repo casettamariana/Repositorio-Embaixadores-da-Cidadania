@@ -12,7 +12,7 @@
     <link rel="stylesheet" type="text/css" href="./node_modules/slick-carousel/slick/slick-theme.css"/>
 </head>
 <body>
-    <nav>
+    <!-- <nav>
         <div class="nav_logo">
             <img class="logo" src="./assets/img/logo_embaixadores_amarelo-2.png" alt="">
         </div>
@@ -31,6 +31,18 @@
                 PODCASTS
             </div>
         </div>
+    </nav> -->
+    <nav>
+        <div class="nav_logo">
+            <img class="logo" src="./assets/img/logo_embaixadores_amarelo-2.png" alt="">
+        </div>
+        <ul class="ul__navbar">
+            <li class="li__ul_navbar item1"><a href="index.html">home</a></li>
+            <li class="li__ul_navbar item2"><a href="#">PÍLULAS</a></li>
+            <li class="li__ul_navbar item3"><a href="#">ATIVIDADES</a></li>
+            <li class="li__ul_navbar item4"><a href="#">PODCASTS</a></li>
+            <li class="li__ul_navbar item5"><a href="#">outros</a></li>
+        </ul>
     </nav>
 
     <!-- INTRODUÇÃO -->
@@ -44,11 +56,11 @@
             <div class="carousel-ultimas_atualiz">
                 <div class="your-element">
                     <div><img src="./assets/img/cardPodcast.png" alt="Card de atualização"></div>
+                    <div><img src="./assets/img/video_cast.png" alt="Card de atualização"></div>
+                    <div><img src="./assets/img/webnar.png" alt="Card de atualização"></div>
                     <div><img src="./assets/img/cardPodcast.png" alt="Card de atualização"></div>
-                    <div><img src="./assets/img/cardPodcast.png" alt="Card de atualização"></div>
-                    <div><img src="./assets/img/cardPodcast.png" alt="Card de atualização"></div>
-                    <div><img src="./assets/img/cardPodcast.png" alt="Card de atualização"></div>
-                    <div><img src="./assets/img/cardPodcast.png" alt="Card de atualização"></div>
+                    <div><img src="./assets/img/video_cast.png" alt="Card de atualização"></div>
+                    <div><img src="./assets/img/webnar.png" alt="Card de atualização"></div>
                 </div>
             </div>
         </div>
@@ -58,24 +70,22 @@
     <!-- <div id="container-pilulas" class="container"  style="display: grid;"> -->
     <div id="container-pilulas" class="container"  style="display: none;">
         <div class="container-video">
-            <div class="div_pil pilula-1">
+            <div class="div_pil pilula-1" style="display: block;">
                 <div class="div_pil_vd">
-                    <iframe id="pilula-1-id" width="560" height="315" style="display: block;"
-                    src="https://www.youtube.com/embed/Qnzub8HtzJg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Qnzub8HtzJg" frameborder="0" 
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
-            <div class="div_pil pilula-2">
-                <div class="div_pil_vd" >
-                    <iframe id="pilula-2-id" width="560" height="315" style="display: none;"
-                    src="https://www.youtube.com/embed/BeweyC0uM_M" frameborder="0" 
+            <div class="div_pil pilula-2" style="display: none;">
+                <div class="div_pil_vd">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/BeweyC0uM_M" frameborder="0" 
                     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
                     allowfullscreen></iframe>
                 </div>
             </div>
-            <div class="div_pil pilula-3">
+            <div class="div_pil pilula-3" style="display: none;">
                 <div class="div_pil_vd">
-                    <iframe id="pilula-3-id" width="560" height="315" style="display: none;"
-                    src="https://www.youtube.com/embed/axFl6MG84ts" frameborder="0" 
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/axFl6MG84ts" frameborder="0" 
                     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
@@ -85,7 +95,7 @@
         
         <div class="option-video">
             <div class="option_grid" id="opition_pilula-1" onclick="displayVideo('op_1')" onmouseover="btnHover('op_1')" onmouseout="btnBack('op_1')">
-                <div class="indicate_ball"><img id="ball_1" class="ball" src="./assets/img/1-100px.png" alt=""></div>
+                <div class="indicate_ball"><img id="ball_1" class="ball" src="./assets/img/marcador/1-100px.png" alt=""></div>
                 <div class="indicate_text">
                     <div class="title_indicate">Pílula 1</div>
                     <div class="description_indicate">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</div>
@@ -93,7 +103,7 @@
             </div>
             <div class="separa_option"></div>
             <div class="option_grid" id="opition_pilula-2" onclick="displayVideo('op_2')" onmouseover="btnHover('op_2')" onmouseout="btnBack('op_2')">
-               <div class="indicate_ball"><img id="ball_2" class="ball" src="./assets/img/2-100px.png" alt=""></div>
+               <div class="indicate_ball"><img id="ball_2" class="ball" src="./assets/img/marcador/2-100px.png" alt=""></div>
                 <div class="indicate_text">
                     <div class="title_indicate">Pílula 2</div>
                     <div class="description_indicate">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</div>
@@ -101,7 +111,7 @@
             </div>
             <div class="separa_option"></div>
             <div class="option_grid" id="opition_pilula-3" onclick="displayVideo('op_3')" onmouseover="btnHover('op_3')" onmouseout="btnBack('op_3')">
-                <div class="indicate_ball"><img id="ball_3" class="ball" src="./assets/img/3-100px.png" alt=""></div>
+                <div class="indicate_ball"><img id="ball_3" class="ball" src="./assets/img/marcador/3-100px.png" alt=""></div>
                 <div class="indicate_text">
                     <div class="title_indicate">Pílula 3</div>
                     <div class="description_indicate">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</div>
@@ -115,7 +125,7 @@
     <div id="container-atividades" class="container" style="display: none;">
         <div class="container-atividades-1">
             <div class="area-atividade area-atividade-1" onclick="pdf('atividade1')">
-                <div class="disco disco_1"><img class="disco_img" src="./assets/img/1-100px.png" alt="Imagem ilustrativa para demarcação de atividades"></div>
+                <div class="disco disco_1"><img class="disco_img" src="./assets/img/marcador/1-100px.png" alt="Imagem ilustrativa para demarcação de atividades"></div>
                 <div class="texto_ativ">
                     <div class="titulo_ativ titulo-ativ_1">ATIVIDADE 1</div>
                     <div class="descricao_ativ descricao-ativ_1">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
@@ -124,7 +134,7 @@
             </div>
             <div class="divisoria_ativ divisoria_ativ-1"></div>
             <div class="area-atividade area-atividade-2" onclick="pdf('atividade2')">
-                <div class="disco disco_2"><img class="disco_img" src="./assets/img/2-100px.png" alt="Imagem ilustrativa para demarcação de atividades"></div>
+                <div class="disco disco_2"><img class="disco_img" src="./assets/img/marcador/2-100px.png" alt="Imagem ilustrativa para demarcação de atividades"></div>
                 <div class="texto_ativ">
                     <div class="titulo_ativ titulo-ativ_2">ATIVIDADE 2</div>
                     <div class="descricao_ativ descricao-ativ_2">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
@@ -133,7 +143,7 @@
             <div class="divisoria_ativ divisoria_ativ-2"></div>
 
             <div class="area-atividade area-atividade-3" onclick="pdf('atividade3')">
-                <div class="disco disco_3"><img class="disco_img" src="./assets/img/3-100px.png" alt="Imagem ilustrativa para demarcação de atividades"></div>
+                <div class="disco disco_3"><img class="disco_img" src="./assets/img/marcador/3-100px.png" alt="Imagem ilustrativa para demarcação de atividades"></div>
                 <div class="texto_ativ">
                     <div class="titulo_ativ titulo-ativ_3">ATIVIDADE 3</div>
                     <div class="descricao_ativ descricao-ativ_3">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
@@ -142,7 +152,7 @@
             <div class="divisoria_ativ divisoria_ativ-3"></div>
 
             <div class="area-atividade area-atividade-4" onclick="pdf('atividade4')">
-                <div class="disco disco_4"><img class="disco_img" src="./assets/img/4-100px.png" alt="Imagem ilustrativa para demarcação de atividades"></div>
+                <div class="disco disco_4"><img class="disco_img" src="./assets/img/marcador/4-100px.png" alt="Imagem ilustrativa para demarcação de atividades"></div>
                 <div class="texto_ativ">
                     <div class="titulo_ativ titulo-ativ_4">ATIVIDADE 4</div>
                     <div class="descricao_ativ descricao-ativ_4">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
@@ -170,7 +180,7 @@
         </div>
         <div class="option-podcast">
             <div class="option_grid" id="opition_podcast-1" onclick="spotifyOption('podcast1')">
-                <div class="indicate_ball"><img class="ball" src="./assets/img/1-100px.png" alt=""></div>
+                <div class="indicate_ball"><img class="ball" src="./assets/img/marcador/1-100px.png" alt=""></div>
                 <div class="indicate_text">
                     <div class="title_indicate">Podcast 1</div>
                     <div class="description_indicate">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</div>
@@ -178,7 +188,7 @@
             </div>
             <div class="separa_option"></div>
             <div class="option_grid" id="opition_podcast-2" onclick="spotifyOption('podcast2')">
-               <div class="indicate_ball"><img class="ball" src="./assets/img/2-100px.png" alt=""></div>
+               <div class="indicate_ball"><img class="ball" src="./assets/img/marcador/2-100px.png" alt=""></div>
                 <div class="indicate_text">
                     <div class="title_indicate">Podcast 2</div>
                     <div class="description_indicate">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</div>
@@ -186,7 +196,7 @@
             </div>
             <div class="separa_option"></div>
             <div class="option_grid" id="opition_podcast-3" onclick="spotifyOption('podcast3')">
-                <div class="indicate_ball"><img class="ball" src="./assets/img/3-100px.png" alt=""></div>
+                <div class="indicate_ball"><img class="ball" src="./assets/img/marcador/3-100px.png" alt=""></div>
                 <div class="indicate_text">
                     <div class="title_indicate">Podcast 3</div>
                     <div class="description_indicate">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</div>
@@ -198,7 +208,7 @@
 
 
     <footer style="z-index: 10;">
-        <img id="logo_organizacao" src="./assets/img/logo_realizacao.png" alt="Logo da Controladoria-Geral do Estado e da Universidade Federal de Goiás">
+        <img id="logo_organizacao" src="./assets/img/footer/logo_realizacao-corte_1.png" alt="Logo da Controladoria-Geral do Estado e da Universidade Federal de Goiás">
     </footer>
 
 
@@ -220,6 +230,7 @@
                     infinite:true,
                     mobileFirst:true,
                     touchMove: true,
+                    autoplay: true,
                 }
             );
         });

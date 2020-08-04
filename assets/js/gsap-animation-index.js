@@ -11,10 +11,11 @@ var container_pilulas = document.querySelector("#container-pilulas");
 var container_atividades = document.querySelector("#container-atividades");
 var container_podcast = document.querySelector("#container-podcast");
 
-const btn_home = document.querySelector(".nav_op_home");
-const btn_pilulas = document.querySelector(".nav_op_pilulas");
-const btn_atividades = document.querySelector(".nav_op_atividades");
-const btn_podcast = document.querySelector(".nav_op_podcast");
+const btn_home = document.querySelector(".item1");
+const btn_pilulas = document.querySelector(".item2");
+const btn_atividades = document.querySelector(".item3");
+const btn_podcast = document.querySelector(".item4");
+const btn_outros = document.querySelector(".item5");
 
 //                 princ, pilula, ativ, podcast
 let controlPage = [false, false, false, true];
@@ -23,11 +24,6 @@ let controlPage = [false, false, false, true];
 //Animação troca de conteiners
 
 
-btn_home.addEventListener('click', () => {
-    console.log('Clicou Home');
-    desapareceContainer();
-    container_introducao.style.display = 'grid';
-});
 btn_pilulas.addEventListener('click', () => {
     console.log('Clicou Pilulas');
     desapareceContainer();
