@@ -17,9 +17,11 @@
     width: 100%;
     height: 60%;
     display: flex;
-    justify-content: center;
     align-content: center;
+    align-self: center;
     align-items: center;
+    justify-content: center;
+    justify-self: center;
     justify-items: center;
     border-radius: 20px;
 
@@ -37,5 +39,5 @@
     justify-items: center;
     justify-content: space-around;
     border-radius: 20px;
-
+    overflow-y: scroll;
 }
