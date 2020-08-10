@@ -15,21 +15,21 @@
 .container-atividades-1 {
   grid-area: cont1;
   width: 90%;
-  display: -ms-grid;
-  display: grid;
-      grid-template-areas: ". area-atividade-1 divisoria_ativ-1 area-atividade-2 divisoria_ativ-2 area-atividade-3 divisoria_ativ-3 area-atividade-4. ";
-  -ms-grid-rows: none;
-      grid-template-rows: none;
-  -ms-grid-columns: 10px 1fr 10px 1fr 10px 1fr 10px 1fr 10px;
-      grid-template-columns: 10px 1fr 10px 1fr 10px 1fr 10px 1fr 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  padding: 2%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   justify-items: center;
-  -ms-grid-column-align: center;
-      justify-self: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 2% 1% 2% 1%;
-  border-radius: 40px;
+  border-radius: 20px;
 }
 
 .area-atividade {

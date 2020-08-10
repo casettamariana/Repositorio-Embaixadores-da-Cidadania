@@ -150,11 +150,70 @@
   height: 80%;
 }
 
+.description_indicate {
+  font-family: 'Ubuntu', sans-serif;
+  text-align: start;
+  font-size: small;
+  width: 80%;
+}
+
+.container-video {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: container-video;
+  border: solid 3px transparent;
+  border-radius: 8px;
+  width: 95%;
+  height: 85%;
+  background: url("../img/fundo2.png");
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.option-video {
+  border: solid 3px transparent;
+  border-radius: 8px;
+  background: url("../img/fundo2.png");
+  width: 95%;
+  height: 85%;
+}
+
+#pilula-1-id {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.option_grid {
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+}
+
+.option_grid:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.ball {
+  -ms-grid-column-align: start;
+      justify-self: start;
+  width: 80%;
+}
+
+.indicate_text {
+  padding-left: 10px;
+}
+
 .title_indicate {
   font-family: 'Bebas Neue', cursive;
+  color: #2B2B2B;
   letter-spacing: 3px;
   font-weight: 700;
-  font-size: x-large;
+  font-size: xx-large;
   text-align: start;
 }
 
@@ -163,5 +222,9 @@
   text-align: start;
   font-size: small;
   width: 80%;
+}
+
+.div_pil_vd iframe {
+  border-radius: 10px;
 }
 /*# sourceMappingURL=style_pilulas.css.map */

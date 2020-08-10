@@ -20,9 +20,16 @@ function displayVideo(video){
 var img_op_1 = document.getElementById('ball_1');
 var img_op_2 = document.getElementById('ball_2');
 var img_op_3 = document.getElementById('ball_3');
+
+var vd_1 = document.getElementById('player_pilula_1');
+var vd_2 = document.getElementById('player_pilula_2');
+var vd_3 = document.getElementById('player_pilula_3');
+
+
 function btnHover(op){
     if(op == 'op_1'){
         img_op_1.src = "./assets/img/marcador/play-100px.png";
+        
     }else if(op == 'op_2'){
         img_op_2.src = "./assets/img/marcador/play-100px.png";
     }else if(op == 'op_3'){
@@ -38,4 +45,7 @@ function btnBack(op){
     }else if(op == 'op_3'){
         img_op_3.src = "./assets/img/marcador/3-100px.png";
     }
+}
+function stopVideo(video){
+    $(video)[0].contentWindow.postMessage('{"event":"command","func":"' + 'stopVideo' + '","args":""}', '*');
 }

@@ -1,5 +1,5 @@
 //CONTAINER PÍLULAS
-#container-pilulas{
+#container-pilulas {
     justify-self: center;
     justify-items: center;
     justify-content: center;
@@ -12,9 +12,11 @@
     grid-template-columns: 60% auto 18%;
 }
 
-.separa{grid-area: separa;}
+.separa {
+    grid-area: separa;
+}
 
-.div_pil{
+.div_pil {
     display: grid;
     grid-template-areas: "div_pil_vd";
     grid-template-rows: 90%;
@@ -23,12 +25,23 @@
     align-items: center;
 }
 
-.div_pil_vd{grid-area: div_pil_vd;}
-#pilula-1-id{border-radius: 20px;}
-#pilula-2-id{border-radius: 20px;}
-#pilula-3-id{border-radius: 20px;}
+.div_pil_vd {
+    grid-area: div_pil_vd;
+}
 
-.option-video{
+#pilula-1-id {
+    border-radius: 20px;
+}
+
+#pilula-2-id {
+    border-radius: 20px;
+}
+
+#pilula-3-id {
+    border-radius: 20px;
+}
+
+.option-video {
     background: url('../img/fundo2.png');
     grid-area: option-video;
     display: flex;
@@ -42,7 +55,7 @@
     height: 85%;
 }
 
-.option_grid{
+.option_grid {
     display: grid;
     grid-template-areas: "indicate_ball indicate_text";
     grid-template-rows: none;
@@ -52,8 +65,12 @@
     padding-left: 5%;
     transition-duration: 0.8s;
 }
-.option_grid:hover{transform: scale(1.05);}
-.separa_option{
+
+.option_grid:hover {
+    transform: scale(1.05);
+}
+
+.separa_option {
     height: 0;
     width: 50%;
     color: #be991d;
@@ -64,7 +81,7 @@
     border: solid 0.01px #be991d;
 }
 
-.container-video{
+.container-video {
     background: url('../img/fundo2.png');
 
     grid-area: container-video;
@@ -76,77 +93,84 @@
     justify-content: center;
     align-content: center;
 }
-.ball{
+
+.ball {
     justify-self: start;
     width: 80%;
 }
-.indicate_text{
+
+.indicate_text {
     padding-left: 10px;
     width: 100%;
     height: 80%;
 }
-.title_indicate{
-    font-family: 'Bebas Neue', cursive;
-    letter-spacing: 3px;
-    font-weight: 700;
-    font-size: x-large;
-    text-align: start;
-}
-.description_indicate{
+
+.description_indicate {
     font-family: 'Ubuntu', sans-serif;
     text-align: start;
     font-size: small;
     width: 80%;
 }
-.container-video{
+
+.container-video {
     grid-area: container-video;
-    border: solid 3px $amarelo_oficial;
+    border: solid 3px transparent;
     border-radius: 8px;
     width: 95%;
     height: 85%;
     background: url('../img/fundo2.png');
-    
+
     display: grid;
     justify-content: center;
     align-content: center;
 }
 
-.option-video{
-    border: solid 3px $amarelo_oficial;
+.option-video {
+    border: solid 3px transparent;
     border-radius: 8px;
     background: url('../img/fundo2.png');
     width: 95%;
     height: 85%;
 }
 
-#pilula-1-id{
+#pilula-1-id {
     width: 100%;
     border-radius: 20px;
 }
 
-.option_grid{
+.option_grid {
     transition-duration: 1s;
 }
-.option_grid:hover{
+
+.option_grid:hover {
     transform: scale(1.05);
 }
-.ball{
+
+.ball {
     justify-self: start;
     width: 80%;
 }
-.indicate_text{
+
+.indicate_text {
     padding-left: 10px;
 }
-.title_indicate{
+
+.title_indicate {
     font-family: 'Bebas Neue', cursive;
+    color: #2B2B2B;
     letter-spacing: 3px;
     font-weight: 700;
-    font-size: x-large;
+    font-size: xx-large;
     text-align: start;
 }
-.description_indicate{
+
+.description_indicate {
     font-family: 'Ubuntu', sans-serif;
     text-align: start;
     font-size: small;
     width: 80%;
+}
+
+.div_pil_vd iframe {
+    border-radius: 10px;
 }

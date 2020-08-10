@@ -11,18 +11,14 @@
 .container-atividades-1{
     grid-area: cont1;
     width: 90%;
-    display: grid;
-    grid-template-areas: 
-    ". area-atividade-1 divisoria_ativ-1 area-atividade-2 divisoria_ativ-2 area-atividade-3 divisoria_ativ-3 area-atividade-4. ";
-    grid-template-rows: none;
-    grid-template-columns: 10px 1fr 10px 1fr 10px 1fr 10px 1fr 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 2%;
+    justify-content: center;
     justify-items: center;
-    justify-self: center;
-    align-items: center;
-    padding: 2% 1% 2% 1%;
-    border-radius: 40px;
+    border-radius: 20px;
 }
-
 .area-atividade{
     display: grid;
     grid-template-areas: ". disco . texto_ativ .";
