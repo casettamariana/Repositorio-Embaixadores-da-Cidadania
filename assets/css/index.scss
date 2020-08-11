@@ -8,6 +8,7 @@
 @import url('./style_atividades.css');
 @import url('./style_podcast.css');
 @import url('./style_introducao.css');
+@import url('./style_videocast.css');
 @import "var_media_screen";
 
 
@@ -604,9 +605,11 @@ footer {
     font-size: 12px;
     font-family: sans-serif;
     text-transform: uppercase;
+    text-decoration: none;
     letter-spacing: 3px;
     list-style-type: none;
     transition-duration: 0.8s;
+    cursor: pointer;
 }
 .li__ul_outros:hover{
     transform: scale(1.1);

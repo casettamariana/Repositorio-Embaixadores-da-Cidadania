@@ -60,6 +60,7 @@ btn_outros__item1.addEventListener('click', () => {
         btn_outros.click();
     }
     container_videocast.style.display = 'grid';
+    document.body.style.backgroundImage  = "url('videocast.png')";
 });
 btn_outros__item2.addEventListener('click', () => {
     desapareceContainer();
@@ -67,6 +68,7 @@ btn_outros__item2.addEventListener('click', () => {
         container_webnar.click();
     }
     container_webnar.style.display = 'grid';
+    document.body.style.backgroundImage = "url('../img/backgrounds/webnar.png')";
 });
 btn_outros.addEventListener('click', () => {
     if(!controlBtn_outros){
@@ -86,5 +88,6 @@ function desapareceContainer(){
     container_introducao.style.display = "none";
     container_videocast.style.display = "none";
     container_webnar.style.display = "none";
+    document.body.style.background = 'transparent';
 }
 

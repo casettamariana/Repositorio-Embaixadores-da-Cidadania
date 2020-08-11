@@ -7,6 +7,7 @@
 @import url("./style_atividades.css");
 @import url("./style_podcast.css");
 @import url("./style_introducao.css");
+@import url("./style_videocast.css");
 /* ----- MEDIA SCREEN ----- */
 /* Media Screen - EXTRA SMALL */
 /* Media Screen - SMALL */
@@ -677,10 +678,12 @@ footer {
   font-size: 12px;
   font-family: sans-serif;
   text-transform: uppercase;
+  text-decoration: none;
   letter-spacing: 3px;
   list-style-type: none;
   -webkit-transition-duration: 0.8s;
           transition-duration: 0.8s;
+  cursor: pointer;
 }
 
 .li__ul_outros:hover {
