@@ -1,22 +1,28 @@
 // CONTAINER ATIVIDADES
 #container-atividades{
     width: 100vw;
-    height: 100%;
+    height: 90%;
     align-content: center;
+    align-self: center;
     align-items: center;
     justify-content: center;
+    justify-self: center;
     justify-items: center;
 }
 
 .container-atividades-1{
     grid-area: cont1;
-    width: 90%;
+    width: 90vw;
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
     padding: 2%;
+    align-content: center;
+    align-self: center;
+    align-items: center;
     justify-content: center;
+    justify-self: center;
     justify-items: center;
+    background: url('../img/fundo2.png'); 
     border-radius: 20px;
 }
 .area-atividade{
@@ -27,9 +33,6 @@
     align-items: center; 
 }
 
-.container-atividades-1{
-    background: url('../img/fundo2.png'); 
-}
 
 .titulo_ativ{
     font-family: 'Bebas Neue', cursive;
@@ -39,7 +42,7 @@
 .descricao_ativ{font-family: 'Ubuntu', sans-serif;}
 
 .area-atividade{transition-duration: 0.8s;}
-.area-atividade:hover{transform: scale(1.05);}
+.area-atividade:hover{transform: scale(1.1);}
 
 .divisoria_ativ{
     height: 150px;
@@ -52,3 +55,128 @@
     border: solid 0.01px #be991d;
 }
 .disco_img{transform: scale(0.8);}
+
+@media (max-width: 575.98px) {
+    .titulo_ativ{
+        font-size: medium;
+    }
+    .descricao_ativ{
+        font-size: x-small;
+    }
+    .container-atividades-1{
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: 85%;
+
+    }
+    .divisoria_ativ{
+        height: 0px;
+        width: 180px;
+
+    }
+    .disco_img{
+        width: 50px;
+    }
+
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .titulo_ativ{
+        font-size: large;
+    }
+    .descricao_ativ{
+        font-size: small;
+    }
+    .container-atividades-1{
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: 85%;
+    }
+    .container-atividades{
+        height: 100%;   
+    }
+    .disco_img{
+        width: 70%;
+    }
+    .divisoria_ativ{
+        height: 0px;
+        width: 180px;
+        padding: 0;
+        margin: 0;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .titulo_ativ{
+        font-size: large;
+    }
+    .descricao_ativ{
+        font-size: small;
+    }
+    .container-atividades-1{
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: 85%;
+    }
+    .container-atividades{
+        height: 100%;   
+    }
+    .disco_img{
+        width: 70%;
+    }
+    .divisoria_ativ{
+        height: 0px;
+        width: 180px;
+        padding: 0;
+        margin: 0;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .titulo_ativ{
+        font-size: large;
+    }
+    .descricao_ativ{
+        font-size: small;
+    }
+    .container-atividades-1{
+        flex-wrap: nowrap;
+    }
+    .container-atividades{
+        height: 20vh;   
+    }
+    .disco_img{
+        width: 60px;
+    }
+    
+    .divisoria_ativ{
+        height: 100px;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1799.98px){
+    .titulo_ativ{
+        font-size: large;
+    }
+    .container-atividades-1{
+        flex-wrap: nowrap;
+
+    }
+    .container-atividades{
+        height: 100%;   
+    }
+
+}
+@media (min-width: 1800px) {
+    .titulo_ativ{
+        font-size: xx-large;
+    }
+    .container-atividades-1{
+        flex-wrap: nowrap;
+
+    }
+    .container-atividades{ 
+        height: 100%;   
+    }
+
+}

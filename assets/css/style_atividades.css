@@ -1,20 +1,25 @@
 #container-atividades {
   width: 100vw;
-  height: 100%;
+  height: 90%;
   -ms-flex-line-pack: center;
       align-content: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
   justify-items: center;
 }
 
 .container-atividades-1 {
   grid-area: cont1;
-  width: 90%;
+  width: 90vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -22,13 +27,20 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
   padding: 2%;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  justify-self: center;
   justify-items: center;
+  background: url("../img/fundo2.png");
   border-radius: 20px;
 }
 
@@ -43,10 +55,6 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.container-atividades-1 {
-  background: url("../img/fundo2.png");
 }
 
 .titulo_ativ {
@@ -64,8 +72,8 @@
 }
 
 .area-atividade:hover {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .divisoria_ativ {
@@ -85,5 +93,138 @@
 .disco_img {
   -webkit-transform: scale(0.8);
           transform: scale(0.8);
+}
+
+@media (max-width: 575.98px) {
+  .titulo_ativ {
+    font-size: medium;
+  }
+  .descricao_ativ {
+    font-size: x-small;
+  }
+  .container-atividades-1 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    height: 85%;
+  }
+  .divisoria_ativ {
+    height: 0px;
+    width: 180px;
+  }
+  .disco_img {
+    width: 50px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .titulo_ativ {
+    font-size: large;
+  }
+  .descricao_ativ {
+    font-size: small;
+  }
+  .container-atividades-1 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    height: 85%;
+  }
+  .container-atividades {
+    height: 100%;
+  }
+  .disco_img {
+    width: 70%;
+  }
+  .divisoria_ativ {
+    height: 0px;
+    width: 180px;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .titulo_ativ {
+    font-size: large;
+  }
+  .descricao_ativ {
+    font-size: small;
+  }
+  .container-atividades-1 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    height: 85%;
+  }
+  .container-atividades {
+    height: 100%;
+  }
+  .disco_img {
+    width: 70%;
+  }
+  .divisoria_ativ {
+    height: 0px;
+    width: 180px;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .titulo_ativ {
+    font-size: large;
+  }
+  .descricao_ativ {
+    font-size: small;
+  }
+  .container-atividades-1 {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .container-atividades {
+    height: 20vh;
+  }
+  .disco_img {
+    width: 60px;
+  }
+  .divisoria_ativ {
+    height: 100px;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1799.98px) {
+  .titulo_ativ {
+    font-size: large;
+  }
+  .container-atividades-1 {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .container-atividades {
+    height: 100%;
+  }
+}
+
+@media (min-width: 1800px) {
+  .titulo_ativ {
+    font-size: xx-large;
+  }
+  .container-atividades-1 {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .container-atividades {
+    height: 100%;
+  }
 }
 /*# sourceMappingURL=style_atividades.css.map */
