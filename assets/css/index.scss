@@ -28,7 +28,6 @@ body {
     grid-template-rows: 10% 1fr 10%;
     grid-template-columns: 100%;
     overflow-x: hidden;
-    overflow-y: 1fr;
 }
 
 .tracinho {
@@ -45,7 +44,6 @@ body {
 
 ::-webkit-scrollbar {
     width: 10px;
-    height: 80px;
     border-radius: 16px;
 }
 
@@ -109,86 +107,26 @@ footer {
 
 @media (min-width: 1200px) {}
 
-
-#opition_pilula-1 {
-    grid-area: opition_pilula-1;
-}
-
-#opition_pilula-2 {
-    grid-area: opition_pilula-2;
-}
-
-#opition_pilula-3 {
-    grid-area: opition_pilula-3;
-}
-
-#pilula-1-id {
-    grid-area: pilula-1-id;
-}
-
-.container {
-    grid-area: container;
-}
-
-.indicate_ball {
-    grid-area: indicate_ball;
-}
-
-.indicate_text {
-    grid-area: indicate_text;
-}
-
-.menu-btn {
-    grid-area: menu-btn;
-}
-
-.slidebar {
-    grid-area: slidebar;
-}
-
-.container-video {
-    grid-area: container-video;
-}
-
-.disco {
-    grid-area: disco;
-}
-
-.texto_ativ {
-    grid-area: texto_ativ;
-}
-
-.area-atividade-1 {
-    grid-area: area-atividade-1;
-}
-
-.area-atividade-2 {
-    grid-area: area-atividade-2;
-}
-
-.area-atividade-3 {
-    grid-area: area-atividade-3;
-}
-
-.area-atividade-4 {
-    grid-area: area-atividade-4;
-}
-
-.divisoria_ativ-1 {
-    grid-area: divisoria_ativ-1;
-}
-
-.divisoria_ativ-2 {
-    grid-area: divisoria_ativ-2;
-}
-
-.divisoria_ativ-3 {
-    grid-area: divisoria_ativ-3;
-}
-
-.separa_option {
-    grid-area: separa_option;
-}
+#opition_pilula-1 {grid-area: opition_pilula-1;}
+#opition_pilula-2 {grid-area: opition_pilula-2;}
+#opition_pilula-3 {grid-area: opition_pilula-3;}
+#pilula-1-id {grid-area: pilula-1-id;}
+.container {grid-area: container;}
+.indicate_ball {grid-area: indicate_ball;}
+.indicate_text {grid-area: indicate_text;}
+.menu-btn {grid-area: menu-btn;}
+.slidebar {grid-area: slidebar;}
+.container-video {grid-area: container-video;}
+.disco {grid-area: disco;}
+.texto_ativ {grid-area: texto_ativ;}
+.area-atividade-1 {grid-area: area-atividade-1;}
+.area-atividade-2 {grid-area: area-atividade-2;}
+.area-atividade-3 {grid-area: area-atividade-3;}
+.area-atividade-4 {grid-area: area-atividade-4;}
+.divisoria_ativ-1 {grid-area: divisoria_ativ-1;}
+.divisoria_ativ-2 {grid-area: divisoria_ativ-2;}
+.divisoria_ativ-3 {grid-area: divisoria_ativ-3;}
+.separa_option {grid-area: separa_option;}
 
 /* Media Screen - EXTRA - 575.98px */
 @media (max-width: $break-extra-small) {

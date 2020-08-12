@@ -30,7 +30,6 @@ body {
   -ms-grid-columns: 100%;
       grid-template-columns: 100%;
   overflow-x: hidden;
-  overflow-y: 1fr;
 }
 
 .tracinho {
@@ -48,7 +47,6 @@ body {
 
 ::-webkit-scrollbar {
   width: 10px;
-  height: 80px;
   border-radius: 16px;
 }
 
