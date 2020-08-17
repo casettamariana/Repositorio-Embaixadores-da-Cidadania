@@ -55,6 +55,13 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition-duration: 0.8s;
+          transition-duration: 0.8s;
+}
+
+.area-atividade:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .titulo_ativ {
@@ -64,16 +71,6 @@
 
 .descricao_ativ {
   font-family: 'Ubuntu', sans-serif;
-}
-
-.area-atividade {
-  -webkit-transition-duration: 0.8s;
-          transition-duration: 0.8s;
-}
-
-.area-atividade:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
 }
 
 .divisoria_ativ {
@@ -116,7 +113,31 @@
     width: 180px;
   }
   .disco_img {
-    width: 50px;
+    width: 45px;
+  }
+  .area-atividade {
+        grid-template-areas: ". disco . texto_ativ .";
+    -ms-grid-rows: 40%;
+        grid-template-rows: 40%;
+    -ms-grid-columns: 15% 20% 4% 72% 2%;
+        grid-template-columns: 15% 20% 4% 72% 2%;
+    width: 300px;
+    height: 50px;
+    -ms-flex-line-pack: distribute;
+        align-content: space-around;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    justify-items: stretch;
+    text-align: start;
   }
 }
 
@@ -148,6 +169,31 @@
     padding: 0;
     margin: 0;
   }
+  .area-atividade {
+        grid-template-areas: ". disco . texto_ativ .";
+    -ms-grid-rows: 50%;
+        grid-template-rows: 50%;
+    -ms-grid-columns: 2% 20% 4% 72% 2%;
+        grid-template-columns: 2% 20% 4% 72% 2%;
+    width: 400px;
+    height: 50px;
+    padding: 5px;
+    -ms-flex-line-pack: distribute;
+        align-content: space-around;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    justify-items: stretch;
+    text-align: start;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
@@ -162,21 +208,54 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    height: 85%;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    height: 80%;
   }
   .container-atividades {
     height: 100%;
   }
+  .disco {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    justify-items: center;
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
   .disco_img {
-    width: 70%;
+    width: 60px;
+    height: 60px;
   }
   .divisoria_ativ {
     height: 0px;
     width: 180px;
     padding: 0;
     margin: 0;
+  }
+  .area-atividade {
+        grid-template-areas: ". disco . texto_ativ .";
+    -ms-grid-rows: 50%;
+        grid-template-rows: 50%;
+    -ms-grid-columns: 2% 20% 4% 72% 2%;
+        grid-template-columns: 2% 20% 4% 72% 2%;
+    width: 400px;
+    height: 70px;
+    -ms-flex-line-pack: distribute;
+        align-content: space-around;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    justify-items: stretch;
+    text-align: start;
   }
 }
 
@@ -200,6 +279,9 @@
   .divisoria_ativ {
     height: 100px;
   }
+  .area-atividade {
+    width: 500px;
+  }
 }
 
 @media (min-width: 1200px) and (max-width: 1799.98px) {
@@ -213,6 +295,9 @@
   .container-atividades {
     height: 100%;
   }
+  .area-atividade {
+    width: 500px;
+  }
 }
 
 @media (min-width: 1800px) {
@@ -225,6 +310,9 @@
   }
   .container-atividades {
     height: 100%;
+  }
+  .area-atividade {
+    width: 500px;
   }
 }
 /*# sourceMappingURL=style_atividades.css.map */

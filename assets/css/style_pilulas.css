@@ -102,6 +102,8 @@
       justify-self: center;
   border-radius: 5px;
   border: solid 0.01px #be991d;
+  padding: 0;
+  margin: 0;
 }
 
 .container-video {
@@ -180,10 +182,6 @@
   -ms-grid-column-align: start;
       justify-self: start;
   width: 80%;
-}
-
-.indicate_text {
-  padding-left: 10px;
 }
 
 .title_indicate {
