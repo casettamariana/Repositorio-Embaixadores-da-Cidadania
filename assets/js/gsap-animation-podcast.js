@@ -25,12 +25,17 @@ function spotifyOption(op){
 }
 
 function openPlataf(plataf){
-    if(plataf == 'deezer'){
-        window.open("https://www.deezer.com/br/");
-    } else if(plataf == 'google-podcasts'){
-        window.open("https://podcasts.google.com/");
-    }
-    else if(plataf == 'soundcloud'){
-        window.open("https://soundcloud.com/");
+    if(plataf == 'google-podcasts'){
+        window.open("https://www.google.com/podcasts?feed=aHR0cHM6Ly9hbmNob3IuZm0vcy8yNzRkM2E5Yy9wb2RjYXN0L3Jzcw==");
+    } else if(plataf == 'anchor'){
+        window.open("https://anchor.fm/cgegoias");
+    } else if(plataf == 'breaker'){
+        window.open("https://www.breaker.audio/embaixadores-da-cidadania");
+    } else if(plataf == 'overcast'){
+        window.open("https://overcast.fm/itunes1519518183/embaixadores-da-cidadania");
+    } else if(plataf == 'pocketCasts'){
+        window.open("https://pca.st/1vbji782");
+    } else if(plataf == 'radioPublic'){
+        window.open("https://radiopublic.com/embaixadores-da-cidadania-G393AY");
     }
 }

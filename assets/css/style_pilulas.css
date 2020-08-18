@@ -21,6 +21,22 @@
   grid-area: separa;
 }
 
+.div_pil {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "video_pilula";
+  -ms-grid-rows: 90%;
+      grid-template-rows: 90%;
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 #pilula-1-id {
   border-radius: 20px;
 }
@@ -86,6 +102,8 @@
       justify-self: center;
   border-radius: 5px;
   border: solid 0.01px #be991d;
+  padding: 0;
+  margin: 0;
 }
 
 .container-video {
@@ -164,10 +182,6 @@
   -ms-grid-column-align: start;
       justify-self: start;
   width: 80%;
-}
-
-.indicate_text {
-  padding-left: 10px;
 }
 
 .title_indicate {
@@ -347,6 +361,8 @@
 
 @media (min-width: 1800px) {
   .video_pilula {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
     grid-area: video_pilula;
     height: 430px;
     width: 800px;

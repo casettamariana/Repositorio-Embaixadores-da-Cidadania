@@ -9,6 +9,7 @@
 @import url('./style_podcast.css');
 @import url('./style_introducao.css');
 @import url('./style_videocast.css');
+@import url('./style_webinar.css');
 @import "var_media_screen";
 
 
@@ -189,6 +190,7 @@ footer {
     nav {
         grid-template-columns: 15% 20% 1fr 50% 5%;
     }
+    
 
 }
 
@@ -501,6 +503,9 @@ footer {
     nav {
         grid-template-columns: 2% 20% 1fr 50% 2%;
     }
+    .ul__outros{
+        padding: 20px 20px 20px 20px;
+    }
 }
 
 
@@ -526,7 +531,9 @@ footer {
 }
 
 .ul__outros{
+    text-align: center;
     display: flex;
+    justify-self: center;
     flex-direction: column;
     position: fixed;
     right: 2%;
@@ -535,8 +542,8 @@ footer {
     align-items: center;
     justify-content: center;
     justify-items: center;
-            
 }
+    
 .li__ul_outros{
     padding: 10px 5px 10px 5px;
     color: #243769;
