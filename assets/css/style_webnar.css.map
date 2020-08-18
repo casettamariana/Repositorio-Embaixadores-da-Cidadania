@@ -2,8 +2,8 @@
     "version": 3,
     "mappings": "",
     "sources": [
-        "style_videocast.scss"
+        "style_webnar.scss"
     ],
     "names": [],
-    "file": "style_videocast.css"
+    "file": "style_webnar.css"
 }
