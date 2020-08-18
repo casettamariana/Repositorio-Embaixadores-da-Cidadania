@@ -1,0 +1,318 @@
+#container-atividades {
+  width: 100vw;
+  height: 90%;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  justify-items: center;
+}
+
+.container-atividades-1 {
+  grid-area: cont1;
+  width: 90vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 2%;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  justify-self: center;
+  justify-items: center;
+  background: url("../img/fundo2.png");
+  border-radius: 20px;
+}
+
+.area-atividade {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: ". disco . texto_ativ .";
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  -ms-grid-columns: 2% auto 5% auto 1%;
+      grid-template-columns: 2% auto 5% auto 1%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition-duration: 0.8s;
+          transition-duration: 0.8s;
+}
+
+.area-atividade:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.titulo_ativ {
+  font-family: 'Bebas Neue', cursive;
+  letter-spacing: 1.5px;
+}
+
+.descricao_ativ {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.divisoria_ativ {
+  height: 150px;
+  width: 0px;
+  color: #be991d;
+  font-weight: 800;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  border-radius: 5px;
+  border: solid 0.01px #be991d;
+}
+
+.disco_img {
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+
+@media (max-width: 575.98px) {
+  .titulo_ativ {
+    font-size: medium;
+  }
+  .descricao_ativ {
+    font-size: x-small;
+  }
+  .container-atividades-1 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    height: 85%;
+  }
+  .divisoria_ativ {
+    height: 0px;
+    width: 180px;
+  }
+  .disco_img {
+    width: 45px;
+  }
+  .area-atividade {
+        grid-template-areas: ". disco . texto_ativ .";
+    -ms-grid-rows: 40%;
+        grid-template-rows: 40%;
+    -ms-grid-columns: 15% 20% 4% 72% 2%;
+        grid-template-columns: 15% 20% 4% 72% 2%;
+    width: 300px;
+    height: 50px;
+    -ms-flex-line-pack: distribute;
+        align-content: space-around;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    justify-items: stretch;
+    text-align: start;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .titulo_ativ {
+    font-size: large;
+  }
+  .descricao_ativ {
+    font-size: small;
+  }
+  .container-atividades-1 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    height: 85%;
+  }
+  .container-atividades {
+    height: 100%;
+  }
+  .disco_img {
+    width: 70%;
+  }
+  .divisoria_ativ {
+    height: 0px;
+    width: 180px;
+    padding: 0;
+    margin: 0;
+  }
+  .area-atividade {
+        grid-template-areas: ". disco . texto_ativ .";
+    -ms-grid-rows: 50%;
+        grid-template-rows: 50%;
+    -ms-grid-columns: 2% 20% 4% 72% 2%;
+        grid-template-columns: 2% 20% 4% 72% 2%;
+    width: 400px;
+    height: 50px;
+    padding: 5px;
+    -ms-flex-line-pack: distribute;
+        align-content: space-around;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    justify-items: stretch;
+    text-align: start;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .titulo_ativ {
+    font-size: large;
+  }
+  .descricao_ativ {
+    font-size: small;
+  }
+  .container-atividades-1 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    height: 80%;
+  }
+  .container-atividades {
+    height: 100%;
+  }
+  .disco {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    justify-items: center;
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+  .disco_img {
+    width: 60px;
+    height: 60px;
+  }
+  .divisoria_ativ {
+    height: 0px;
+    width: 180px;
+    padding: 0;
+    margin: 0;
+  }
+  .area-atividade {
+        grid-template-areas: ". disco . texto_ativ .";
+    -ms-grid-rows: 50%;
+        grid-template-rows: 50%;
+    -ms-grid-columns: 2% 20% 4% 72% 2%;
+        grid-template-columns: 2% 20% 4% 72% 2%;
+    width: 400px;
+    height: 70px;
+    -ms-flex-line-pack: distribute;
+        align-content: space-around;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    justify-items: stretch;
+    text-align: start;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .titulo_ativ {
+    font-size: large;
+  }
+  .descricao_ativ {
+    font-size: small;
+  }
+  .container-atividades-1 {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .container-atividades {
+    height: 20vh;
+  }
+  .disco_img {
+    width: 60px;
+  }
+  .divisoria_ativ {
+    height: 100px;
+  }
+  .area-atividade {
+    width: 500px;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1799.98px) {
+  .titulo_ativ {
+    font-size: large;
+  }
+  .container-atividades-1 {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .container-atividades {
+    height: 100%;
+  }
+  .area-atividade {
+    width: 500px;
+  }
+}
+
+@media (min-width: 1800px) {
+  .titulo_ativ {
+    font-size: xx-large;
+  }
+  .container-atividades-1 {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .container-atividades {
+    height: 100%;
+  }
+  .area-atividade {
+    width: 500px;
+  }
+}
+/*# sourceMappingURL=style_atividades.css.map */
