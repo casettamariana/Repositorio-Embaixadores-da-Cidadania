@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,8BAA8B;AAE9B,gCAAgC;AAEhC,0BAA0B;AAG1B,2BAA2B;AAG3B,0BAA0B;AAG1B,gCAAgC;AAGhC,kCAAkC",
-    "sources": [
-        "var_media_screen.scss"
-    ],
-    "names": [],
-    "file": "var_media_screen.css"
-}

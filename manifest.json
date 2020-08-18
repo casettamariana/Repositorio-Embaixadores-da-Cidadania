@@ -1,8 +1,0 @@
-{
-    "permissions": [
-      "cookies",
-      "*spotify*",
-      "*youtube*"
-      "webRequest"
-    ]
-} 
