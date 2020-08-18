@@ -1,66 +1,191 @@
 @media (max-width: 375.98px) {
-    .logo{width: 180px;}
-    .menu-btn {width: 35px; height: 35px;}
-    .menu-btn__slidebar {width: 35px; height: 6px;}
+    .logo {
+        width: 180px;
+    }
+
+    .menu-btn {
+        width: 35px;
+        height: 35px;
+    }
+
+    .menu-btn__slidebar {
+        width: 35px;
+        height: 6px;
+    }
+
     .menu-btn__slidebar::before,
-    .menu-btn__slidebar::after {width: 35px; height: 6px;}
-    .nav_op_style{padding: 8px; font-size: xx-small;}
+    .menu-btn__slidebar::after {
+        width: 35px;
+        height: 6px;
+    }
+
+    .nav_op_style {
+        padding: 8px;
+        font-size: xx-small;
+    }
+
     //rodapé
-    #logo_organizacao{width: 55%;}
+    #logo_organizacao {
+        width: 55%;
+    }
 }
 
 @media (min-width: 376px) and (max-width: 575.98px) {
-    .logo{width: 180px;}
-    .menu-btn {width: 40px; height: 40px;}
-    .menu-btn__slidebar {width: 40px; height: 6px;}
+    .logo {
+        width: 180px;
+    }
+
+    .menu-btn {
+        width: 40px;
+        height: 40px;
+    }
+
+    .menu-btn__slidebar {
+        width: 40px;
+        height: 6px;
+    }
+
     .menu-btn__slidebar::before,
-    .menu-btn__slidebar::after {width: 40px; height: 6px;}
-    .nav_op_style{padding: 10px 20px; font-size: x-small;}
+    .menu-btn__slidebar::after {
+        width: 40px;
+        height: 6px;
+    }
+
+    .nav_op_style {
+        padding: 10px 20px;
+        font-size: x-small;
+    }
+
     //rodapé
-    #logo_organizacao{width: 55%;}
+    #logo_organizacao {
+        width: 55%;
+    }
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
-    .logo{width: 230px;}
-    .menu-btn {width: 45px; height: 45px;}
-    .menu-btn__slidebar {width: 40px; height: 6px;}
+    .logo {
+        width: 230px;
+    }
+
+    .menu-btn {
+        width: 45px;
+        height: 45px;
+    }
+
+    .menu-btn__slidebar {
+        width: 40px;
+        height: 6px;
+    }
+
     .menu-btn__slidebar::before,
-    .menu-btn__slidebar::after {width: 40px; height: 6px;}
-    .nav_op_style{padding: 10px 20px; font-size: small;}
+    .menu-btn__slidebar::after {
+        width: 40px;
+        height: 6px;
+    }
+
+    .nav_op_style {
+        padding: 10px 20px;
+        font-size: small;
+    }
+
     //rodapé
-    #logo_organizacao{width: 40%;}
+    #logo_organizacao {
+        width: 40%;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
-    .logo{width: 250px;}
-    .menu-btn {width: 45px; height: 45px;}
-    .menu-btn__slidebar {width: 45px; height: 6px;}
+    .logo {
+        width: 250px;
+    }
+
+    .menu-btn {
+        width: 45px;
+        height: 45px;
+    }
+
+    .menu-btn__slidebar {
+        width: 45px;
+        height: 6px;
+    }
+
     .menu-btn__slidebar::before,
-    .menu-btn__slidebar::after {width: 45px; height: 6px;}
-    .nav_op_style{padding: 15px 30px; font-size: medium;}
+    .menu-btn__slidebar::after {
+        width: 45px;
+        height: 6px;
+    }
+
+    .nav_op_style {
+        padding: 15px 30px;
+        font-size: medium;
+    }
+
     //rodapé
-    #logo_organizacao{width: 35%;}
+    #logo_organizacao {
+        width: 35%;
+    }
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
-    .logo{width: 300px;}
-    .menu-btn {width: 50px; height: 50px;}
-    .menu-btn__slidebar {width: 50px; height: 6px;}
+    .logo {
+        width: 300px;
+    }
+
+    .menu-btn {
+        width: 50px;
+        height: 50px;
+    }
+
+    .menu-btn__slidebar {
+        width: 50px;
+        height: 6px;
+    }
+
     .menu-btn__slidebar::before,
-    .menu-btn__slidebar::after {width: 50px; height: 6px;}
-    .nav_op_style{padding: 15px 30px; font-size: medium;}
+    .menu-btn__slidebar::after {
+        width: 50px;
+        height: 6px;
+    }
+
+    .nav_op_style {
+        padding: 15px 30px;
+        font-size: medium;
+    }
+
     //rodapé
-    #logo_organizacao{width: 30%;}
+    #logo_organizacao {
+        width: 30%;
+    }
 }
 
 @media (min-width: 1200px) {
-    .logo{width: 350px;}
-    .menu-btn {width: 80px; height: 80px;}
-    .menu-btn__slidebar {width: 50px; height: 6px;}
-    .menu-btn__slidebar::before,
-    .menu-btn__slidebar::after {width: 50px; height: 6px;}
-    .nav_op_style{padding: 15px 30px; font-size: medium;}
-    //rodapé
-    #logo_organizacao{width: 22%;}
-}
+    .logo {
+        width: 350px;
+    }
 
+    .menu-btn {
+        width: 80px;
+        height: 80px;
+    }
+
+    .menu-btn__slidebar {
+        width: 50px;
+        height: 6px;
+    }
+
+    .menu-btn__slidebar::before,
+    .menu-btn__slidebar::after {
+        width: 50px;
+        height: 6px;
+    }
+
+    .nav_op_style {
+        padding: 15px 30px;
+        font-size: medium;
+    }
+
+    //rodapé
+    #logo_organizacao {
+        width: 22%;
+    }
+}

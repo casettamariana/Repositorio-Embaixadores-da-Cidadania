@@ -1,7 +1,7 @@
 #container-podcast {
   width: 100%;
   height: 100%;
-      grid-template-areas: ". . . . ." "container_img_fone . container-podcast . option-podcast" "plataf plataf plataf plataf plataf" ". . . . .";
+      grid-template-areas: ". . . . ." "container_img_fone . container-podcast . option-podcast" "plataf plataf plataf plataf plataf" ". . . . .";
   -ms-grid-rows: 15% 50% auto 10%;
       grid-template-rows: 15% 50% auto 10%;
   -ms-grid-columns: 2% 5% 50% 5% 18%;
@@ -101,7 +101,7 @@
   grid-area: plataf;
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "text-outras_plataf" "carousel-plataf_podcast";
+      grid-template-areas: "text-outras_plataf" "carousel-plataf_podcast";
   -ms-grid-rows: 10% 1fr;
       grid-template-rows: 10% 1fr;
   -ms-grid-columns: none;
@@ -175,7 +175,7 @@
     height: 172px;
   }
   #container-podcast {
-        grid-template-areas: ". container-podcast ." ". . ." ". option-podcast ." "container_img_fone plataf .";
+        grid-template-areas: ". container-podcast ." ". . ." ". option-podcast ." "container_img_fone plataf .";
     -ms-grid-rows: 40% 2% 20% auto;
         grid-template-rows: 40% 2% 20% auto;
     -ms-grid-columns: 5% 1fr 5%;

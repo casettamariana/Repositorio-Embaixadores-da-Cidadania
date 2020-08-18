@@ -112,7 +112,7 @@
 }
 
 /*  -- Carousel --  */
-.carousel-plataf_podcast{
+.carousel-plataf_podcast {
     z-index: 100;
     padding: 20px;
     width: 40vw;
@@ -121,19 +121,21 @@
 }
 
 @media (max-width: 575.98px) {
-    .carousel-plataf_podcast{
+    .carousel-plataf_podcast {
         flex-wrap: wrap;
     }
-    .div_podcast iframe{
-        width: 280px; 
+
+    .div_podcast iframe {
+        width: 280px;
         height: 172px;
     }
+
     #container-podcast {
         grid-template-areas:
-        ". container-podcast ."
-        ". . ."
-        ". option-podcast ."
-        "container_img_fone plataf ."
+            ". container-podcast ."
+            ". . ."
+            ". option-podcast ."
+            "container_img_fone plataf ."
         ;
         grid-template-rows: 40% 2% 20% auto;
         grid-template-columns: 5% 1fr 5%;
@@ -143,65 +145,74 @@
         top: 20%;
         bottom: 20%;
     }
-    .img_fone{
+
+    .img_fone {
         width: 45%;
         position: fixed;
         bottom: 0;
         left: 0;
     }
-    .img_plataf_div{
+
+    .img_plataf_div {
         transform: scale(0.5);
     }
+
     .carousel-plataf_podcast {
         flex-direction: column;
         flex-wrap: wrap;
         width: 100%;
     }
-    #opition_podcast-1{
-       margin-top: 130%;
+
+    #opition_podcast-1 {
+        margin-top: 130%;
     }
-    .separa_option{
+
+    .separa_option {
         padding: 0;
         margin: 0;
     }
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
-    .carousel-plataf_podcast{
+    .carousel-plataf_podcast {
         flex-wrap: wrap;
     }
-    .div_podcast iframe{
-        width: 280px; 
+
+    .div_podcast iframe {
+        width: 280px;
         height: 152px;
     }
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
-    .carousel-plataf_podcast{
+    .carousel-plataf_podcast {
         flex-wrap: wrap;
     }
-    .div_podcast iframe{
-        width: 300px; 
+
+    .div_podcast iframe {
+        width: 300px;
         height: 152px;
     }
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
-    .carousel-plataf_podcast{
+    .carousel-plataf_podcast {
         flex-wrap: nowrap;
     }
-    .div_podcast iframe{
-        width: 500px; 
+
+    .div_podcast iframe {
+        width: 500px;
         height: 232px;
     }
 }
 
 @media (min-width: 1200px) {
-    .carousel-plataf_podcast{
+    .carousel-plataf_podcast {
         flex-wrap: nowrap;
     }
-    .div_podcast iframe{
-        width: 500px; 
+
+    .div_podcast iframe {
+        width: 500px;
         height: 232px;
     }
 }

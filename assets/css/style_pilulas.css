@@ -210,7 +210,7 @@
   #container-pilulas {
     width: 90vw;
     height: 65vh;
-        grid-template-areas: "container-video" "separa" "option-video";
+        grid-template-areas: "container-video" "separa" "option-video";
     -ms-grid-columns: 100%;
         grid-template-columns: 100%;
     -ms-grid-rows: 65% auto 35%;

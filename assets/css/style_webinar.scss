@@ -1,4 +1,4 @@
-#container-webinar{
+#container-webinar {
     justify-items: center;
     justify-self: center;
     justify-content: center;
@@ -9,7 +9,7 @@
     padding: 0;
     margin: 0;
     display: grid;
-    grid-template-areas: 
+    grid-template-areas:
         ". . . . ."
         ". title_webinar title_webinar . ."
         ". . . . ."
@@ -22,7 +22,7 @@
     width: 100vw;
 }
 
-.title_webinar{
+.title_webinar {
     justify-self: start;
     text-align: start;
     grid-area: title_webinar;
@@ -33,7 +33,8 @@
     font-size: 55px;
 
 }
-.container_webinar{
+
+.container_webinar {
     display: flex;
     flex-direction: row;
     height: 100%;
@@ -42,7 +43,8 @@
     background-color: #695112;
     border-radius: 20px;
 }
-.option_webinar{
+
+.option_webinar {
     display: flex;
     flex-direction: row;
     height: 100%;

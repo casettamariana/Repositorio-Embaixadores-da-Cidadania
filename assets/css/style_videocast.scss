@@ -1,4 +1,4 @@
-#container-videocast{
+#container-videocast {
     justify-items: center;
     justify-self: center;
     justify-content: center;
@@ -9,7 +9,7 @@
     padding: 0;
     margin: 0;
     display: grid;
-    grid-template-areas: 
+    grid-template-areas:
         ". . . . ."
         ". title_videocast title_videocast . ."
         ". . . . ."
@@ -21,7 +21,8 @@
     height: 90%;
     width: 100vw;
 }
-.title_videocast{
+
+.title_videocast {
     justify-self: start;
     text-align: start;
     grid-area: title_videocast;
@@ -31,7 +32,8 @@
     color: #252424;
     font-size: 55px;
 }
-.container_videocast{
+
+.container_videocast {
     justify-items: center;
     justify-self: center;
     justify-content: center;
@@ -46,7 +48,8 @@
     background-color: #695112;
     border-radius: 20px;
 }
-.option_videocast{
+
+.option_videocast {
     display: flex;
     flex-direction: row;
     height: 100%;
@@ -55,6 +58,7 @@
     background-color: #695112;
     border-radius: 20px;
 }
-.container_videocast iframe{
+
+.container_videocast iframe {
     border-radius: 20px;
 }
