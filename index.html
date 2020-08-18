@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Repositório - Embaixadores da Cidadania</title>    
+    <title>Repositório - Embaixadores da Cidadania</title>
 
     <link rel="stylesheet" href="./assets/css/index.css">
-    
+
     <link rel="shortcut icon" href="./assets/img/icon.png" type="image/x-icon">
     <!-- carousel -->
-    <link rel="stylesheet" type="text/css" href="./node_modules/slick-carousel/slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="./node_modules/slick-carousel/slick/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="./node_modules/slick-carousel/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="./node_modules/slick-carousel/slick/slick-theme.css" />
 </head>
+
 <body>
     <nav>
         <div class="nav_logo">
@@ -53,43 +55,51 @@
 
     <!-- PÍLULAS -->
     <!-- <div id="container-pilulas" class="container"  style="display: grid;"> -->
-    <div id="container-pilulas" class="container"  style="display: none;">
+    <div id="container-pilulas" class="container" style="display: none;">
         <div class="container-video">
-            <div class="div_pil pilula-1" style="display: block;">
-                    <iframe id="player_pilula_1" class="video_pilula" src="https://www.youtube.com/embed/Qnzub8HtzJg" frameborder="0" 
-                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div id="video_pilula_1" class="div_pil pilula-1" style="display: block;">
+                <iframe id="player_pilula_1" class="video_pilula" src="https://www.youtube.com/embed/Qnzub8HtzJg"
+                    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
             </div>
-            <div class="div_pil pilula-2" style="display: none;">
-                    <iframe id="player_pilula_2" class="video_pilula" src="https://www.youtube.com/embed/BeweyC0uM_M" frameborder="0" 
-                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div id="video_pilula_2" class="div_pil pilula-2" style="display: none;">
+                <iframe id="player_pilula_2" class="video_pilula" src="https://www.youtube.com/embed/BeweyC0uM_M"
+                    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
             </div>
-            <div class="div_pil pilula-3" style="display: none;">
-                    <iframe id="player_pilula_3" class="video_pilula" src="https://www.youtube.com/embed/axFl6MG84ts" frameborder="0" 
-                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div id="video_pilula_3" class="div_pil pilula-3" style="display: none;">
+                <iframe id="player_pilula_3" class="video_pilula" src="https://www.youtube.com/embed/axFl6MG84ts"
+                    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
             </div>
-
         </div>
         <span class="separa"></span>
-        
+
         <div class="option-video">
-            <div class="option_grid option_grid_1" id="opition_pilula-1" onclick="displayVideo('op_1')" onmouseover="btnHover('op_1')" onmouseout="btnBack('op_1')">
-                <div class="indicate_ball"><img id="ball_1" class="ball" src="./assets/img/marcador/1-100px.png" alt=""></div>
+            <div class="option_grid option_grid_1" id="opition_pilula-1" onclick="displayVideo('op_1')"
+                onmouseover="btnHover('op_1')" onmouseout="btnBack('op_1')">
+                <div class="indicate_ball"><img id="ball_1" class="ball" src="./assets/img/marcador/1-100px.png" alt="">
+                </div>
                 <div class="indicate_text title_pil_1">
                     <div class="title_indicate">Pílula 1</div>
                     <div class="description_indicate">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</div>
                 </div>
             </div>
             <div class="separa_option"></div>
-            <div class="option_grid" id="opition_pilula-2" onclick="displayVideo('op_2')" onmouseover="btnHover('op_2')" onmouseout="btnBack('op_2')">
-               <div class="indicate_ball"><img id="ball_2" class="ball" src="./assets/img/marcador/2-100px.png" alt=""></div>
+            <div class="option_grid" id="opition_pilula-2" onclick="displayVideo('op_2')" onmouseover="btnHover('op_2')"
+                onmouseout="btnBack('op_2')">
+                <div class="indicate_ball"><img id="ball_2" class="ball" src="./assets/img/marcador/2-100px.png" alt="">
+                </div>
                 <div class="indicate_text">
                     <div class="title_indicate">Pílula 2</div>
                     <div class="description_indicate">Participação social e as fake news.</div>
                 </div>
             </div>
             <div class="separa_option"></div>
-            <div class="option_grid" id="opition_pilula-3" onclick="displayVideo('op_3')" onmouseover="btnHover('op_3')" onmouseout="btnBack('op_3')">
-                <div class="indicate_ball"><img id="ball_3" class="ball" src="./assets/img/marcador/3-100px.png" alt=""></div>
+            <div class="option_grid" id="opition_pilula-3" onclick="displayVideo('op_3')" onmouseover="btnHover('op_3')"
+                onmouseout="btnBack('op_3')">
+                <div class="indicate_ball"><img id="ball_3" class="ball" src="./assets/img/marcador/3-100px.png" alt="">
+                </div>
                 <div class="indicate_text">
                     <div class="title_indicate">Pílula 3</div>
                     <div class="description_indicate">Acesso a informação: Um direito Cidadão.</div>
@@ -103,7 +113,8 @@
     <div id="container-atividades" class="container container-atividades" style="display: none;">
         <div class="container-atividades-1">
             <div class="area-atividade area-atividade-1" onclick="pdf('atividade1')">
-                <div class="disco disco_1"><img class="disco_img" src="./assets/img/marcador/1-100px.png" alt="Imagem ilustrativa para demarcação de atividades"></div>
+                <div class="disco disco_1"><img class="disco_img" src="./assets/img/marcador/1-100px.png"
+                        alt="Imagem ilustrativa para demarcação de atividades"></div>
                 <div class="texto_ativ">
                     <div class="titulo_ativ titulo-ativ_1">ATIVIDADE 1</div>
                     <div class="descricao_ativ descricao-ativ_1">Apoiando uma ideia Legislativa.</div>
@@ -112,7 +123,8 @@
             </div>
             <div class="divisoria_ativ divisoria_ativ-1"></div>
             <div class="area-atividade area-atividade-2" onclick="pdf('atividade2')">
-                <div class="disco disco_2"><img class="disco_img" src="./assets/img/marcador/2-100px.png" alt="Imagem ilustrativa para demarcação de atividades"></div>
+                <div class="disco disco_2"><img class="disco_img" src="./assets/img/marcador/2-100px.png"
+                        alt="Imagem ilustrativa para demarcação de atividades"></div>
                 <div class="texto_ativ">
                     <div class="titulo_ativ titulo-ativ_2">ATIVIDADE 2</div>
                     <div class="descricao_ativ descricao-ativ_2">Caça as Fake News.</div>
@@ -121,7 +133,8 @@
             <div class="divisoria_ativ divisoria_ativ-2"></div>
 
             <div class="area-atividade area-atividade-3" onclick="pdf('atividade3')">
-                <div class="disco disco_3"><img class="disco_img" src="./assets/img/marcador/3-100px.png" alt="Imagem ilustrativa para demarcação de atividades"></div>
+                <div class="disco disco_3"><img class="disco_img" src="./assets/img/marcador/3-100px.png"
+                        alt="Imagem ilustrativa para demarcação de atividades"></div>
                 <div class="texto_ativ">
                     <div class="titulo_ativ titulo-ativ_3">ATIVIDADE 3</div>
                     <div class="descricao_ativ descricao-ativ_3">Solicitando uma informação.</div>
@@ -130,7 +143,8 @@
             <div class="divisoria_ativ divisoria_ativ-3"></div>
 
             <div class="area-atividade area-atividade-4" onclick="pdf('atividade4')">
-                <div class="disco disco_4"><img class="disco_img" src="./assets/img/marcador/4-100px.png" alt="Imagem ilustrativa para demarcação de atividades"></div>
+                <div class="disco disco_4"><img class="disco_img" src="./assets/img/marcador/4-100px.png"
+                        alt="Imagem ilustrativa para demarcação de atividades"></div>
                 <div class="texto_ativ">
                     <div class="titulo_ativ titulo-ativ_4">ATIVIDADE 4</div>
                     <div class="descricao_ativ descricao-ativ_4">Conselho Virtual dos Embaixadores da Cidadania.</div>
@@ -138,7 +152,8 @@
             </div>
             <div class="divisoria_ativ divisoria_ativ-4"></div>
             <div class="area-atividade area-atividade-5" onclick="pdf('atividade5')">
-                <div class="disco disco_5"><img class="disco_img" src="./assets/img/marcador/5-100px.png" alt="Imagem ilustrativa para demarcação de atividades"></div>
+                <div class="disco disco_5"><img class="disco_img" src="./assets/img/marcador/5-100px.png"
+                        alt="Imagem ilustrativa para demarcação de atividades"></div>
                 <div class="texto_ativ">
                     <div class="titulo_ativ titulo-ativ_5">ATIVIDADE 5</div>
                     <div class="descricao_ativ descricao-ativ_5">Compartilhando Informação.</div>
@@ -151,32 +166,34 @@
     <!-- <div id="container-podcast" class="container" style="display: grid;"> -->
     <div id="container-podcast" class="container" style="display: none;">
         <div class="container_img_fone">
-            <img class="img_fone" src="./assets/img/fone-403x489.png" alt="Imagem ilustratifa de um fone para o podcast">
+            <img class="img_fone" src="./assets/img/fone-403x489.png"
+                alt="Imagem ilustratifa de um fone para o podcast">
         </div>
         <div class="container-podcast">
             <div class="div_podcast podcast_1" style="display: block;">
-                <iframe id="podcast-1" src="https://open.spotify.com/embed-podcast/episode/5UnRYtIpIkZpitCUtYeUFE" 
-                frameborder="0" allowtransparency="true" allow="encrypted-media" SameSite=None; Secure></iframe>
+                <iframe id="podcast-1" src="https://open.spotify.com/embed-podcast/episode/5UnRYtIpIkZpitCUtYeUFE"
+                    frameborder="0" allowtransparency="true" allow="encrypted-media" SameSite=None; Secure></iframe>
             </div>
             <div class="div_podcast podcast_2" style="display: none;">
-                <iframe id="podcast-2" src="https://open.spotify.com/embed-podcast/episode/1445FLqnS1UfO8NXF9ucgs" 
-                frameborder="0" allowtransparency="true" allow="encrypted-media" SameSite=None; Secure></iframe>
+                <iframe id="podcast-2" src="https://open.spotify.com/embed-podcast/episode/1445FLqnS1UfO8NXF9ucgs"
+                    frameborder="0" allowtransparency="true" allow="encrypted-media" SameSite=None; Secure></iframe>
             </div>
             <div class="div_podcast podcast_3" style="display: none;">
-                <iframe id="podcast-3" src="https://open.spotify.com/embed-podcast/episode/4Yy3oPGuN6OsYfk8RSqjkm" 
-                frameborder="0" allowtransparency="true" allow="encrypted-media" SameSite=None; Secure></iframe>
+                <iframe id="podcast-3" src="https://open.spotify.com/embed-podcast/episode/4Yy3oPGuN6OsYfk8RSqjkm"
+                    frameborder="0" allowtransparency="true" allow="encrypted-media" SameSite=None; Secure></iframe>
             </div>
             <div class="div_podcast podcast_4" style="display: none;">
-                <iframe id="podcast-4" src="https://open.spotify.com/embed-podcast/episode/6mav9cnZrsUi8snfjsYD3N" 
-                frameborder="0" allowtransparency="true" allow="encrypted-media" SameSite=None; Secure></iframe>
+                <iframe id="podcast-4" src="https://open.spotify.com/embed-podcast/episode/6mav9cnZrsUi8snfjsYD3N"
+                    frameborder="0" allowtransparency="true" allow="encrypted-media" SameSite=None; Secure></iframe>
             </div>
             <div class="div_podcast podcast_5" style="display: none;">
-                <iframe id="podcast-5" src="https://open.spotify.com/embed-podcast/episode/28DGh7Begrd5ku5QGkUtcB" 
-                frameborder="0" allowtransparency="true" allow="encrypted-media" SameSite=None; Secure></iframe>
+                <iframe id="podcast-5" src="https://open.spotify.com/embed-podcast/episode/28DGh7Begrd5ku5QGkUtcB"
+                    frameborder="0" allowtransparency="true" allow="encrypted-media" SameSite=None; Secure></iframe>
             </div>
         </div>
         <div class="option-podcast">
-            <div class="option_grid container_option_podcast" id="opition_podcast-1" onclick="spotifyOption('podcast1')">
+            <div class="option_grid container_option_podcast" id="opition_podcast-1"
+                onclick="spotifyOption('podcast1')">
                 <div class="indicate_ball"><img class="ball" src="./assets/img/marcador/1-100px.png" alt=""></div>
                 <div class="indicate_text">
                     <div class="title_indicate">Podcast 1</div>
@@ -184,31 +201,37 @@
                 </div>
             </div>
             <div class="separa_option"></div>
-            <div class="option_grid container_option_podcast" id="opition_podcast-2" onclick="spotifyOption('podcast2')">
-               <div class="indicate_ball"><img class="ball" src="./assets/img/marcador/2-100px.png" alt=""></div>
+            <div class="option_grid container_option_podcast" id="opition_podcast-2"
+                onclick="spotifyOption('podcast2')">
+                <div class="indicate_ball"><img class="ball" src="./assets/img/marcador/2-100px.png" alt=""></div>
                 <div class="indicate_text">
                     <div class="title_indicate">Podcast 2</div>
                     <div class="description_indicate">Por que a Educação Cidadã importa?</div>
                 </div>
             </div>
             <div class="separa_option"></div>
-            <div class="option_grid container_option_podcast" id="opition_podcast-3" onclick="spotifyOption('podcast3')">
+            <div class="option_grid container_option_podcast" id="opition_podcast-3"
+                onclick="spotifyOption('podcast3')">
                 <div class="indicate_ball"><img class="ball" src="./assets/img/marcador/3-100px.png" alt=""></div>
                 <div class="indicate_text">
                     <div class="title_indicate">Podcast 3</div>
-                    <div class="description_indicate">Como os três poderes funcionam e o que eu tenho a ver com isso?</div>
+                    <div class="description_indicate">Como os três poderes funcionam e o que eu tenho a ver com isso?
+                    </div>
                 </div>
             </div>
             <div class="separa_option"></div>
-            <div class="option_grid container_option_podcast" id="opition_podcast-4" onclick="spotifyOption('podcast4')">
+            <div class="option_grid container_option_podcast" id="opition_podcast-4"
+                onclick="spotifyOption('podcast4')">
                 <div class="indicate_ball"><img class="ball" src="./assets/img/marcador/4-100px.png" alt=""></div>
                 <div class="indicate_text">
                     <div class="title_indicate">Podcast 4</div>
-                    <div class="description_indicate">Transparência pública: como o cidadão pode utilizar a Lei de Acesso a Informação e outros canais do governo?</div>
+                    <div class="description_indicate">Transparência pública: como o cidadão pode utilizar a Lei de
+                        Acesso a Informação e outros canais do governo?</div>
                 </div>
             </div>
             <div class="separa_option"></div>
-            <div class="option_grid container_option_podcast" id="opition_podcast-5" onclick="spotifyOption('podcast5')">
+            <div class="option_grid container_option_podcast" id="opition_podcast-5"
+                onclick="spotifyOption('podcast5')">
                 <div class="indicate_ball"><img class="ball" src="./assets/img/marcador/5-100px.png" alt=""></div>
                 <div class="indicate_text">
                     <div class="title_indicate">Podcast 5</div>
@@ -221,27 +244,36 @@
                 <div class="title_indicate">OUTRAS PLATAFORMAS</div>
             </div>
             <div class="carousel-plataf_podcast">
-                <div class="img_plataf_div div_anchor" onclick="openPlataf('anchor')"><img class="img_plataf" src="./assets/img/logos_plataf_podcast/anchor-logo.png" alt="Logo da Anchor"></div>
-                <div class="img_plataf_div div_breaker" onclick="openPlataf('breaker')"><img class="img_plataf" src="./assets/img/logos_plataf_podcast/breaker-logo.png" alt="Logo da breaker"></div>
-                <div class="img_plataf_div div_google-podcasts" onclick="openPlataf('google-podcasts')"><img class="img_plataf" src="./assets/img/logos_plataf_podcast/google-podcasts-logo-7-133x155.png" alt="Logo do google podcasts"></div>
-                <div class="img_plataf_div div_overcast" onclick="openPlataf('overcast')"><img class="img_plataf" src="./assets/img/logos_plataf_podcast/overcast-logo_200x56.png" alt="Logo da overcast"></div>
-                <div class="img_plataf_div div_pocketCasts" onclick="openPlataf('pocketCasts')"><img class="img_plataf" src="./assets/img/logos_plataf_podcast/pocket-Casts-logo-200x40.png" alt="Logo da Pocket Casts"></div>
-                <div class="img_plataf_div div_radioPublic" onclick="openPlataf('radioPublic')"><img class="img_plataf" src="./assets/img/logos_plataf_podcast/radiopublic-logo-200x67.png" alt="Logo da Radio Public"></div>
+                <div class="img_plataf_div div_anchor" onclick="openPlataf('anchor')"><img class="img_plataf"
+                        src="./assets/img/logos_plataf_podcast/anchor-logo.png" alt="Logo da Anchor"></div>
+                <div class="img_plataf_div div_breaker" onclick="openPlataf('breaker')"><img class="img_plataf"
+                        src="./assets/img/logos_plataf_podcast/breaker-logo.png" alt="Logo da breaker"></div>
+                <div class="img_plataf_div div_google-podcasts" onclick="openPlataf('google-podcasts')"><img
+                        class="img_plataf" src="./assets/img/logos_plataf_podcast/google-podcasts-logo-7-133x155.png"
+                        alt="Logo do google podcasts"></div>
+                <div class="img_plataf_div div_overcast" onclick="openPlataf('overcast')"><img class="img_plataf"
+                        src="./assets/img/logos_plataf_podcast/overcast-logo_200x56.png" alt="Logo da overcast"></div>
+                <div class="img_plataf_div div_pocketCasts" onclick="openPlataf('pocketCasts')"><img class="img_plataf"
+                        src="./assets/img/logos_plataf_podcast/pocket-Casts-logo-200x40.png" alt="Logo da Pocket Casts">
+                </div>
+                <div class="img_plataf_div div_radioPublic" onclick="openPlataf('radioPublic')"><img class="img_plataf"
+                        src="./assets/img/logos_plataf_podcast/radiopublic-logo-200x67.png" alt="Logo da Radio Public">
+                </div>
             </div>
         </div>
-        </div>
     </div>
-    
+
     <!-- VIDEOCAST -->
     <div id="container-videocast" class="container" style="display: none;">
         <div class="title_videocast">videocast</div>
         <div class="container_videocast">
-            <iframe width="560" height="315" 
-            src="https://www.youtube.com/embed/CE0_0z12BXw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/CE0_0z12BXw" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
         </div>
         <div class="option_videocast"></div>
     </div>
-    
+
     <!-- WEBINAR -->
     <div id="container-webinar" class="container" style="display: none;">
         <div class="title_webinar">webinar</div>
@@ -250,7 +282,8 @@
     </div>
 
     <footer style="z-index: 10;">
-        <img id="logo_organizacao" src="./assets/img/footer/logo_realizacao-corte_1.png" alt="Logo da Controladoria-Geral do Estado e da Universidade Federal de Goiás">
+        <img id="logo_organizacao" src="./assets/img/footer/logo_realizacao-corte_1.png"
+            alt="Logo da Controladoria-Geral do Estado e da Universidade Federal de Goiás">
     </footer>
 
 
@@ -267,16 +300,15 @@
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="./node_modules/slick-carousel/slick/slick.min.js"></script>
     <script type="text/javascript">
-        $(document).ready(function(){
-            $('.your-element').slick(
-                {
-                    infinite:true,
-                    mobileFirst:true,
-                    touchMove: true,
-                    autoplay: true,
-                }
-            );
+        $(document).ready(function () {
+            $('.your-element').slick({
+                infinite: true,
+                mobileFirst: true,
+                touchMove: true,
+                autoplay: true,
+            });
         });
-      </script>
+    </script>
 </body>
+
 </html>
