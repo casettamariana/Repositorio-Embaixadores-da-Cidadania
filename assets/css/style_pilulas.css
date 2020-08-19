@@ -24,7 +24,6 @@
 .div_pil {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "video_pilula";
   -ms-grid-rows: 90%;
       grid-template-rows: 90%;
   -ms-grid-columns: 100%;
@@ -32,21 +31,19 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  justify-items: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-#pilula-1-id {
-  border-radius: 20px;
-}
-
-#pilula-2-id {
-  border-radius: 20px;
-}
-
-#pilula-3-id {
-  border-radius: 20px;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
+      grid-template-areas: "." "video_pilula" "." "descr_video" ".";
+  -ms-grid-rows: auto auto 8% auto auto;
+      grid-template-rows: auto auto 8% auto auto;
+  -ms-grid-columns: 95%;
+      grid-template-columns: 95%;
 }
 
 .option-video {
@@ -107,12 +104,12 @@
 }
 
 .container-video {
-  background: url("../img/fundo2.png");
   grid-area: container-video;
-  border: solid 3px #ffffff;
+  border: solid 3px transparent;
   border-radius: 8px;
   width: 95%;
   height: 85%;
+  background: url("../img/fundo2.png");
   display: -ms-grid;
   display: grid;
   -webkit-box-pack: center;
@@ -120,6 +117,25 @@
           justify-content: center;
   -ms-flex-line-pack: center;
       align-content: center;
+}
+
+.title__descr_video {
+  text-transform: uppercase;
+  color: #2B2B2B;
+  font-weight: 800;
+  font-size: larger;
+}
+
+.descr_video {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: descr_video;
+  text-align: start;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  font-family: 'Ubuntu', sans-serif;
+  color: #333333;
+  width: 85%;
 }
 
 .ball {
@@ -139,33 +155,12 @@
   width: 80%;
 }
 
-.container-video {
-  grid-area: container-video;
-  border: solid 3px transparent;
-  border-radius: 8px;
-  width: 95%;
-  height: 85%;
-  background: url("../img/fundo2.png");
-  display: -ms-grid;
-  display: grid;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
-}
-
 .option-video {
   border: solid 3px transparent;
   border-radius: 8px;
   background: url("../img/fundo2.png");
   width: 95%;
   height: 85%;
-}
-
-#pilula-1-id {
-  width: 100%;
-  border-radius: 20px;
 }
 
 .option_grid {
@@ -361,9 +356,6 @@
 
 @media (min-width: 1800px) {
   .video_pilula {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-    grid-area: video_pilula;
     height: 430px;
     width: 800px;
   }
@@ -393,6 +385,18 @@
 }
 
 .video_pilula {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: video_pilula;
   border-radius: 10px;
+}
+
+.highlight_op {
+  padding-top: 8%;
+  padding-bottom: 8%;
+  border-radius: 15px;
+  background-color: #f5f5dca4;
+  -webkit-transition-duration: 1.5s;
+          transition-duration: 1.5s;
 }
 /*# sourceMappingURL=style_pilulas.css.map */

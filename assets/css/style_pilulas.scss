@@ -16,23 +16,22 @@
 
 .div_pil {
     display: grid;
-    grid-template-areas: "video_pilula";
     grid-template-rows: 90%;
     grid-template-columns: 100%;
     justify-content: center;
+    justify-items: center;
+    justify-self: center;
     align-items: center;
-}
-
-#pilula-1-id {
-    border-radius: 20px;
-}
-
-#pilula-2-id {
-    border-radius: 20px;
-}
-
-#pilula-3-id {
-    border-radius: 20px;
+    align-content: space-around;
+    grid-template-areas: 
+        "."
+        "video_pilula"
+        "."
+        "descr_video"
+        "."
+    ;
+    grid-template-rows: auto auto 8% auto auto;
+    grid-template-columns: 95%;
 }
 
 .option-video {
@@ -75,17 +74,30 @@
 }
 
 .container-video {
-    background: url('../img/fundo2.png');
-
     grid-area: container-video;
-    border: solid 3px #ffffff;
+    border: solid 3px transparent;
     border-radius: 8px;
     width: 95%;
     height: 85%;
+    background: url('../img/fundo2.png');
     display: grid;
     justify-content: center;
     align-content: center;
-
+    
+}
+.title__descr_video{
+    text-transform: uppercase;
+    color: #2B2B2B;
+    font-weight: 800;
+    font-size: larger;
+}
+.descr_video{
+    grid-area: descr_video;
+    text-align: start;
+    justify-self: center;
+    font-family: 'Ubuntu', sans-serif;
+    color: #333333;
+    width: 85%;
 }
 
 .ball {
@@ -104,19 +116,6 @@
     width: 80%;
 }
 
-.container-video {
-    grid-area: container-video;
-    border: solid 3px transparent;
-    border-radius: 8px;
-    width: 95%;
-    height: 85%;
-    background: url('../img/fundo2.png');
-
-    display: grid;
-    justify-content: center;
-    align-content: center;
-}
-
 .option-video {
     border: solid 3px transparent;
     border-radius: 8px;
@@ -125,10 +124,6 @@
     height: 85%;
 }
 
-#pilula-1-id {
-    width: 100%;
-    border-radius: 20px;
-}
 
 .option_grid {
     transition-duration: 1s;
@@ -308,7 +303,6 @@
 
 @media (min-width: 1800px) {
     .video_pilula{
-        grid-area: video_pilula;
         height: 430px;
         width: 800px;
     }
@@ -334,5 +328,13 @@
     }
 }
 .video_pilula{
+    grid-area: video_pilula;
     border-radius: 10px;
+}
+.highlight_op{
+    padding-top: 8%;
+    padding-bottom: 8%;
+    border-radius: 15px;
+    background-color: #f5f5dca4;
+    transition-duration: 1.5s;
 }
