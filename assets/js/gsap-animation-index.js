@@ -83,7 +83,7 @@ btn_outros__item1.addEventListener('click', () => {
 btn_outros__item2.addEventListener('click', () => {
     desapareceContainers();
     if (controlBtn_outros) {
-        container_webnar.click();
+        btn_outros.click();
     }
     container_webnar.style.display = 'grid';
     document.body.style.backgroundImage = "url('http://www.homolog.estudantesdeatitude.go.gov.br/repositorio_embaixadores/assets/img/backgrounds/webnar1920x947.png')";
@@ -93,7 +93,7 @@ btn_outros__item2.addEventListener('click', () => {
 btn_outros__item3.addEventListener('click', () => {
     desapareceContainers();
     if (controlBtn_outros) {
-        container_webnar.click();
+        btn_outros.click();
     }
     container_jornada.style.display = 'grid';
     document.body.style.backgroundImage = "url('http://www.homolog.estudantesdeatitude.go.gov.br/repositorio_embaixadores/assets/img/backgrounds/webnar1920x947.png')";
@@ -118,5 +118,6 @@ function desapareceContainers() {
     container_introducao.style.display = "none";
     container_videocast.style.display = "none";
     container_webnar.style.display = "none";
+    container_jornada.style.display = "none";
     document.body.style.background = 'transparent';
 }

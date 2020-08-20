@@ -9,6 +9,7 @@
 @import url("./style_introducao.css");
 @import url("./style_videocast.css");
 @import url("./style_webinar.css");
+@import url("./style_videocast.css");
 /* ----- MEDIA SCREEN ----- */
 /* Media Screen - EXTRA SMALL */
 /* Media Screen - SMALL */
@@ -25,7 +26,7 @@ body {
   background-size: cover;
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "nav" "container" "footer";
+      grid-template-areas: "nav" "container" "footer";
   -ms-grid-rows: 10% 1fr 10%;
       grid-template-rows: 10% 1fr 10%;
   -ms-grid-columns: 100%;
