@@ -119,6 +119,18 @@ footer {
   grid-area: footer;
 }
 
+@media (max-width: 575.98px) {
+  nav {
+    height: 130px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  nav {
+    height: 100px;
+  }
+}
+
 #opition_pilula-1 {
   grid-area: opition_pilula-1;
 }
