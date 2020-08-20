@@ -33,7 +33,9 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-size: xx-large;
+  font-family: "Bahnschrift";
+  color: #333333;
+  font-weight: bold;
 }
 
 #img_introducao {
@@ -41,12 +43,6 @@
   bottom: 0;
   left: 0;
   z-index: 0;
-}
-
-.title_atualiz {
-  font-family: "Bahnschrift";
-  color: #333333;
-  font-weight: bold;
 }
 
 .img_introducao {
@@ -90,11 +86,17 @@
   #img_introducao {
     width: 80%;
   }
+  .title_atualiz {
+    font-size: 25px;
+  }
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
   #img_introducao {
     width: 50%;
+  }
+  .title_atualiz {
+    font-size: 30px;
   }
 }
 
@@ -102,11 +104,17 @@
   #img_introducao {
     width: 50%;
   }
+  .title_atualiz {
+    font-size: 30px;
+  }
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
   #img_introducao {
     width: 40%;
+  }
+  .title_atualiz {
+    font-size: 40px;
   }
 }
 
@@ -114,11 +122,17 @@
   #img_introducao {
     width: 45%;
   }
+  .title_atualiz {
+    font-size: 45px;
+  }
 }
 
 @media (min-width: 1800px) {
   #img_introducao {
     width: 45%;
+  }
+  .title_atualiz {
+    font-size: 50px;
   }
 }
 /*# sourceMappingURL=style_introducao.css.map */

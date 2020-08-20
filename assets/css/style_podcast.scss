@@ -111,6 +111,37 @@
     width: 40vw;
 }
 
+.descr_podcast{
+    margin-top: 2%;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-self: center;
+    justify-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.div_podcast{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+}
+.text__descr_podcast{
+    width: 90%;
+    height: 100px;
+
+    text-align: justify;
+    font-family: 'Ubuntu', sans-serif;
+    color: #333333;
+    z-index: 100;
+    font-size: small;
+}
+
 @media (max-width: 575.98px) {
     #container-podcast {
         height: 90%;

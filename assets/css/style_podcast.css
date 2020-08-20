@@ -3,7 +3,7 @@
   height: 55%;
   display: -ms-grid;
   display: grid;
-      grid-template-areas: ". . . . ." "container_img_fone . container-podcast . option-podcast" ". . . . ." ". plataf plataf plataf ." ". . . . .";
+      grid-template-areas: ". . . . ." "container_img_fone . container-podcast . option-podcast" ". . . . ." ". plataf plataf plataf ." ". . . . .";
   -ms-grid-rows: 4% auto 5% 26% 2%;
       grid-template-rows: 4% auto 5% 26% 2%;
   -ms-grid-columns: 2% 5% 50% 5% 18%;
@@ -98,7 +98,7 @@
   grid-area: plataf;
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "text-outras_plataf" "carousel-plataf_podcast";
+      grid-template-areas: "text-outras_plataf" "carousel-plataf_podcast";
   -ms-grid-rows: 10% 1fr;
       grid-template-rows: 10% 1fr;
   -ms-grid-columns: none;
@@ -152,10 +152,59 @@
   width: 40vw;
 }
 
+.descr_podcast {
+  margin-top: 2%;
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  justify-self: center;
+  justify-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.div_podcast {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.text__descr_podcast {
+  width: 90%;
+  height: 100px;
+  text-align: justify;
+  font-family: 'Ubuntu', sans-serif;
+  color: #333333;
+  z-index: 100;
+  font-size: small;
+}
+
 @media (max-width: 575.98px) {
   #container-podcast {
     height: 90%;
-        grid-template-areas: ". . ." ". container-podcast ." ". . ." ". option-podcast ." ". . ." "container_img_fone plataf ." ". . .";
+        grid-template-areas: ". . ." ". container-podcast ." ". . ." ". option-podcast ." ". . ." "container_img_fone plataf ." ". . .";
     -ms-grid-rows: 2% 1fr 1% 30% 4% 35% 1%;
         grid-template-rows: 2% 1fr 1% 30% 4% 35% 1%;
     -ms-grid-columns: 5% 1fr 5%;
@@ -221,7 +270,7 @@
 @media (min-width: 576px) and (max-width: 767.98px) {
   #container-podcast {
     height: 90%;
-        grid-template-areas: ". . ." ". container-podcast ." ". . ." ". option-podcast ." ". . ." "container_img_fone plataf ." ". . .";
+        grid-template-areas: ". . ." ". container-podcast ." ". . ." ". option-podcast ." ". . ." "container_img_fone plataf ." ". . .";
     -ms-grid-rows: 2% auto 1% 30% 4% 20% 1%;
         grid-template-rows: 2% auto 1% 30% 4% 20% 1%;
     -ms-grid-columns: 5% 1fr 5%;

@@ -25,19 +25,19 @@ function spotifyOption(op) {
         op_pod_5.classList.remove('highlight_op');
 
     if (op == 'podcast1') {
-        tl.to(podcast_1, {display: 'block', duration: 0.5, opacity: 1});
+        tl.to(podcast_1, {display: 'flex', duration: 0.5, opacity: 1});
         op_pod_1.classList.add('highlight_op');
     } else if (op == 'podcast2') {
-        tl.to(podcast_2, {display: 'block', duration: 0.5, opacity: 1});
+        tl.to(podcast_2, {display: 'flex', duration: 0.5, opacity: 1});
         op_pod_2.classList.add('highlight_op');
     } else if (op == 'podcast3') {
-        tl.to(podcast_3, {display: 'block', duration: 0.5, opacity: 1});
+        tl.to(podcast_3, {display: 'flex', duration: 0.5, opacity: 1});
         op_pod_3.classList.add('highlight_op');
     } else if (op == 'podcast4') {
-        tl.to(podcast_4, {display: 'block', duration: 0.5, opacity: 1});
+        tl.to(podcast_4, {display: 'flex', duration: 0.5, opacity: 1});
         op_pod_4.classList.add('highlight_op');
     } else if (op == 'podcast5') {
-        tl.to(podcast_5, {display: 'block', duration: 0.5,opacity: 1});
+        tl.to(podcast_5, {display: 'flex', duration: 0.5,opacity: 1});
         op_pod_5.classList.add('highlight_op');
     }
 }
