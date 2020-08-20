@@ -25,7 +25,6 @@
             <li class="li__ul_navbar item3"><a href="#">ATIVIDADES</a></li>
             <li class="li__ul_navbar item4"><a href="#">PODCASTS</a></li>
             <li class="li__ul_navbar item5"><a href="#">outros</a></li>
-            
         </ul>
         <ul class="ul__outros" style="display: none;">
             <li class="li__ul_outros item1a">VIDEOCAST</li>
@@ -57,19 +56,20 @@
     <!-- PÍLULAS -->
     <!-- <div id="container-pilulas" class="container"  style="display: grid;"> -->
     <div id="container-pilulas" class="container" style="display: none;">
+       <!--  <button  id="myStopClickButton" class="pause-video btn">PAUSE</button> -->
         <div class="container-video">
             <div class="div_pil pilula-1" style="display: block;">
-                <iframe id="player_pilula_1" class="video_pilula" src="https://www.youtube.com/embed/Qnzub8HtzJg"
+                <iframe id="player_pilula_1" class="video_pilula" src="https://www.youtube.com/embed/Qnzub8HtzJg?enablejsapi=1&version=3&playerapiid=ytplayer"
                     frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
             </div>
             <div class="div_pil pilula-2" style="display: none;">
-                <iframe id="player_pilula_2" class="video_pilula" src="https://www.youtube.com/embed/BeweyC0uM_M"
+                <iframe id="player_pilula_2" class="video_pilula" src="https://www.youtube.com/embed/BeweyC0uM_M?enablejsapi=1&version=3&playerapiid=ytplayer"
                     frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
             </div>
             <div class="div_pil pilula-3" style="display: none;">
-                <iframe id="player_pilula_3" class="video_pilula" src="https://www.youtube.com/embed/axFl6MG84ts"
+                <iframe id="player_pilula_3" class="video_pilula" src="https://www.youtube.com/embed/axFl6MG84ts?enablejsapi=1&version=3&playerapiid=ytplayer"
                     frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
             </div>
@@ -93,7 +93,7 @@
                 <div class="indicate_ball"><img id="ball_2" class="ball" src="./assets/img/marcador/2-100px.png" alt="">
                 </div>
                 <div class="indicate_text">
-                    <div class="title_indicate">Pílula 2</div>
+                   <div class="title_indicate">Pílula 2</div>
                     <div class="description_indicate">Participação social e as fake news.</div>
                 </div>
             </div>
@@ -104,12 +104,14 @@
                 </div>
                 <div class="indicate_text">
                     <div class="title_indicate">Pílula 3</div>
+                
+                    
                     <div class="description_indicate">Acesso a informação: Um direito Cidadão.</div>
                 </div>
             </div>
         </div>
     </div>
-
+    
     <!-- ATIVIDADES -->
     <!-- <div id="container-atividades" style="display: flex;"> -->
     <div id="container-atividades" class="container container-atividades" style="display: none;">
@@ -298,6 +300,12 @@
     <script src="./assets/js/gsap-animation-pilulas.js"></script>
     <script src="./assets/js/gsap-animation-podcast.js"></script>
 
+    <script
+  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"
+  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script>
+
+
     <!-- carousel -->
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
@@ -311,6 +319,16 @@
                 autoplay: true,
             });
         });
+        $('.title_indicate').click(function(){
+                     $('.video_pilula').each(function(){
+                         $(this)[0].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+                     })
+                 }); 
+/* $('#myStopClickButton').click(function(){
+  $('.video_pilula').each(function(){
+    $(this).stopVideo();
+  });
+}); */
     </script>
 </body>
 
