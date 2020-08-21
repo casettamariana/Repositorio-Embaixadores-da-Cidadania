@@ -315,4 +315,13 @@
     width: 500px;
   }
 }
+
+.ilustracao_atividade {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  z-index: -10;
+}
 /*# sourceMappingURL=style_atividades.css.map */

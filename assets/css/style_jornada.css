@@ -1,4 +1,4 @@
-#container-webinar {
+#container-jornada {
   justify-items: center;
   -ms-grid-column-align: center;
       justify-self: center;
@@ -17,34 +17,34 @@
   margin: 0;
   display: -ms-grid;
   display: grid;
-      grid-template-areas: ". . . . ." ". title_webinar title_webinar . ." ". . . . ." ". container_webinar . option_webinar ." ". . . . .";
+      grid-template-areas: ". . . . ." ". title_jornada title_jornada . ." ". . . . ." ". container_jornada . option_jornada ." ". . . . .";
   -ms-grid-rows: 2% 10% 2% 1fr 4%;
       grid-template-rows: 2% 10% 2% 1fr 4%;
-  -ms-grid-columns: 15% 1fr 2% 15% 15%;
-      grid-template-columns: 15% 1fr 2% 15% 15%;
+  -ms-grid-columns: 15% 1fr 2% 18% 15%;
+      grid-template-columns: 15% 1fr 2% 18% 15%;
   height: 90%;
   width: 100vw;
 }
 
-.title_webinar {
+.title_jornada {
   -ms-grid-column-align: start;
       justify-self: start;
   text-align: start;
   -ms-grid-row: 2;
   -ms-grid-column: 2;
   -ms-grid-column-span: 2;
-  grid-area: title_webinar;
+  grid-area: title_jornada;
   text-transform: uppercase;
   font-family: 'Bebas Neue', cursive;
-  letter-spacing: 5px;
+  letter-spacing: 4px;
   color: #252424;
   font-size: 55px;
 }
 
-.container_webinar {
+.container_jornada {
   -ms-grid-row: 4;
   -ms-grid-column: 2;
-  grid-area: container_webinar;
+  grid-area: container_jornada;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -70,7 +70,88 @@
   border-radius: 20px;
 }
 
-.option_webinar {
+.option_jornada {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  justify-items: center;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  width: 100%;
+  -ms-grid-row: 4;
+  -ms-grid-column: 4;
+  grid-area: option_jornada;
+  background-color: #695112;
+  border-radius: 20px;
+}
+
+.div_video_jorn iframe {
+  border-radius: 20px;
+  grid-area: iframe_jorn;
+}
+
+.div_video_jorn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.descr_jorn {
+  margin-top: 2%;
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  justify-self: center;
+  justify-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.text__descr_jorn {
+  width: 90%;
+  height: 80px;
+  text-align: justify;
+  font-family: 'Ubuntu', sans-serif;
+  color: white;
+  z-index: 100;
+  font-size: medium;
+}
+
+.option_jornada {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -82,38 +163,19 @@
   width: 100%;
   -ms-grid-row: 4;
   -ms-grid-column: 4;
-  grid-area: option_webinar;
+  grid-area: option_jornada;
   background-color: #695112;
   border-radius: 20px;
 }
 
-.container_webinar iframe {
-  border-radius: 20px;
-}
-
-.option_webinar {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  height: 100%;
-  width: 100%;
-  -ms-grid-row: 4;
-  -ms-grid-column: 4;
-  grid-area: option_webinar;
-  background-color: #695112;
-  border-radius: 20px;
-}
-
-.option_grid_webinar {
+.option_grid_jornada {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "ball_webinar text_webinar";
+      grid-template-areas: "ball_jornada text_jornada";
   -ms-grid-rows: none;
       grid-template-rows: none;
+  -ms-grid-columns: 30% 1fr;
+      grid-template-columns: 30% 1fr;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -122,34 +184,34 @@
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
-  padding: 10% 0 5% 4%;
 }
 
-.option_grid_webinar:hover {
+.option_grid_jornada:hover {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
 }
 
-.indicate_ball_webinar {
+.indicate_ball_jornada {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
-  grid-area: ball_webinar;
+  grid-area: ball_jornada;
 }
 
-.indicate_text_webinar {
+.indicate_text_jornada {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
-  grid-area: text_webinar;
+  grid-area: text_jornada;
+  padding: 0 0 0 4%;
 }
 
-.title_indicate_webinar {
+.title_indicate_jornada {
   -ms-grid-column-align: start;
       justify-self: start;
   text-align: start;
   -ms-grid-row: 2;
   -ms-grid-column: 2;
   -ms-grid-column-span: 2;
-  grid-area: title_webinar;
+  grid-area: title_jornada;
   text-transform: uppercase;
   font-family: 'Bebas Neue', cursive;
   letter-spacing: 4px;
@@ -158,7 +220,7 @@
   font-size: larger;
 }
 
-.description_indicate_webinar {
+.description_indicate_jornada {
   font-family: 'Ubuntu', sans-serif;
   text-align: start;
   width: 90%;
@@ -166,20 +228,20 @@
 }
 
 @media (min-width: 1200px) and (max-width: 1799.98px) {
-  .title_indicate_webinar {
-    font-size: x-large;
+  .title_indicate_jornada {
+    font-size: large;
   }
-  .description_indicate_webinar {
+  .description_indicate_jornada {
     font-size: small;
   }
 }
 
 @media (min-width: 1800px) {
-  .title_indicate_webinar {
-    font-size: x-large;
+  .title_indicate_jornada {
+    font-size: large;
   }
-  .description_indicate_webinar {
+  .description_indicate_jornada {
     font-size: small;
   }
 }
-/*# sourceMappingURL=style_webinar.css.map */
+/*# sourceMappingURL=style_jornada.css.map */

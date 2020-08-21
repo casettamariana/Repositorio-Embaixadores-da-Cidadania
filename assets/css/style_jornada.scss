@@ -1,4 +1,4 @@
-#container-webinar {
+#container-jornada {
     justify-items: center;
     justify-self: center;
     justify-content: center;
@@ -11,31 +11,31 @@
     display: grid;
     grid-template-areas:
         ". . . . ."
-        ". title_webinar title_webinar . ."
+        ". title_jornada title_jornada . ."
         ". . . . ."
-        ". container_webinar . option_webinar ."
+        ". container_jornada . option_jornada ."
         ". . . . ."
     ;
     grid-template-rows: 2% 10% 2% 1fr 4%;
-    grid-template-columns: 15% 1fr 2% 15% 15%;
+    grid-template-columns: 15% 1fr 2% 18% 15%;
     height: 90%;
     width: 100vw;
 }
 
-.title_webinar {
+.title_jornada {
     justify-self: start;
     text-align: start;
-    grid-area: title_webinar;
+    grid-area: title_jornada;
     text-transform: uppercase;
     font-family: 'Bebas Neue', cursive;
-    letter-spacing: 5px;
+    letter-spacing: 4px;
     color: #252424;
     font-size: 55px;
 
 }
 
-.container_webinar {
-    grid-area: container_webinar;
+.container_jornada {
+    grid-area: container_jornada;
     display: flex;
     justify-items: center;
     justify-self: center;
@@ -50,57 +50,94 @@
     border-radius: 20px;
 }
 
-.option_webinar {
+.option_jornada {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    justify-items: center;
+    align-content: space-around;
+    align-items: center;
     height: 100%;
     width: 100%;
-    grid-area: option_webinar;
+    grid-area: option_jornada;
     background-color: #695112;
     border-radius: 20px;
 }
 
-.container_webinar iframe {
+.div_video_jorn iframe {
     border-radius: 20px;
+    grid-area: iframe_jorn;
+}
+.div_video_jorn{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+}
+.descr_jorn{
+    margin-top: 2%;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-self: center;
+    justify-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
-.option_webinar {
+.text__descr_jorn{
+    width: 90%;
+    height: 80px;
+    text-align: justify;
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+    z-index: 100;
+    font-size: medium;
+}
+
+.option_jornada {
     display: flex;
     flex-direction: row;
     height: 100%;
     width: 100%;
-    grid-area: option_webinar;
+    grid-area: option_jornada;
     background-color: #695112;
     border-radius: 20px;
 }
 
-.option_grid_webinar{
+.option_grid_jornada{
     display: grid;
     grid-template-areas: 
-        "ball_webinar text_webinar";
+        "ball_jornada text_jornada";
     grid-template-rows: none;
+    grid-template-columns: 30% 1fr;
     justify-content: center;
     transition-duration: 0.8s;
     height: max-content;
-    padding: 10% 0 5% 4%;
 }
 
-.option_grid_webinar:hover {
+.option_grid_jornada:hover {
     transform: scale(1.05);
 }
 
-.indicate_ball_webinar{
-    grid-area: ball_webinar;
+.indicate_ball_jornada{
+    grid-area: ball_jornada;
 }
 
-.indicate_text_webinar{
-    grid-area: text_webinar;
+.indicate_text_jornada{
+    grid-area: text_jornada;
+    padding: 0 0 0 4%;
 }
 
-.title_indicate_webinar {
+.title_indicate_jornada {
     justify-self: start;
     text-align: start;
-    grid-area: title_webinar;
+    grid-area: title_jornada;
     text-transform: uppercase;
     font-family: 'Bebas Neue', cursive;
     letter-spacing: 4px;
@@ -109,7 +146,7 @@
     font-size: larger;
 }
 
-.description_indicate_webinar{
+.description_indicate_jornada{
     font-family: 'Ubuntu', sans-serif;
     text-align: start;
     width: 90%;
@@ -129,19 +166,19 @@
 @media (min-width: 992px) and (max-width: 1199.98px) {}
 
 @media (min-width: 1200px) and (max-width: 1799.98px) {
-    .title_indicate_webinar{
-        font-size: x-large;
+    .title_indicate_jornada{
+        font-size: large;
     }
-    .description_indicate_webinar{
+    .description_indicate_jornada{
         font-size: small;
     }
 }
 
 @media (min-width: 1800px) {
-    .title_indicate_webinar{
-        font-size: x-large;
+    .title_indicate_jornada{
+        font-size: large;
     }
-    .description_indicate_webinar{
+    .description_indicate_jornada{
         font-size: small;
     }
 }

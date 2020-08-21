@@ -16,21 +16,10 @@
         ". container_videocast . option_videocast ."
         ". . . . ."
     ;
-    grid-template-rows: 2% 10% 2% 1fr 4%;
-    grid-template-columns: 15% 1fr 2% 15% 15%;
+    grid-template-rows: 2% 10% 2% 1fr 2%;
+    grid-template-columns: 12% 1fr 5% 16% 12%;
     height: 90%;
     width: 100vw;
-}
-
-.title_videocast {
-    justify-self: start;
-    text-align: start;
-    grid-area: title_videocast;
-    text-transform: uppercase;
-    font-family: 'Bebas Neue', cursive;
-    letter-spacing: 5px;
-    color: #252424;
-    font-size: 55px;
 }
 
 .container_videocast {
@@ -49,6 +38,10 @@
     border-radius: 20px;
 }
 
+.container_videocast iframe {
+    border-radius: 20px;
+}
+
 .option_videocast {
     display: flex;
     flex-direction: row;
@@ -59,6 +52,74 @@
     border-radius: 20px;
 }
 
-.container_videocast iframe {
-    border-radius: 20px;
+.option_grid_videocast{
+    display: grid;
+    grid-template-areas: 
+        "ball_videocast text_videocast";
+    grid-template-rows: none;
+    justify-content: center;
+    transition-duration: 0.8s;
+    height: max-content;
+    padding: 10% 0 5% 4%;
+}
+
+.option_grid_videocast:hover {
+    transform: scale(1.05);
+}
+
+.indicate_ball_videocast{
+    grid-area: ball_videocast;
+}
+
+.indicate_text_videocast{
+    grid-area: text_videocast;
+}
+
+.title_indicate_videocast {
+    justify-self: start;
+    text-align: start;
+    grid-area: title_videocast;
+    text-transform: uppercase;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 4px;
+    color: white;
+    font-weight: 800;
+    font-size: larger;
+}
+
+.description_indicate_videocast{
+    font-family: 'Ubuntu', sans-serif;
+    text-align: start;
+    width: 90%;
+    color: white;
+}
+
+@media (max-width: 575.98px) {
+    
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {}
+
+@media (min-width: 1200px) and (max-width: 1799.98px) {
+    .title_indicate_videocast{
+        font-size: x-large;
+    }
+    .description_indicate_videocast{
+        font-size: small;
+    }
+}
+
+@media (min-width: 1800px) {
+    .title_indicate_videocast{
+        font-size: x-large;
+    }
+    .description_indicate_videocast{
+        font-size: small;
+    }
 }

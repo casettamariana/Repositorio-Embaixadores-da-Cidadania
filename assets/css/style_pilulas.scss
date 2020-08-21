@@ -16,23 +16,21 @@
 
 .div_pil {
     display: grid;
-    grid-template-areas: "video_pilula";
-    grid-template-rows: 90%;
-    grid-template-columns: 100%;
+    grid-template-rows: 58%;
     justify-content: center;
+    justify-items: center;
+    justify-self: center;
     align-items: center;
-}
-
-#pilula-1-id {
-    border-radius: 20px;
-}
-
-#pilula-2-id {
-    border-radius: 20px;
-}
-
-#pilula-3-id {
-    border-radius: 20px;
+    align-content: space-around;
+    grid-template-areas: 
+        "."
+        "video_pilula"
+        "."
+        "descr_video"
+        "."
+    ;
+    grid-template-rows: 2% auto 8% auto 2%;
+    grid-template-columns: 95%;
 }
 
 .option-video {
@@ -75,17 +73,25 @@
 }
 
 .container-video {
-    background: url('../img/fundo2.png');
-
     grid-area: container-video;
-    border: solid 3px #ffffff;
+    border: solid 3px transparent;
     border-radius: 8px;
     width: 95%;
     height: 85%;
+    background: url('../img/fundo2.png');
     display: grid;
     justify-content: center;
     align-content: center;
-
+    
+}
+.descr_video{
+    grid-area: descr_video;
+    text-align: start;
+    justify-self: center;
+    font-family: 'Ubuntu', sans-serif;
+    color: #333333;
+    width: 85%;
+    overflow-y: auto;
 }
 
 .ball {
@@ -104,19 +110,6 @@
     width: 80%;
 }
 
-.container-video {
-    grid-area: container-video;
-    border: solid 3px transparent;
-    border-radius: 8px;
-    width: 95%;
-    height: 85%;
-    background: url('../img/fundo2.png');
-
-    display: grid;
-    justify-content: center;
-    align-content: center;
-}
-
 .option-video {
     border: solid 3px transparent;
     border-radius: 8px;
@@ -125,10 +118,6 @@
     height: 85%;
 }
 
-#pilula-1-id {
-    width: 100%;
-    border-radius: 20px;
-}
 
 .option_grid {
     transition-duration: 1s;
@@ -149,13 +138,6 @@
     letter-spacing: 3px;
     font-weight: 700;
     text-align: start;
-}
-
-.description_indicate {
-    font-family: 'Ubuntu', sans-serif;
-    text-align: start;
-    font-size: small;
-    width: 80%;
 }
 
 .div_pil_vd iframe {
@@ -219,16 +201,22 @@
         width: 80%;
     }
     .option_grid {
-    grid-template-columns: 25% 75%;
-    padding: 0;
-    padding-left: 5%;
+        grid-template-columns: 25% 75%;
+        padding: 0;
+        padding-left: 5%;
+    }
+    .descr_video{
+        margin: 3% 0 0 0;
+    }
+    .text__descr_video{
+        height: 45px;
     }
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
     .video_pilula{
-        height: 180px;
-        width: 45vw;
+        height: 28vh;
+        width: 70%;
     }
     #container-pilulas {
         width: 90vw;
@@ -240,7 +228,8 @@
         font-size: x-large;
     }
     .description_indicate {
-        font-size: smaller;
+        font-size: xx-small;
+        overflow-y: auto;
     }
     .ball {
         width: 80%;
@@ -250,12 +239,18 @@
     padding: 0;
     padding-left: 5%;
     }
+    .descr_video{
+        margin: 4% 0 0 0;
+    }
+    .text__descr_video{
+        height: 50px;
+    }
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
     .video_pilula{
-        height: 250px;
-        width: 48vw;
+        height: 32vh;
+        width: 70%;
     }
     #container-pilulas {
         width: 90vw;
@@ -277,12 +272,13 @@
     padding: 0;
     padding-left: 5%;
     }
+    
 }
 
 @media (min-width: 1200px) and (max-width: 1799.98px){
     .video_pilula{
-        height: 330px;
-        width: 620px;
+        height: 35vh;
+        width: 80%;
     }
     #container-pilulas {
         width: 90vw;
@@ -308,7 +304,6 @@
 
 @media (min-width: 1800px) {
     .video_pilula{
-        grid-area: video_pilula;
         height: 430px;
         width: 800px;
     }
@@ -334,5 +329,21 @@
     }
 }
 .video_pilula{
+    grid-area: video_pilula;
     border-radius: 10px;
+}
+.highlight_op{
+    padding-top: 8%;
+    padding-bottom: 8%;
+    border-radius: 15px;
+    background-color: #f5f5dca4;
+    transition-duration: 1.5s;
+}
+.ilustracao_pilula{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    z-index: -10;
 }
