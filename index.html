@@ -17,7 +17,7 @@
 <body>
     <nav>
         <div class="nav_logo">
-            <img class="logo" src="./assets/img/logo_embaixadores_amarelo-2.png" alt="">
+            <img class="logo" src="./assets/img/logo_embaixadores_amarelo-2.png" alt="Logo do Projeto Embaixadores">
         </div>
         <ul class="ul__navbar">
             <li class="li__ul_navbar item1"><a href="#">home</a></li>
@@ -34,7 +34,7 @@
     </nav>
 
     <!-- INTRODUÇÃO -->
-    <!-- <div id="container-introducao" class="container" style="display: grid;"> -->
+
     <div id="container-introducao" class="container" style="display: grid;">
         <div class="img_introducao">
             <img id="img_introducao" src="./assets/img/img_page_introduction.png" alt="Imagem ilustrativa">
@@ -43,19 +43,16 @@
         <div class="container-ultimas_atualiz">
             <div class="carousel-ultimas_atualiz">
                 <div class="your-element">
-                    <div><img class="card_ult_atual" src="./assets/img/cardPodcast.png" alt="Card de atualização"></div>
-                    <div><img class="card_ult_atual" src="./assets/img/video_cast.png" alt="Card de atualização"></div>
-                    <div><img class="card_ult_atual" src="./assets/img/webnar.png" alt="Card de atualização"></div>
-                    <div><img class="card_ult_atual" src="./assets/img/cardPodcast.png" alt="Card de atualização"></div>
-                    <div><img class="card_ult_atual" src="./assets/img/video_cast.png" alt="Card de atualização"></div>
-                    <div><img class="card_ult_atual" src="./assets/img/webnar.png" alt="Card de atualização"></div>
+                    <div><img id="card_1" class="card_ult_atual" src="./assets/img/cardPodcast.png" alt="Card que ilustra os podcasts"></div>
+                    <div><img id="card_2" class="card_ult_atual" src="./assets/img/video_cast.png" alt="Card que informa os conteúdos do videocast"></div>
+                    <div><img id="card_3" class="card_ult_atual" src="./assets/img/webnar.png" alt="Card que informa os conteúdos do webinar"></div>
                 </div>
             </div>
         </div>
     </div>
 
     <!-- PÍLULAS -->
-    <!-- <div id="container-pilulas" class="container"  style="display: grid;"> -->
+
     <div id="container-pilulas" class="container" style="display: none;">
         <div class="container-video">
             <div class="div_pil pilula-1">
@@ -63,9 +60,10 @@
                     frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
                 <div class="descr_video">
-                    <span class="title__descr_video">Cidadania na internet</span><br><br>
-                    Você sabia que dá para exercer a cidadania do sofá da sua casa?
-                    Assista ao vídeo e descubra como usar a internet para você ter iniciativas cidadãs.
+                    <div class="text__descr_video">
+                        Você sabia que dá para exercer a cidadania do sofá da sua casa?
+                        Assista ao vídeo e descubra como usar a internet para você ter iniciativas cidadãs.
+                    </div>
                 </div>
             </div>
             <div class="div_pil pilula-2" style="display: none;">
@@ -73,9 +71,10 @@
                     frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
                 <div class="descr_video">
-                    <span class="title__descr_video">Participação social e as fake news.</span><br><br>
-                    Você já deve ter visto pessoas utilizando as redes sociais para fazer um verdadeiro desserviço à
-                    nossa comunidade. Saiba mais neste vídeo.
+                    <div class="text__descr_video">
+                        Você já deve ter visto pessoas utilizando as redes sociais para fazer um verdadeiro desserviço à
+                        nossa comunidade. Saiba mais neste vídeo.
+                    </div>
                 </div>
             </div>
             <div class="div_pil pilula-3" style="display: none;">
@@ -83,9 +82,10 @@
                     frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
                 <div class="descr_video">
-                    <span class="title__descr_video">Acesso a informação: Um direito Cidadão.</span><br><br>
-                    Ana conversa com a gente sobre um dos grandes marcos do Governo Aberto no Brasil: a criação e
-                    implementação da Lei de Acesso a Informação! Vem descobrir apertando o play!
+                    <div class="text__descr_video">
+                        Ana conversa com a gente sobre um dos grandes marcos do Governo Aberto no Brasil: a criação e
+                        implementação da Lei de Acesso a Informação! Vem descobrir apertando o play!
+                    </div>
                 </div>
             </div>
 
@@ -93,7 +93,7 @@
         <div class="option-video">
             <div class="option_grid option_grid_1 highlight_op" id="option_pilula-1" onclick="displayVideo('op_1')"
                 onmouseover="btnHover('op_1')" onmouseout="btnBack('op_1')">
-                <div class="indicate_ball"><img id="ball_1" class="ball" src="./assets/img/marcador/1-100px.png" alt="">
+                <div class="indicate_ball"><img id="ball_1" class="ball" src="./assets/img/marcador/1-100px.png" alt="Imagem ilustrativa para indicar o número a que se refere o conteúdo exposto.">
                 </div>
                 <div class="indicate_text title_pil_1">
                     <div class="title_indicate">Pílula 1</div>
@@ -103,7 +103,7 @@
             <div class="separa_option"></div>
             <div class="option_grid" id="option_pilula-2" onclick="displayVideo('op_2')" onmouseover="btnHover('op_2')"
                 onmouseout="btnBack('op_2')">
-                <div class="indicate_ball"><img id="ball_2" class="ball" src="./assets/img/marcador/2-100px.png" alt="">
+                <div class="indicate_ball"><img id="ball_2" class="ball" src="./assets/img/marcador/2-100px.png" alt="Imagem ilustrativa para indicar o número a que se refere o conteúdo exposto.">
                 </div>
                 <div class="indicate_text">
                     <div class="title_indicate">Pílula 2</div>
@@ -113,7 +113,7 @@
             <div class="separa_option"></div>
             <div class="option_grid" id="option_pilula-3" onclick="displayVideo('op_3')" onmouseover="btnHover('op_3')"
                 onmouseout="btnBack('op_3')">
-                <div class="indicate_ball"><img id="ball_3" class="ball" src="./assets/img/marcador/3-100px.png" alt="">
+                <div class="indicate_ball"><img id="ball_3" class="ball" src="./assets/img/marcador/3-100px.png" alt="Imagem ilustrativa para indicar o número a que se refere o conteúdo exposto.">
                 </div>
                 <div class="indicate_text">
                     <div class="title_indicate">Pílula 3</div>
@@ -121,10 +121,13 @@
                 </div>
             </div>
         </div>
+        <div class="ilustracao_pilula">
+            <img src="./assets/img/ilustracoes/pilula-500x445-invertida.png" alt="Ilustração da página de pílulas. Uma câmera representando a filmagem dos vídeos.">
+        </div>
     </div>
 
     <!-- ATIVIDADES -->
-    <!-- <div id="container-atividades" style="display: flex;"> -->
+
     <div id="container-atividades" class="container container-atividades" style="display: none;">
         <div class="container-atividades-1">
             <div class="area-atividade area-atividade-1" onclick="pdf('atividade1')">
@@ -175,10 +178,13 @@
                 </div>
             </div>
         </div>
+        <div class="ilustracao_atividade">
+            <img src="./assets/img/ilustracoes/atividades-300x275.png" alt="Ilustração da página de atividades. Uma câmera representando a filmagem dos vídeos.">
+        </div>
     </div>
 
     <!-- PODCAST -->
-    <!-- <div id="container-podcast" class="container" style="display: grid;"> -->
+
     <div id="container-podcast" class="container" style="display: none;">
         <div class="container_img_fone">
             <img class="img_fone" src="./assets/img/fone-403x489.png"
@@ -338,7 +344,7 @@
         <div class="option-podcast">
             <div class="option_grid container_option_podcast highlight_op option_podcast-1" id="option_podcast-1"
                 onclick="spotifyOption('podcast1')">
-                <div class="indicate_ball"><img class="ball" src="./assets/img/marcador/1-100px.png" alt=""></div>
+                <div class="indicate_ball"><img class="ball" src="./assets/img/marcador/1-100px.png" alt="Imagem ilustrativa para indicar o número a que se refere o conteúdo exposto."></div>
                 <div class="indicate_text">
                     <div class="title_indicate">Podcast 1</div>
                     <div class="description_indicate descr_ind_podc">Começando pelo começo: o que é cidadania?</div>
@@ -347,7 +353,7 @@
             <div class="separa_option"></div>
             <div class="option_grid container_option_podcast option_podcast-2" id="option_podcast-2"
                 onclick="spotifyOption('podcast2')">
-                <div class="indicate_ball"><img class="ball" src="./assets/img/marcador/2-100px.png" alt=""></div>
+                <div class="indicate_ball"><img class="ball" src="./assets/img/marcador/2-100px.png" alt="Imagem ilustrativa para indicar o número a que se refere o conteúdo exposto."></div>
                 <div class="indicate_text">
                     <div class="title_indicate">Podcast 2</div>
                     <div class="description_indicate descr_ind_podc">Por que a Educação Cidadã importa?</div>
@@ -356,7 +362,7 @@
             <div class="separa_option"></div>
             <div class="option_grid container_option_podcast option_podcast-3" id="option_podcast-3"
                 onclick="spotifyOption('podcast3')">
-                <div class="indicate_ball"><img class="ball" src="./assets/img/marcador/3-100px.png" alt=""></div>
+                <div class="indicate_ball"><img class="ball" src="./assets/img/marcador/3-100px.png" alt="Imagem ilustrativa para indicar o número a que se refere o conteúdo exposto."></div>
                 <div class="indicate_text">
                     <div class="title_indicate">Podcast 3</div>
                     <div class="description_indicate descr_ind_podc">Como os três poderes funcionam e o que eu tenho a
@@ -367,7 +373,7 @@
             <div class="separa_option"></div>
             <div class="option_grid container_option_podcast option_podcast-4" id="option_podcast-4"
                 onclick="spotifyOption('podcast4')">
-                <div class="indicate_ball"><img class="ball" src="./assets/img/marcador/4-100px.png" alt=""></div>
+                <div class="indicate_ball"><img class="ball" src="./assets/img/marcador/4-100px.png" alt="Imagem ilustrativa para indicar o número a que se refere o conteúdo exposto."></div>
                 <div class="indicate_text">
                     <div class="title_indicate">Podcast 4</div>
                     <div class="description_indicate descr_ind_podc">Transparência pública: como o cidadão pode utilizar
@@ -377,7 +383,7 @@
             <div class="separa_option"></div>
             <div class="option_grid container_option_podcast option_podcast-5" id="option_podcast-5"
                 onclick="spotifyOption('podcast5')">
-                <div class="indicate_ball"><img class="ball" src="./assets/img/marcador/5-100px.png" alt=""></div>
+                <div class="indicate_ball"><img class="ball" src="./assets/img/marcador/5-100px.png" alt="Imagem ilustrativa para indicar o número a que se refere o conteúdo exposto."></div>
                 <div class="indicate_text">
                     <div class="title_indicate">Podcast 5</div>
                     <div class="description_indicate descr_ind_podc">Conselhos de Políticas Públicas: desafios e
@@ -410,6 +416,7 @@
     </div>
 
     <!-- VIDEOCAST -->
+
     <div id="container-videocast" class="container" style="display: none;">
         <div class="title_videocast">videocast</div>
         <div class="container_videocast">
@@ -420,7 +427,7 @@
         <div class="option_videocast">
             <div class="option_grid_videocast" id="option_videocast-1">
                 <div class="indicate_ball_videocast">
-                    <img class="ball" src="./assets/img/marcador/1-100px.png" alt="">
+                    <img class="ball" src="./assets/img/marcador/1-100px.png" alt="Imagem ilustrativa para indicar o número a que se refere o conteúdo exposto.">
                 </div>
                 <div class="indicate_text_videocast">
                     <div class="title_indicate_videocast">Videocast 1</div>
@@ -431,6 +438,7 @@
     </div>
 
     <!-- WEBINAR -->
+
     <div id="container-webinar" class="container" style="display: none;">
         <div class="title_webinar">webinar</div>
         <div class="container_webinar">
@@ -441,7 +449,7 @@
         <div class="option_webinar">
             <div class="option_grid_webinar" id="option_webinar-1">
                 <div class="indicate_ball_webinar">
-                    <img class="ball" src="./assets/img/marcador/1-100px.png" alt="">
+                    <img class="ball" src="./assets/img/marcador/1-100px.png" alt="Imagem ilustrativa para indicar o número a que se refere o conteúdo exposto.">
                 </div>
                 <div class="indicate_text_webinar">
                     <div class="title_indicate_webinar">Webinar 1</div>
@@ -452,6 +460,7 @@
     </div>
 
     <!-- JORNADA EMBAIXADORA -->
+
     <div id="container-jornada" class="container" style="display: none;">
         <div class="title_jornada">Jornada Embaixadora</div>
         <div class="container_jornada">
@@ -499,7 +508,7 @@
             <div class="option_grid_jornada  option_jornada-1 highlight_op" id="option_jornada-1"
                 onclick="displayVideoJorn('op_1')" onmouseover="btnHoverJorn('op_1')" onmouseout="btnBackJorn('op_1')">
                 <div class="indicate_ball_jornada">
-                    <img id="ball_j_1" class="ball" src="./assets/img/marcador/1-100px.png" alt="">
+                    <img id="ball_j_1" class="ball" src="./assets/img/marcador/1-100px.png" alt="Imagem ilustrativa para indicar o número a que se refere o conteúdo exposto.">
                 </div>
                 <div class="indicate_text_jornada">
                     <div class="title_indicate_jornada">jornada <br> embaixadora 1</div>
@@ -509,7 +518,7 @@
             <div class="option_grid_jornada option_jornada-2" id="option_jornada-2" onclick="displayVideoJorn('op_2')"
                 onmouseover="btnHoverJorn('op_2')" onmouseout="btnBackJorn('op_2')">
                 <div class="indicate_ball_jornada">
-                    <img id="ball_j_2" class="ball" src="./assets/img/marcador/2-100px.png" alt="">
+                    <img id="ball_j_2" class="ball" src="./assets/img/marcador/2-100px.png" alt="Imagem ilustrativa para indicar o número a que se refere o conteúdo exposto.">
                 </div>
                 <div class="indicate_text_jornada">
                     <div class="title_indicate_jornada">jornada <br> embaixadora 2</div>
@@ -519,7 +528,7 @@
             <div class="option_grid_jornada option_jornada-3" id="option_jornada-3" onclick="displayVideoJorn('op_3')"
                 onmouseover="btnHoverJorn('op_3')" onmouseout="btnBackJorn('op_3')">
                 <div class="indicate_ball_jornada">
-                    <img id="ball_j_3" class="ball" src="./assets/img/marcador/3-100px.png" alt="">
+                    <img id="ball_j_3" class="ball" src="./assets/img/marcador/3-100px.png" alt="Imagem ilustrativa para indicar o número a que se refere o conteúdo exposto.">
                 </div>
                 <div class="indicate_text_jornada">
                     <div class="title_indicate_jornada">jornada <br> embaixadora 3</div>
