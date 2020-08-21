@@ -175,8 +175,8 @@
         </div>
         <div class="container-podcast">
             <div class="div_podcast podcast_1" style="display: block;">
-                <iframe id="podcast-1" src="https://open.spotify.com/embed-podcast/episode/5UnRYtIpIkZpitCUtYeUFE"
-                    frameborder="0" allowtransparency="true" allow="encrypted-media" SameSite=None; Secure></iframe>
+                <iframe id="podcast-1" class="div_podcast"  src="https://open.spotify.com/embed-podcast/episode/5UnRYtIpIkZpitCUtYeUFE"
+                    frameborder="0"  allowtransparency="true" allow="encrypted-media" SameSite=None; Secure></iframe>
             </div>
             <div class="div_podcast podcast_2" style="display: none;">
                 <iframe id="podcast-2" src="https://open.spotify.com/embed-podcast/episode/1445FLqnS1UfO8NXF9ucgs"
@@ -196,6 +196,7 @@
             </div>
         </div>
         <div class="option-podcast">
+            
             <div class="option_grid container_option_podcast" id="opition_podcast-1"
                 onclick="spotifyOption('podcast1')">
                 <div class="indicate_ball"><img class="ball" src="./assets/img/marcador/1-100px.png" alt=""></div>
@@ -243,8 +244,10 @@
                 </div>
             </div>
         </div>
+        
         <div class="container-outras_plataf">
             <div class="text-outras_plataf">
+               <!--  <button  id="myStopClickButton" class="pause-video btn">PAUSE</button> -->
                 <div class="title_indicate">OUTRAS PLATAFORMAS</div>
             </div>
             <div class="carousel-plataf_podcast">
@@ -319,11 +322,27 @@
                 autoplay: true,
             });
         });
+         /*Pausa video do youtube*/
         $('.title_indicate').click(function(){
-                     $('.video_pilula').each(function(){
-                         $(this)[0].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
-                     })
-                 }); 
+            $('.video_pilula').each(function(){
+                $(this)[0].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');})
+        }); 
+        $('.ul__navbar').click(function(){
+            $('.video_pilula').each(function(){
+                $(this)[0].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');})
+        }); 
+        /*Recarrega iframe spotify*/
+        $('.title_indicate').click(function(){
+            /* $("#podcast-1").remove(); */
+            $('.div_podcast').each(function(){
+            $('#podcast-1',window.parent.document).attr('src',$('#podcast-1',window.parent.document).attr('src'));
+            $('#podcast-2',window.parent.document).attr('src',$('#podcast-2',window.parent.document).attr('src'));
+            $('#podcast-3',window.parent.document).attr('src',$('#podcast-3',window.parent.document).attr('src'));
+            $('#podcast-4',window.parent.document).attr('src',$('#podcast-4',window.parent.document).attr('src'));
+            $('#podcast-5',window.parent.document).attr('src',$('#podcast-5',window.parent.document).attr('src'));
+            })
+        }); 
+
 /* $('#myStopClickButton').click(function(){
   $('.video_pilula').each(function(){
     $(this).stopVideo();
