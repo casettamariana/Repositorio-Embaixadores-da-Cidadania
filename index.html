@@ -425,7 +425,7 @@
     <div id="container-videocast" class="container" style="display: none;">
         <div class="title_videocast">videocast</div>
         <div class="container_videocast">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/CE0_0z12BXw" frameborder="0"
+            <iframe class="video_videocast" width="560" height="315" src="https://www.youtube.com/embed/CE0_0z12BXw?enablejsapi=1&version=3&playerapiid=ytplayer" frameborder="0"
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>
         </div>
@@ -447,7 +447,7 @@
     <div id="container-webinar" class="container" style="display: none;">
         <div class="title_webinar">webinar</div>
         <div class="container_webinar">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/RbCt0soVWFA" frameborder="0"
+            <iframe class="video_webinar" width="560" height="315" src="https://www.youtube.com/embed/RbCt0soVWFA?enablejsapi=1&version=3&playerapiid=ytplayer" frameborder="0"
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>
         </div>
@@ -470,7 +470,7 @@
         <div class="title_jornada">Jornada Embaixadora</div>
         <div class="container_jornada">
             <div class="div_video_jorn video_jornada_1">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/v4oeHK8xlk8" frameborder="0"
+                <iframe class="video_jornada" width="560" height="315" src="https://www.youtube.com/embed/v4oeHK8xlk8?enablejsapi=1&version=3&playerapiid=ytplayer" frameborder="0"
                     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
                 <div class="descr_jorn">
@@ -483,7 +483,7 @@
                 </div>
             </div>
             <div class="div_video_jorn video_jornada_2" style="display: none;">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/_sCLvT4Rm4k" frameborder="0"
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/_sCLvT4Rm4k?enablejsapi=1&version=3&playerapiid=ytplayer" frameborder="0"
                     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
                 <div class="descr_jorn">
@@ -496,7 +496,7 @@
                 </div>
             </div>
             <div class="div_video_jorn video_jornada_3" style="display: none;">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/HoO4zW9PlyE" frameborder="0"
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/HoO4zW9PlyE?enablejsapi=1&version=3&playerapiid=ytplayer" frameborder="0"
                     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
                 <div class="descr_jorn">
@@ -587,7 +587,17 @@
         }); 
         $('.ul__navbar').click(function(){
             $('.video_pilula').each(function(){
-                $(this)[0].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');})
+                $(this)[0].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+            });
+            $('.video_videocast').each(function(){
+                $(this)[0].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+            });
+            $('.video_webinar').each(function(){
+                $(this)[0].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+            });
+            $('.video_jornada').each(function(){
+                $(this)[0].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+            });
         }); 
         /*Recarrega iframe spotify*/
         $('.title_indicate').click(function(){

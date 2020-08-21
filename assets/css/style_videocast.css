@@ -17,7 +17,7 @@
   margin: 0;
   display: -ms-grid;
   display: grid;
-      grid-template-areas: ". . . . ." ". title_videocast title_videocast . ." ". . . . ." ". container_videocast . option_videocast ." ". . . . .";
+      grid-template-areas: ". . . . ." ". title_videocast title_videocast . ." ". . . . ." ". container_videocast . option_videocast ." ". . . . .";
   -ms-grid-rows: 2% 10% 2% 1fr 2%;
       grid-template-rows: 2% 10% 2% 1fr 2%;
   -ms-grid-columns: 12% 1fr 5% 16% 12%;
@@ -110,14 +110,25 @@
   grid-area: text_videocast;
 }
 
-.title_indicate_videocast {
-  -ms-grid-column-align: start;
-      justify-self: start;
-  text-align: start;
+.title_videocast {
   -ms-grid-row: 2;
   -ms-grid-column: 2;
   -ms-grid-column-span: 2;
   grid-area: title_videocast;
+  -ms-grid-column-align: start;
+      justify-self: start;
+  text-align: start;
+  text-transform: uppercase;
+  font-family: 'Bebas Neue', cursive;
+  letter-spacing: 4px;
+  color: #252424;
+  font-size: 55px;
+}
+
+.title_indicate_videocast {
+  -ms-grid-column-align: start;
+      justify-self: start;
+  text-align: start;
   text-transform: uppercase;
   font-family: 'Bebas Neue', cursive;
   letter-spacing: 4px;

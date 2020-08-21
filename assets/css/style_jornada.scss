@@ -23,9 +23,9 @@
 }
 
 .title_jornada {
+    grid-area: title_jornada;
     justify-self: start;
     text-align: start;
-    grid-area: title_jornada;
     text-transform: uppercase;
     font-family: 'Bebas Neue', cursive;
     letter-spacing: 4px;

@@ -74,11 +74,20 @@
 .indicate_text_videocast{
     grid-area: text_videocast;
 }
+.title_videocast{
+    grid-area: title_videocast;
+    justify-self: start;
+    text-align: start;
+    text-transform: uppercase;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 4px;
+    color: #252424;
+    font-size: 55px;
+}
 
 .title_indicate_videocast {
     justify-self: start;
     text-align: start;
-    grid-area: title_videocast;
     text-transform: uppercase;
     font-family: 'Bebas Neue', cursive;
     letter-spacing: 4px;
