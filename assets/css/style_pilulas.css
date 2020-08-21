@@ -40,8 +40,8 @@
   -ms-flex-line-pack: distribute;
       align-content: space-around;
       grid-template-areas: "." "video_pilula" "." "descr_video" ".";
-  -ms-grid-rows: auto auto 8% auto auto;
-      grid-template-rows: auto auto 8% auto auto;
+  -ms-grid-rows: 2% auto 8% auto 2%;
+      grid-template-rows: 2% auto 8% auto 2%;
   -ms-grid-columns: 95%;
       grid-template-columns: 95%;
 }

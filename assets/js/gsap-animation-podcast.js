@@ -4,11 +4,11 @@ var podcast_3 = document.querySelector(".podcast_3");
 var podcast_4 = document.querySelector(".podcast_4");
 var podcast_5 = document.querySelector(".podcast_5");
 
-var op_pod_1 = document.querySelector(".opition_podcast-1");
-var op_pod_2 = document.querySelector(".opition_podcast-2");
-var op_pod_3 = document.querySelector(".opition_podcast-3");
-var op_pod_4 = document.querySelector(".opition_podcast-4");
-var op_pod_5 = document.querySelector(".opition_podcast-5");
+var op_pod_1 = document.querySelector(".option_podcast-1");
+var op_pod_2 = document.querySelector(".option_podcast-2");
+var op_pod_3 = document.querySelector(".option_podcast-3");
+var op_pod_4 = document.querySelector(".option_podcast-4");
+var op_pod_5 = document.querySelector(".option_podcast-5");
 
 function spotifyOption(op) {
     var tl = gsap.timeline();

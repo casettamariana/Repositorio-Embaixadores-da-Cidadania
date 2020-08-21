@@ -1,7 +1,7 @@
 //Animação navbar
 const btn_navbar__click = document.querySelector("#menu-btn-id");
 
-var opition_navbar = gsap.to(".slidebar", {
+var option_navbar = gsap.to(".slidebar", {
     x: '100%',
     duration: .5
 });

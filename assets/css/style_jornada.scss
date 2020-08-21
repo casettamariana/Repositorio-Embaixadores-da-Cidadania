@@ -1,0 +1,184 @@
+#container-jornada {
+    justify-items: center;
+    justify-self: center;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-areas:
+        ". . . . ."
+        ". title_jornada title_jornada . ."
+        ". . . . ."
+        ". container_jornada . option_jornada ."
+        ". . . . ."
+    ;
+    grid-template-rows: 2% 10% 2% 1fr 4%;
+    grid-template-columns: 15% 1fr 2% 18% 15%;
+    height: 90%;
+    width: 100vw;
+}
+
+.title_jornada {
+    justify-self: start;
+    text-align: start;
+    grid-area: title_jornada;
+    text-transform: uppercase;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 4px;
+    color: #252424;
+    font-size: 55px;
+
+}
+
+.container_jornada {
+    grid-area: container_jornada;
+    display: flex;
+    justify-items: center;
+    justify-self: center;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+    background-color: #695112;
+    border-radius: 20px;
+}
+
+.option_jornada {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    justify-items: center;
+    align-content: space-around;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    grid-area: option_jornada;
+    background-color: #695112;
+    border-radius: 20px;
+}
+
+.div_video_jorn iframe {
+    border-radius: 20px;
+    grid-area: iframe_jorn;
+}
+.div_video_jorn{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+}
+.descr_jorn{
+    margin-top: 2%;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-self: center;
+    justify-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.text__descr_jorn{
+    width: 90%;
+    height: 80px;
+    text-align: justify;
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+    z-index: 100;
+    font-size: medium;
+}
+
+.option_jornada {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+    grid-area: option_jornada;
+    background-color: #695112;
+    border-radius: 20px;
+}
+
+.option_grid_jornada{
+    display: grid;
+    grid-template-areas: 
+        "ball_jornada text_jornada";
+    grid-template-rows: none;
+    grid-template-columns: 30% 1fr;
+    justify-content: center;
+    transition-duration: 0.8s;
+    height: max-content;
+}
+
+.option_grid_jornada:hover {
+    transform: scale(1.05);
+}
+
+.indicate_ball_jornada{
+    grid-area: ball_jornada;
+}
+
+.indicate_text_jornada{
+    grid-area: text_jornada;
+    padding: 0 0 0 4%;
+}
+
+.title_indicate_jornada {
+    justify-self: start;
+    text-align: start;
+    grid-area: title_jornada;
+    text-transform: uppercase;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 4px;
+    color: white;
+    font-weight: 800;
+    font-size: larger;
+}
+
+.description_indicate_jornada{
+    font-family: 'Ubuntu', sans-serif;
+    text-align: start;
+    width: 90%;
+    color: white;
+}
+
+@media (max-width: 575.98px) {
+    
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {}
+
+@media (min-width: 1200px) and (max-width: 1799.98px) {
+    .title_indicate_jornada{
+        font-size: large;
+    }
+    .description_indicate_jornada{
+        font-size: small;
+    }
+}
+
+@media (min-width: 1800px) {
+    .title_indicate_jornada{
+        font-size: large;
+    }
+    .description_indicate_jornada{
+        font-size: small;
+    }
+}

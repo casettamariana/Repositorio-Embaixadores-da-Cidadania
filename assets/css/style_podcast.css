@@ -75,7 +75,7 @@
   overflow-y: scroll;
 }
 
-#opition_podcast-1 {
+#option_podcast-1 {
   margin-top: calc(300px + 5%);
 }
 
@@ -198,7 +198,7 @@
   font-family: 'Ubuntu', sans-serif;
   color: #333333;
   z-index: 100;
-  font-size: small;
+  font-size: medium;
 }
 
 @media (max-width: 575.98px) {
