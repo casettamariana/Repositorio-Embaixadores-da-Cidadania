@@ -182,4 +182,13 @@
     font-size: small;
   }
 }
+
+.highlight_op_outros {
+  padding-top: 8%;
+  padding-bottom: 8%;
+  border-radius: 15px;
+  background-color: #50657e;
+  -webkit-transition-duration: 1.5s;
+          transition-duration: 1.5s;
+}
 /*# sourceMappingURL=style_webinar.css.map */
