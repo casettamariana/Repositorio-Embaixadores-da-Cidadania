@@ -12,6 +12,7 @@
     <!-- carousel -->
     <link rel="stylesheet" type="text/css" href="./node_modules/slick-carousel/slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="./node_modules/slick-carousel/slick/slick-theme.css" />
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v8.0" nonce="QmWEOgc2"></script>
 </head>
 
 <body>
@@ -564,10 +565,20 @@
             </div>
             <div class="video_outros live__video_outros live__item1" style="display: none;">
                 <div class="video__vid_outros">
-                    <iframe class="video_outros video_live" width="560" height="315"
+                   <!--  <iframe class="video_outros video_live" width="560" height="315"
                         src="https://www.youtube.com/embed/CE0_0z12BXw?enablejsapi=1&version=3&playerapiid=ytplayer"
                         frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
+                        allowfullscreen></iframe> -->
+                        <iframe id="live-fb-1" class="video_outros video_live" src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Ffacebook%2Fvideos%2F276019267141546%2F&show_text=false&width=734&height=411&appId" 
+                        width="560" 
+                        height="315" 
+                        style="border:none;overflow:hidden" 
+                        scrolling="no" 
+                        frameborder="0" 
+                        allowTransparency="true" 
+                        allow="encrypted-media" 
+                        allowFullScreen="true">
+                        </iframe>
                     <div class="descr_vid_outros">
                         <div class="text__descr_vid_outros">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum autem eum ratione nihil
@@ -722,6 +733,25 @@
                     .document).attr('src'));
                 $('#podcast-5', window.parent.document).attr('src', $('#podcast-5', window.parent
                     .document).attr('src'));
+            })
+        });
+        /*Recarrega iframe LIVE FACEBOOK*/
+        $('.title_indicate_vid_outros').click(function () {
+            /* $("#podcast-1").remove(); */
+            /* alert('LIVE FACEBOOK') */
+            $('.indicate_text_vid_outros').each(function () {
+                $('#live-fb-1', window.parent.document).attr('src', $('#live-fb-1', window.parent
+                    .document).attr('src'));
+                
+            })
+        });
+        $('.ul__navbar').click(function () {
+            /* $("#podcast-1").remove(); */
+           /*  alert('LIVE FACEBOOK') */
+            $('.indicate_text_vid_outros').each(function () {
+                $('#live-fb-1', window.parent.document).attr('src', $('#live-fb-1', window.parent
+                    .document).attr('src'));
+                
             })
         });
         $('.ul__navbar').click(function () {
