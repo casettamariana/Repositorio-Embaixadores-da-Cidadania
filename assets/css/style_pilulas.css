@@ -183,6 +183,10 @@
   border-radius: 10px;
 }
 
+.text__descr_video {
+  margin-top: 2%;
+}
+
 @media (max-width: 575.98px) {
   .video_pilula {
     width: 70vw;
@@ -324,7 +328,7 @@
 
 @media (min-width: 1200px) and (max-width: 1799.98px) {
   .video_pilula {
-    height: 35vh;
+    height: 40vh;
     width: 80%;
   }
   #container-pilulas {

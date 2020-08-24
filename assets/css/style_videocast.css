@@ -51,7 +51,7 @@
   -ms-grid-row: 4;
   -ms-grid-column: 2;
   grid-area: container_videocast;
-  background-color: #695112;
+  background: url("../img/backgrounds/outros.jpeg");
   border-radius: 20px;
 }
 
@@ -72,7 +72,7 @@
   -ms-grid-row: 4;
   -ms-grid-column: 4;
   grid-area: option_videocast;
-  background-color: #695112;
+  background: url("../img/backgrounds/outros.jpeg");
   border-radius: 20px;
 }
 

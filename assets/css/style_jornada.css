@@ -66,7 +66,7 @@
           flex-direction: row;
   height: 100%;
   width: 100%;
-  background-color: #695112;
+  background: url("../img/backgrounds/outros.jpeg");
   border-radius: 20px;
 }
 
@@ -93,7 +93,7 @@
   -ms-grid-row: 4;
   -ms-grid-column: 4;
   grid-area: option_jornada;
-  background-color: #695112;
+  background: url("../img/backgrounds/outros.jpeg");
   border-radius: 20px;
 }
 

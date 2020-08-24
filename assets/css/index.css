@@ -688,6 +688,7 @@ footer {
       -ms-flex-pack: center;
           justify-content: center;
   justify-items: center;
+  text-shadow: 0.1em 0.1em 0.2em #ffc100;
 }
 
 .li__ul_outros {
