@@ -1,4 +1,4 @@
-#container-jornada {
+#container-videos {
   justify-items: center;
   -ms-grid-column-align: center;
       justify-self: center;
@@ -17,20 +17,20 @@
   margin: 0;
   display: -ms-grid;
   display: grid;
-      grid-template-areas: ". . . . ." ". title_jornada title_jornada . ." ". . . . ." ". container_jornada . option_jornada ." ". . . . .";
-  -ms-grid-rows: 2% 10% 2% 1fr 4%;
-      grid-template-rows: 2% 10% 2% 1fr 4%;
-  -ms-grid-columns: 15% 1fr 2% 18% 15%;
-      grid-template-columns: 15% 1fr 2% 18% 15%;
+      grid-template-areas: ". . . . ." ". title_videos_outros title_videos_outros . ." ". . . . ." ". container_videos_outros . option_videos_outros ." ". . . . .";
+  -ms-grid-rows: 2% 10% 2% 1fr 2%;
+      grid-template-rows: 2% 10% 2% 1fr 2%;
+  -ms-grid-columns: 12% 1fr 5% 16% 12%;
+      grid-template-columns: 12% 1fr 5% 16% 12%;
   height: 90%;
   width: 100vw;
 }
 
-.title_jornada {
+.title_videos_outros {
   -ms-grid-row: 2;
   -ms-grid-column: 2;
   -ms-grid-column-span: 2;
-  grid-area: title_jornada;
+  grid-area: title_videos_outros;
   -ms-grid-column-align: start;
       justify-self: start;
   text-align: start;
@@ -41,10 +41,10 @@
   font-size: 55px;
 }
 
-.container_jornada {
+.container_videos_outros {
   -ms-grid-row: 4;
   -ms-grid-column: 2;
-  grid-area: container_jornada;
+  grid-area: container_videos_outros;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -70,7 +70,10 @@
   border-radius: 20px;
 }
 
-.option_jornada {
+.option_videos_outros {
+  -ms-grid-row: 4;
+  -ms-grid-column: 4;
+  grid-area: option_videos_outros;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -90,21 +93,16 @@
           align-items: center;
   height: 100%;
   width: 100%;
-  -ms-grid-row: 4;
-  -ms-grid-column: 4;
-  grid-area: option_jornada;
   background: url("../img/backgrounds/outros.jpeg");
-  -ms-flex-direction: row;
-      flex-direction: row;
+  border-radius: 20px;
+  background-color: #695112;
+}
+
+.video__vid_outros iframe {
   border-radius: 20px;
 }
 
-.div_video_jorn iframe {
-  border-radius: 20px;
-  grid-area: iframe_jorn;
-}
-
-.div_video_jorn {
+.video__vid_outros {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -123,7 +121,7 @@
           justify-content: center;
 }
 
-.descr_jorn {
+.descr_vid_outros {
   margin-top: 2%;
   width: 80%;
   display: -webkit-box;
@@ -143,7 +141,7 @@
   overflow-y: auto;
 }
 
-.text__descr_jorn {
+.text__descr_vid_outros {
   width: 90%;
   height: 80px;
   text-align: justify;
@@ -153,10 +151,10 @@
   font-size: medium;
 }
 
-.option_grid_jornada {
+.option_grid_outros {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "ball_jornada text_jornada";
+      grid-template-areas: "ball_outros text_outros";
   -ms-grid-rows: none;
       grid-template-rows: none;
   -ms-grid-columns: 30% 1fr;
@@ -171,32 +169,28 @@
   height: max-content;
 }
 
-.option_grid_jornada:hover {
+.option_grid_outros:hover {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
 }
 
-.indicate_ball_jornada {
+.indicate_ball_vid_outros {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
-  grid-area: ball_jornada;
+  grid-area: ball_outros;
 }
 
-.indicate_text_jornada {
+.indicate_text_vid_outros {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
-  grid-area: text_jornada;
+  grid-area: text_outros;
   padding: 0 0 0 4%;
 }
 
-.title_indicate_jornada {
+.title_indicate_vid_outros {
   -ms-grid-column-align: start;
       justify-self: start;
   text-align: start;
-  -ms-grid-row: 2;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 2;
-  grid-area: title_jornada;
   text-transform: uppercase;
   font-family: 'Bebas Neue', cursive;
   letter-spacing: 4px;
@@ -205,38 +199,57 @@
   font-size: larger;
 }
 
-.description_indicate_jornada {
+.description_indicate_vid_outros {
   font-family: 'Ubuntu', sans-serif;
   text-align: start;
   width: 90%;
   color: white;
 }
 
-.ilustracao_jornada {
-  width: 25%;
+.ilustracao_video_outros {
+  width: 3%;
   position: absolute;
   bottom: 0;
-  right: 0;
+  left: 0;
   margin: 0;
   padding: 0;
-  z-index: -10;
+  z-index: 1;
+}
+
+.title__op_vid_outros {
+  color: #50657e;
+  text-align: center;
+  font-size: 30px;
+  padding: 5% 0 5% 0;
+  font-family: 'Bebas Neue', cursive;
+  font-weight: bolder;
+  letter-spacing: 4px;
+}
+
+.highlight_op_outros {
+  padding-top: 8%;
+  padding-bottom: 8%;
+  border-radius: 15px;
+  background-color: #50657e;
+  -webkit-transition-duration: 1.5s;
+          transition-duration: 1.5s;
 }
 
 @media (min-width: 1200px) and (max-width: 1799.98px) {
-  .title_indicate_jornada {
+  .title_indicate_vid_outros {
     font-size: large;
   }
-  .description_indicate_jornada {
+  .description_indicate_vid_outros {
     font-size: small;
   }
 }
 
 @media (min-width: 1800px) {
-  .title_indicate_jornada {
+  .title_indicate_vid_outros {
     font-size: large;
   }
-  .description_indicate_jornada {
+  .description_indicate_vid_outros {
     font-size: small;
   }
 }
-/*# sourceMappingURL=style_jornada.css.map */
+/*# sourceMappingURL=style_videos.css.map */

@@ -16,8 +16,7 @@ var container_introducao = document.querySelector("#container-introducao");
 var container_pilulas = document.querySelector("#container-pilulas");
 var container_atividades = document.querySelector("#container-atividades");
 var container_podcast = document.querySelector("#container-podcast");
-var container_videocast = document.querySelector("#container-videocast");
-var container_webnar = document.querySelector("#container-webinar");
+var container_videos = document.querySelector("#container-videos");
 var container_jornada = document.querySelector("#container-jornada");
 var op_outros = document.querySelector(".ul__outros");
 
@@ -28,7 +27,6 @@ const btn_podcast = document.querySelector(".item4");
 const btn_outros = document.querySelector(".item5");
 const btn_outros__item1 = document.querySelector(".item1a");
 const btn_outros__item2 = document.querySelector(".item2a");
-const btn_outros__item3 = document.querySelector(".item3a");
 
 //                 princ, pilula, ativ, podcast
 let controlPage = [false, false, false, true];
@@ -76,21 +74,11 @@ btn_outros__item1.addEventListener('click', () => {
     if (controlBtn_outros) {
         btn_outros.click();
     }
-    container_videocast.style.display = 'grid';
+    container_videos.style.display = 'grid';
     document.body.style.background = "url('http://www.homolog.estudantesdeatitude.go.gov.br/repositorio_embaixadores/assets/img/backgrounds/videocast.png') no-repeat right top ";
     document.body.style.backgroundSize = "cover";
 });
 btn_outros__item2.addEventListener('click', () => {
-    desapareceContainers();
-    if (controlBtn_outros) {
-        btn_outros.click();
-    }
-    container_webnar.style.display = 'grid';
-    document.body.style.backgroundImage = "url('http://www.homolog.estudantesdeatitude.go.gov.br/repositorio_embaixadores/assets/img/backgrounds/webnar1920x947.png')";
-    document.body.style.backgroundSize = "cover";
-
-});
-btn_outros__item3.addEventListener('click', () => {
     desapareceContainers();
     if (controlBtn_outros) {
         btn_outros.click();
@@ -116,8 +104,7 @@ function desapareceContainers() {
     container_atividades.style.display = "none";
     container_pilulas.style.display = "none";
     container_introducao.style.display = "none";
-    container_videocast.style.display = "none";
-    container_webnar.style.display = "none";
+    container_videos.style.display = "none";
     container_jornada.style.display = "none";
     document.body.style.background = 'transparent';
 }
