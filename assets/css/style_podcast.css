@@ -4,8 +4,8 @@
   display: -ms-grid;
   display: grid;
       grid-template-areas: ". . . . ." "container_img_fone . container-podcast . option-podcast" ". . . . ." ". plataf plataf plataf ." ". . . . .";
-  -ms-grid-rows: 4% auto 5% 26% 2%;
-      grid-template-rows: 4% auto 5% 26% 2%;
+  -ms-grid-rows: 8% auto 5% 26% 2%;
+      grid-template-rows: 8% auto 5% 26% 2%;
   -ms-grid-columns: 2% 5% 50% 5% 18%;
       grid-template-columns: 2% 5% 50% 5% 18%;
   -ms-grid-column-align: center;
@@ -62,25 +62,26 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-line-pack: center;
-      align-content: center;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   justify-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   border-radius: 20px;
   overflow-x: hidden;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 
-#option_podcast-1 {
-  margin-top: calc(300px + 5%);
+.overflow_op_podcast {
+  height: 100%;
 }
 
-.container_option_podcast {
-  padding: 10% 0 10% 0;
+.overflow_op_podcast .separa_option {
+  margin-left: calc(50% - 25%);
 }
 
 .container_img_fone {
@@ -103,6 +104,8 @@
       grid-template-rows: 10% 1fr;
   -ms-grid-columns: none;
       grid-template-columns: none;
+  margin-top: 5%;
+  padding-top: 5%;
 }
 
 .img_plataf_div {
@@ -199,6 +202,11 @@
   color: #333333;
   z-index: 100;
   font-size: medium;
+}
+
+.option_grid {
+  cursor: pointer;
+  margin: 4% 0 4% 0;
 }
 
 @media (max-width: 575.98px) {

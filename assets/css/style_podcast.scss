@@ -10,7 +10,7 @@
         ". plataf plataf plataf ."
         ". . . . ."
     ;
-    grid-template-rows: 4% auto 5% 26% 2%;
+    grid-template-rows: 8% auto 5% 26% 2%;
     grid-template-columns: 2% 5% 50% 5% 18%;
     justify-self: center;
     justify-items: center;
@@ -43,22 +43,21 @@
     height: 100%;
     display: flex;
     flex-direction: column;
-    align-content: center;
+    align-content: space-around;
     align-items: center;
     justify-items: center;
-    justify-content: space-around;
+    justify-content: center;
     border-radius: 20px;
     overflow-x: hidden;
-    overflow-y: scroll;
+    overflow-y: auto;
+}
+.overflow_op_podcast{
+    height: 100%;
+}
+.overflow_op_podcast .separa_option{
+    margin-left: calc(50% - 25%);
 }
 
-#option_podcast-1 {
-    margin-top: calc(300px + 5%);
-}
-
-.container_option_podcast {
-    padding: 10% 0 10% 0;
-}
 
 .container_img_fone {
     grid-area: container_img_fone;
@@ -75,6 +74,8 @@
     ;
     grid-template-rows: 10% 1fr;
     grid-template-columns: none;
+    margin-top: 5%;
+    padding-top: 5%;
 }
 
 .img_plataf_div {
@@ -140,6 +141,10 @@
     color: #333333;
     z-index: 100;
     font-size: medium;
+}
+.option_grid{
+    cursor: pointer;
+    margin: 4% 0 4% 0;
 }
 
 @media (max-width: 575.98px) {
