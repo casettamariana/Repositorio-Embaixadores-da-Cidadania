@@ -3,12 +3,14 @@ var podcast_2 = document.querySelector(".podcast_2");
 var podcast_3 = document.querySelector(".podcast_3");
 var podcast_4 = document.querySelector(".podcast_4");
 var podcast_5 = document.querySelector(".podcast_5");
+var podcast_6 = document.querySelector(".podcast_6");
 
 var op_pod_1 = document.querySelector(".option_podcast-1");
 var op_pod_2 = document.querySelector(".option_podcast-2");
 var op_pod_3 = document.querySelector(".option_podcast-3");
 var op_pod_4 = document.querySelector(".option_podcast-4");
 var op_pod_5 = document.querySelector(".option_podcast-5");
+var op_pod_6 = document.querySelector(".option_podcast-6");
 
 function spotifyOption(op) {
     var tl = gsap.timeline();
@@ -16,13 +18,15 @@ function spotifyOption(op) {
         .set(podcast_2, {display: 'none',opacity: 0})
         .set(podcast_3, {display: 'none',opacity: 0})
         .set(podcast_4, {display: 'none',opacity: 0})
-        .set(podcast_5, {display: 'none',opacity: 0});
+        .set(podcast_5, {display: 'none',opacity: 0})
+        .set(podcast_6, {display: 'none',opacity: 0});
 
         op_pod_1.classList.remove('highlight_op');
         op_pod_2.classList.remove('highlight_op');
         op_pod_3.classList.remove('highlight_op');
         op_pod_4.classList.remove('highlight_op');
         op_pod_5.classList.remove('highlight_op');
+        op_pod_6.classList.remove('highlight_op');
 
     if (op == 'podcast1') {
         tl.to(podcast_1, {display: 'flex', duration: 0.5, opacity: 1});
@@ -39,6 +43,10 @@ function spotifyOption(op) {
     } else if (op == 'podcast5') {
         tl.to(podcast_5, {display: 'flex', duration: 0.5,opacity: 1});
         op_pod_5.classList.add('highlight_op');
+    }
+    else if (op == 'podcast6') {
+        tl.to(podcast_6, {display: 'flex', duration: 0.5,opacity: 1});
+        op_pod_6.classList.add('highlight_op');
     }
 }
 

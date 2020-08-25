@@ -44,23 +44,28 @@
     flex-direction: row;
     height: 100%;
     width: 100%;
-    background: url('../img/backgrounds/outros.jpeg');
+    background: url('../img/backgrounds/verde-claro.png');
     border-radius: 20px;
 }
 .option_videos_outros{
     grid-area: option_videos_outros;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: space-around;
     justify-items: center;
     align-content: space-around;
     align-items: center;
     height: 100%;
     width: 100%;
-    background: url('../img/backgrounds/outros.jpeg');
+    background: url('../img/backgrounds/verde-claro.png');
     border-radius: 20px;
     background-color: #695112;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.overflow_op_vid_outros{
+    height: 100%;
 }
 .video__vid_outros iframe{
     border-radius: 20px;
@@ -104,6 +109,7 @@
     justify-content: center;
     transition-duration: 0.8s;
     height: max-content;
+    cursor: pointer;
 }
 .option_grid_outros:hover{
     transform: scale(1.05);
@@ -142,7 +148,7 @@
     z-index: 1;
 }
 .title__op_vid_outros{
-    color: #50657e;
+    color: #647365;
     text-align: center;
     font-size: 30px;
     padding: 5% 0 5% 0;
@@ -154,9 +160,12 @@
     padding-top: 8%;
     padding-bottom: 8%;
     border-radius: 15px;
-    background-color: #50657e;
+    background-color: #647365;
     transition-duration: 1.5s;
 }
+.op_live_outros_1{margin: 0 0 5% 0;}
+.op_live_outros_2{margin: 0 0 5% 0;}
+.op_live_outros_3{margin: 0 0 5% 0;}
 
 @media (max-width: 575.98px) {}
 

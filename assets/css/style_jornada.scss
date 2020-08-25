@@ -46,7 +46,7 @@
     flex-direction: row;
     height: 100%;
     width: 100%;
-    background: url('../img/backgrounds/outros.jpeg');
+    background: url('../img/backgrounds/verde-claro.png');
     border-radius: 20px;
 }
 
@@ -61,7 +61,7 @@
     height: 100%;
     width: 100%;
     grid-area: option_jornada;
-    background: url('../img/backgrounds/outros.jpeg');
+    background: url('../img/backgrounds/verde-claro.png');
     flex-direction: row;
     border-radius: 20px;
 }
@@ -111,6 +111,7 @@
     justify-content: center;
     transition-duration: 0.8s;
     height: max-content;
+    cursor: pointer;
 }
 
 .option_grid_jornada:hover {

@@ -158,6 +158,7 @@
 .option_grid {
   -webkit-transition-duration: 1s;
           transition-duration: 1s;
+  cursor: pointer;
 }
 
 .option_grid:hover {
