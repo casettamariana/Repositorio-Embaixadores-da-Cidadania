@@ -63,6 +63,8 @@ $('.title_indicate').click(function () {
             .document).attr('src'));
         $('#podcast-5', window.parent.document).attr('src', $('#podcast-5', window.parent
             .document).attr('src'));
+        $('#podcast-6', window.parent.document).attr('src', $('#podcast-6', window.parent
+        .document).attr('src'));
     })
 });
 /*Recarrega iframe LIVE FACEBOOK*/
@@ -96,6 +98,8 @@ $('.ul__navbar').click(function () {
         $('#podcast-4', window.parent.document).attr('src', $('#podcast-4', window.parent
             .document).attr('src'));
         $('#podcast-5', window.parent.document).attr('src', $('#podcast-5', window.parent
+            .document).attr('src'));
+        $('#podcast-6', window.parent.document).attr('src', $('#podcast-6', window.parent
             .document).attr('src'));
     })
 });

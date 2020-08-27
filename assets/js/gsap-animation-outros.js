@@ -52,7 +52,7 @@ function displayVideoOutros(video) {
             opacity: 1
         });
         div_op_1.classList.add('highlight_op_outros');
-        titulo.innerHTML = "WEBNAR";
+        titulo.innerHTML = "WEBINAR";
     } else if (video == 'op_videocast_1') {
         tl.to(video_2, {
             display: 'flex',
