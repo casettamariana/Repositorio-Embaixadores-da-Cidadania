@@ -1,4 +1,4 @@
-$(document).ready(function () {
+$(document).on("ready", function () {
     $('.your-element').slick({
         infinite: true,
         mobileFirst: true,
@@ -7,13 +7,14 @@ $(document).ready(function () {
     });
 });
 /*Pausa video do youtube*/
-$('.option_grid').click(function () {
+$('.option_grid').on("click", function () {
     $('.video_pilula').each(function () {
         $(this)[0].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' +
             '","args":""}', '*');
     });
 });
-$('.option_videos_outros').click(function () {
+
+$('.option_videos_outros').on("click", function () {
     $('.video_videocast').each(function () {
         $(this)[0].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' +
             '","args":""}', '*');
@@ -35,7 +36,7 @@ $('.option_videos_outros').click(function () {
             '","args":""}', '*');
     });
 });
-$('.ul__navbar').click(function () {
+$('.ul__navbar').on("click", function () {
     $('.video_pilula').each(function () {
         $(this)[0].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' +
             '","args":""}', '*');
@@ -66,7 +67,7 @@ $('.ul__navbar').click(function () {
     });
 });
 /*Recarrega iframe spotify*/
-$('.title_indicate').click(function () {
+$('.title_indicate').on("click", function () {
     /* $("#podcast-1").remove(); */
     $('.div_podcast').each(function () {
         $('#podcast-1', window.parent.document).attr('src', $('#podcast-1', window.parent
@@ -86,7 +87,7 @@ $('.title_indicate').click(function () {
     })
 });
 /*Recarrega iframe LIVE FACEBOOK*/
-$('.title_indicate_vid_outros').click(function () {
+$('.title_indicate_vid_outros').on("click", function () {
     /* $("#podcast-1").remove(); */
     /* alert('LIVE FACEBOOK') */
     $('.indicate_text_vid_outros').each(function () {
@@ -96,7 +97,7 @@ $('.title_indicate_vid_outros').click(function () {
         $('#live-fb-4', window.parent.document).attr('src', $('#live-fb-4', window.parent.document).attr('src'));
     })
 });
-$('.ul__navbar').click(function () {
+$('.ul__navbar').on("click", function () {
     /* $("#podcast-1").remove(); */
    /*  alert('LIVE FACEBOOK') */
     $('.indicate_text_vid_outros').each(function () {
@@ -106,7 +107,7 @@ $('.ul__navbar').click(function () {
         $('#live-fb-4', window.parent.document).attr('src', $('#live-fb-4', window.parent.document).attr('src'));
     })
 });
-$('.ul__navbar').click(function () {
+$('.ul__navbar').on("click", function () {
     /* $("#podcast-1").remove(); */
     $('.div_podcast').each(function () {
         $('#podcast-1', window.parent.document).attr('src', $('#podcast-1', window.parent
