@@ -16,9 +16,9 @@
         ". container_videos_outros . option_videos_outros ."
         ". . . . ."
     ;
-    grid-template-rows: 2% 10% 2% 1fr 2%;
+    grid-template-rows: 2% 5% 2% 1fr 5%;
     grid-template-columns: 12% 1fr 5% 16% 12%;
-    height: 90%;
+    height: 40vw;
     width: 100vw;
 }
 
@@ -67,6 +67,12 @@
 .overflow_op_vid_outros{
     height: 100%;
 }
+.ultimo_item{
+    width: 100%;
+    height: 10px;
+    margin-bottom: 8%;
+}
+
 .video__vid_outros iframe{
     border-radius: 20px;
 }
@@ -110,9 +116,11 @@
     transition-duration: 0.8s;
     height: max-content;
     cursor: pointer;
-}
-.option_grid_outros:hover{
-    transform: scale(1.05);
+    padding-bottom: 5%;
+
+    &:hover{
+        transform: scale(1.05);
+    }
 }
 
 .indicate_ball_vid_outros{

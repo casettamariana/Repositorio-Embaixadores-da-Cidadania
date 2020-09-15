@@ -7,11 +7,11 @@ $(document).ready(function () {
     });
 });
 /*Pausa video do youtube*/
-$('.title_indicate').click(function () {
+$('.option_grid').click(function () {
     $('.video_pilula').each(function () {
         $(this)[0].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' +
             '","args":""}', '*');
-    })
+    });
 });
 $('.option_videos_outros').click(function () {
     $('.video_videocast').each(function () {
@@ -23,6 +23,14 @@ $('.option_videos_outros').click(function () {
             '","args":""}', '*');
     });
     $('.video_live').each(function () {
+        $(this)[0].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' +
+            '","args":""}', '*');
+    });
+    $('.video_entrevista').each(function () {
+        $(this)[0].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' +
+            '","args":""}', '*');
+    });
+    $('.video_outros').each(function () {
         $(this)[0].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' +
             '","args":""}', '*');
     });
@@ -48,6 +56,14 @@ $('.ul__navbar').click(function () {
         $(this)[0].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' +
             '","args":""}', '*');
     });
+    $('.video_entrevista').each(function () {
+        $(this)[0].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' +
+            '","args":""}', '*');
+    });
+    $('.video_outros').each(function () {
+        $(this)[0].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' +
+            '","args":""}', '*');
+    });
 });
 /*Recarrega iframe spotify*/
 $('.title_indicate').click(function () {
@@ -65,6 +81,8 @@ $('.title_indicate').click(function () {
             .document).attr('src'));
         $('#podcast-6', window.parent.document).attr('src', $('#podcast-6', window.parent
         .document).attr('src'));
+        $('#podcast-7', window.parent.document).attr('src', $('#podcast-7', window.parent
+        .document).attr('src'));
     })
 });
 /*Recarrega iframe LIVE FACEBOOK*/
@@ -75,6 +93,7 @@ $('.title_indicate_vid_outros').click(function () {
         $('#live-fb-1', window.parent.document).attr('src', $('#live-fb-1', window.parent.document).attr('src'));
         $('#live-fb-2', window.parent.document).attr('src', $('#live-fb-2', window.parent.document).attr('src'));
         $('#live-fb-3', window.parent.document).attr('src', $('#live-fb-3', window.parent.document).attr('src'));
+        $('#live-fb-4', window.parent.document).attr('src', $('#live-fb-4', window.parent.document).attr('src'));
     })
 });
 $('.ul__navbar').click(function () {
@@ -84,6 +103,7 @@ $('.ul__navbar').click(function () {
         $('#live-fb-1', window.parent.document).attr('src', $('#live-fb-1', window.parent.document).attr('src'));
         $('#live-fb-2', window.parent.document).attr('src', $('#live-fb-2', window.parent.document).attr('src'));
         $('#live-fb-3', window.parent.document).attr('src', $('#live-fb-3', window.parent.document).attr('src'));
+        $('#live-fb-4', window.parent.document).attr('src', $('#live-fb-4', window.parent.document).attr('src'));
     })
 });
 $('.ul__navbar').click(function () {
@@ -101,6 +121,8 @@ $('.ul__navbar').click(function () {
             .document).attr('src'));
         $('#podcast-6', window.parent.document).attr('src', $('#podcast-6', window.parent
             .document).attr('src'));
+        $('#podcast-7', window.parent.document).attr('src', $('#podcast-7', window.parent
+        .document).attr('src'));
     })
 });
 

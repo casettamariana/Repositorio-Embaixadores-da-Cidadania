@@ -5,12 +5,22 @@ function displayVideoOutros(video) {
     var video_3 = document.querySelector(".live__item1");
     var video_4 = document.querySelector(".live__item2");
     var video_5 = document.querySelector(".live__item3");
+    var video_6 = document.querySelector(".live__item4");
+    var video_7 = document.querySelector(".entrevista__item1");
+    var video_8 = document.querySelector(".entrevista__item2");
+    var video_9 = document.querySelector(".outros_video__item1");
+    var video_10 = document.querySelector(".outros_video__item2");
     
     var div_op_1 = document.querySelector(".op_webnar_outros_1");
     var div_op_2 = document.querySelector(".op_vid_outros_1");
     var div_op_3 = document.querySelector(".op_live_outros_1");
     var div_op_4 = document.querySelector(".op_live_outros_2");
     var div_op_5 = document.querySelector(".op_live_outros_3");
+    var div_op_6 = document.querySelector(".op_live_outros_4");
+    var div_op_7 = document.querySelector(".op_entrevista_outros_1");
+    var div_op_8 = document.querySelector(".op_entrevista_outros_2");
+    var div_op_9 = document.querySelector(".op_outros_outros_1");
+    var div_op_10 = document.querySelector(".op_outros_outros_2");
 
     var titulo = document.querySelector('.title_videos_outros');
 
@@ -36,13 +46,39 @@ function displayVideoOutros(video) {
         .set(video_5, {
             display: 'none',
             opacity: 0
-        });
+        })
+        .set(video_6, {
+            display: 'none',
+            opacity: 0
+        })
+        .set(video_7, {
+            display: 'none',
+            opacity: 0
+        })
+        .set(video_8, {
+            display: 'none',
+            opacity: 0
+        })
+        .set(video_9, {
+            display: 'none',
+            opacity: 0
+        })
+        .set(video_10, {
+            display: 'none',
+            opacity: 0
+        })
+        ;
 
         div_op_1.classList.remove('highlight_op_outros');
         div_op_2.classList.remove('highlight_op_outros');
         div_op_3.classList.remove('highlight_op_outros');
         div_op_4.classList.remove('highlight_op_outros');
         div_op_5.classList.remove('highlight_op_outros');
+        div_op_6.classList.remove('highlight_op_outros');
+        div_op_7.classList.remove('highlight_op_outros');
+        div_op_8.classList.remove('highlight_op_outros');
+        div_op_9.classList.remove('highlight_op_outros');
+        div_op_10.classList.remove('highlight_op_outros');
 
 
     if (video == 'op_web_1') {
@@ -79,7 +115,7 @@ function displayVideoOutros(video) {
         div_op_4.classList.add('highlight_op_outros');
         titulo.innerHTML = "LIVE FACEBOOK";
     }
-    if (video == 'op_live_3') {
+    else if (video == 'op_live_3') {
         tl.to(video_5, {
             display: 'flex',
             duration: 0.5,
@@ -87,6 +123,51 @@ function displayVideoOutros(video) {
         });
         div_op_5.classList.add('highlight_op_outros');
         titulo.innerHTML = "LIVE FACEBOOK";
+    }
+    else if (video == 'op_live_4') {
+        tl.to(video_6, {
+            display: 'flex',
+            duration: 0.5,
+            opacity: 1
+        });
+        div_op_6.classList.add('highlight_op_outros');
+        titulo.innerHTML = "LIVE YOUTUBE";
+    }
+    else if (video == 'op_entrevista_1') {
+        tl.to(video_7, {
+            display: 'flex',
+            duration: 0.5,
+            opacity: 1
+        });
+        div_op_7.classList.add('highlight_op_outros');
+        titulo.innerHTML = "ENTREVISTAS";
+    }
+    else if (video == 'op_entrevista_2') {
+        tl.to(video_8, {
+            display: 'flex',
+            duration: 0.5,
+            opacity: 1
+        });
+        div_op_8.classList.add('highlight_op_outros');
+        titulo.innerHTML = "ENTREVISTAS";
+    }
+    else if (video == 'op_outros_1') {
+        tl.to(video_9, {
+            display: 'flex',
+            duration: 0.5,
+            opacity: 1
+        });
+        div_op_9.classList.add('highlight_op_outros');
+        titulo.innerHTML = "A difícil tarefa...";
+    }
+    else if (video == 'op_outros_2') {
+        tl.to(video_10, {
+            display: 'flex',
+            duration: 0.5,
+            opacity: 1
+        });
+        div_op_10.classList.add('highlight_op_outros');
+        titulo.innerHTML = "RESOLUÇÃO DE CONFLITOS";
     }
 }
 
@@ -98,6 +179,11 @@ function btnHoverOutros(op) {
     var img_op_3 = document.getElementById('ball_live_1');
     var img_op_4 = document.getElementById('ball_live_2');
     var img_op_5 = document.getElementById('ball_live_3');
+    var img_op_6 = document.getElementById('ball_live_4');
+    var img_op_7 = document.getElementById('ball_entrevista_1');
+    var img_op_8 = document.getElementById('ball_entrevista_2');
+    var img_op_9 = document.getElementById('ball_outros_1');
+    var img_op_10 = document.getElementById('ball_outros_2');
     if (op == 'op_web_1') {
         img_op_1.src = "./assets/img/marcador/play-100px.png";
     } else if (op == 'op_videocast_1') {
@@ -108,6 +194,16 @@ function btnHoverOutros(op) {
         img_op_4.src = "./assets/img/marcador/play-100px.png";
     } else if (op == 'op_live_3') {
         img_op_5.src = "./assets/img/marcador/play-100px.png";
+    } else if (op == 'op_live_4') {
+        img_op_6.src = "./assets/img/marcador/play-100px.png";
+    } else if (op == 'op_entrevista_1') {
+        img_op_7.src = "./assets/img/marcador/play-100px.png";
+    } else if (op == 'op_entrevista_2') {
+        img_op_8.src = "./assets/img/marcador/play-100px.png";
+    } else if (op == 'op_outros_1') {
+        img_op_9.src = "./assets/img/marcador/play-100px.png";
+    } else if (op == 'op_outros_2') {
+        img_op_10.src = "./assets/img/marcador/play-100px.png";
     }
 }
 
@@ -117,6 +213,11 @@ function btnBackOutros(op) {
     var img_op_3 = document.getElementById('ball_live_1');
     var img_op_4 = document.getElementById('ball_live_2');
     var img_op_5 = document.getElementById('ball_live_3');
+    var img_op_6 = document.getElementById('ball_live_4');
+    var img_op_7 = document.getElementById('ball_entrevista_1');
+    var img_op_8 = document.getElementById('ball_entrevista_2');
+    var img_op_9 = document.getElementById('ball_outros_1');
+    var img_op_10 = document.getElementById('ball_outros_2');
     if (op == 'op_web_1') {
         img_op_1.src = "./assets/img/marcador/1-100px.png";
     } else if (op == 'op_videocast_1') {
@@ -127,5 +228,15 @@ function btnBackOutros(op) {
         img_op_4.src = "./assets/img/marcador/2-100px.png";
     } else if (op == 'op_live_3') {
         img_op_5.src = "./assets/img/marcador/3-100px.png";
+    } else if (op == 'op_live_4') {
+        img_op_6.src = "./assets/img/marcador/4-100px.png";
+    } else if (op == 'op_entrevista_1') {
+        img_op_7.src = "./assets/img/marcador/1-100px.png";
+    } else if (op == 'op_entrevista_2') {
+        img_op_8.src = "./assets/img/marcador/2-100px.png";
+    } else if (op == 'op_outros_1') {
+        img_op_9.src = "./assets/img/marcador/1-100px.png";
+    } else if (op == 'op_outros_2') {
+        img_op_10.src = "./assets/img/marcador/2-100px.png";
     }
 }
