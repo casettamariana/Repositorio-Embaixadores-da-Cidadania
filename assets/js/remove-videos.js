@@ -31,11 +31,28 @@ $('.option_videos_outros').on("click", function () {
         $(this)[0].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' +
             '","args":""}', '*');
     });
-    $('.video_outros').each(function () {
+    $('.video_jornada').each(function () {
+        $(this)[0].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' +
+            '","args":""}', '*');
+    });
+    $('.video_outros_1').each(function () {
+        $(this)[0].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' +
+            '","args":""}', '*');
+    });
+    $('.video_outros_2').each(function () {
         $(this)[0].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' +
             '","args":""}', '*');
     });
 });
+
+$('.option_jornada').on("click", function () {
+    $('.video_jornada').each(function () {
+        $(this)[0].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' +
+            '","args":""}', '*');
+    });
+});
+
+
 $('.ul__navbar').on("click", function () {
     $('.video_pilula').each(function () {
         $(this)[0].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' +
@@ -61,7 +78,11 @@ $('.ul__navbar').on("click", function () {
         $(this)[0].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' +
             '","args":""}', '*');
     });
-    $('.video_outros').each(function () {
+    $('.video_outros_1').each(function () {
+        $(this)[0].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' +
+            '","args":""}', '*');
+    });
+    $('.video_outros_2').each(function () {
         $(this)[0].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' +
             '","args":""}', '*');
     });
