@@ -37,7 +37,7 @@
           align-items: center;
   -ms-flex-line-pack: distribute;
       align-content: space-around;
-      grid-template-areas: "." "video_pilula" "." "descr_video" ".";
+      grid-template-areas: "." "video_pilula" "." "descr_video" ".";
   -ms-grid-rows: 2% auto 8% auto 2%;
       grid-template-rows: 2% auto 8% auto 2%;
   -ms-grid-columns: 95%;
@@ -195,7 +195,7 @@
   #container-pilulas {
     width: 90vw;
     height: 65vh;
-        grid-template-areas: "container-video" "separa" "option-video";
+        grid-template-areas: "container-video" "separa" "option-video";
     -ms-grid-columns: 100%;
         grid-template-columns: 100%;
     -ms-grid-rows: 65% auto 35%;

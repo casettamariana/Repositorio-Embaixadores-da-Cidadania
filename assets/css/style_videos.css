@@ -17,7 +17,7 @@
   margin: 0;
   display: -ms-grid;
   display: grid;
-      grid-template-areas: ". . . . ." ". title_videos_outros title_videos_outros . ." ". . . . ." ". container_videos_outros . option_videos_outros ." ". . . . .";
+      grid-template-areas: ". . . . ." ". title_videos_outros title_videos_outros . ." ". . . . ." ". container_videos_outros . option_videos_outros ." ". . . . .";
   -ms-grid-rows: 2% 5% 2% 1fr 5%;
       grid-template-rows: 2% 5% 2% 1fr 5%;
   -ms-grid-columns: 12% 1fr 5% 16% 12%;

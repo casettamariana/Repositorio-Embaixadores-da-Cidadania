@@ -3,7 +3,7 @@
   height: 55%;
   display: -ms-grid;
   display: grid;
-      grid-template-areas: ". . . . ." "container_img_fone . container-podcast . option-podcast" ". . . . ." ". plataf plataf plataf ." ". . . . .";
+      grid-template-areas: ". . . . ." "container_img_fone . container-podcast . option-podcast" ". . . . ." ". plataf plataf plataf ." ". . . . .";
   -ms-grid-rows: 8% auto 5% 26% 2%;
       grid-template-rows: 8% auto 5% 26% 2%;
   -ms-grid-columns: 2% 5% 50% 5% 18%;
@@ -99,7 +99,7 @@
   grid-area: plataf;
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "text-outras_plataf" "carousel-plataf_podcast";
+      grid-template-areas: "text-outras_plataf" "carousel-plataf_podcast";
   -ms-grid-rows: 10% 1fr;
       grid-template-rows: 10% 1fr;
   -ms-grid-columns: none;
@@ -212,7 +212,7 @@
 @media (max-width: 575.98px) {
   #container-podcast {
     height: 90%;
-        grid-template-areas: ". . ." ". container-podcast ." ". . ." ". option-podcast ." ". . ." "container_img_fone plataf ." ". . .";
+        grid-template-areas: ". . ." ". container-podcast ." ". . ." ". option-podcast ." ". . ." "container_img_fone plataf ." ". . .";
     -ms-grid-rows: 2% 1fr 1% 30% 4% 35% 1%;
         grid-template-rows: 2% 1fr 1% 30% 4% 35% 1%;
     -ms-grid-columns: 5% 1fr 5%;
@@ -278,7 +278,7 @@
 @media (min-width: 576px) and (max-width: 767.98px) {
   #container-podcast {
     height: 90%;
-        grid-template-areas: ". . ." ". container-podcast ." ". . ." ". option-podcast ." ". . ." "container_img_fone plataf ." ". . .";
+        grid-template-areas: ". . ." ". container-podcast ." ". . ." ". option-podcast ." ". . ." "container_img_fone plataf ." ". . .";
     -ms-grid-rows: 2% auto 1% 30% 4% 20% 1%;
         grid-template-rows: 2% auto 1% 30% 4% 20% 1%;
     -ms-grid-columns: 5% 1fr 5%;
