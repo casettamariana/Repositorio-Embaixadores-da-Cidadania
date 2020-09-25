@@ -7,9 +7,11 @@ function displayVideoOutros(video) {
     var video_5 = document.querySelector(".live__item3");
     var video_6 = document.querySelector(".live__item4");
     var video_7 = document.querySelector(".entrevista__item1");
-    var video_8 = document.querySelector(".entrevista__item2");
-    var video_9 = document.querySelector(".outros_video__item1");
-    var video_10 = document.querySelector(".outros_video__item2");
+    var video_8 = document.querySelector(".oficina__item1");
+    var video_9 = document.querySelector(".oficina__item2");
+    var video_10 = document.querySelector(".tiraDuvida__item1");
+    var video_11 = document.querySelector(".tiraDuvida__item2");
+    var video_12 = document.querySelector(".outros__item1");
     
     var div_op_1 = document.querySelector(".op_webnar_outros_1");
     var div_op_2 = document.querySelector(".op_vid_outros_1");
@@ -18,9 +20,11 @@ function displayVideoOutros(video) {
     var div_op_5 = document.querySelector(".op_live_outros_3");
     var div_op_6 = document.querySelector(".op_live_outros_4");
     var div_op_7 = document.querySelector(".op_entrevista_outros_1");
-    var div_op_8 = document.querySelector(".op_entrevista_outros_2");
-    var div_op_9 = document.querySelector(".op_outros_outros_1");
-    var div_op_10 = document.querySelector(".op_outros_outros_2");
+    var div_op_8 = document.querySelector(".op_oficina_outros_1");
+    var div_op_9 = document.querySelector(".op_oficina_outros_2");
+    var div_op_10 = document.querySelector(".op_tiraDuvida_outros_1");
+    var div_op_11 = document.querySelector(".op_tiraDuvida_outros_2");
+    var div_op_12 = document.querySelector(".op_outros_outros_1");
 
     var titulo = document.querySelector('.title_videos_outros');
 
@@ -67,6 +71,14 @@ function displayVideoOutros(video) {
             display: 'none',
             opacity: 0
         })
+        .set(video_11, {
+            display: 'none',
+            opacity: 0
+        })
+        .set(video_12, {
+            display: 'none',
+            opacity: 0
+        })
         ;
 
         div_op_1.classList.remove('highlight_op_outros');
@@ -79,6 +91,9 @@ function displayVideoOutros(video) {
         div_op_8.classList.remove('highlight_op_outros');
         div_op_9.classList.remove('highlight_op_outros');
         div_op_10.classList.remove('highlight_op_outros');
+        div_op_11.classList.remove('highlight_op_outros');
+        div_op_12.classList.remove('highlight_op_outros');
+        
 
 
     if (video == 'op_web_1') {
@@ -142,32 +157,50 @@ function displayVideoOutros(video) {
         div_op_7.classList.add('highlight_op_outros');
         titulo.innerHTML = "ENTREVISTAS";
     }
-    else if (video == 'op_entrevista_2') {
+    else if (video == 'op_oficina_1') {
         tl.to(video_8, {
             display: 'flex',
             duration: 0.5,
             opacity: 1
         });
         div_op_8.classList.add('highlight_op_outros');
-        titulo.innerHTML = "ENTREVISTAS";
+        titulo.innerHTML = "OFICINAS";
     }
-    else if (video == 'op_outros_1') {
+    else if (video == 'op_oficina_2') {
         tl.to(video_9, {
             display: 'flex',
             duration: 0.5,
             opacity: 1
         });
         div_op_9.classList.add('highlight_op_outros');
-        titulo.innerHTML = "A difícil tarefa...";
+        titulo.innerHTML = "OFICINAS";
     }
-    else if (video == 'op_outros_2') {
+    else if (video == 'op_tiraDuvida_1') {
         tl.to(video_10, {
             display: 'flex',
             duration: 0.5,
             opacity: 1
         });
         div_op_10.classList.add('highlight_op_outros');
-        titulo.innerHTML = "RESOLUÇÃO DE CONFLITOS";
+        titulo.innerHTML = "Evento Tira Duvidas";
+    }
+    else if (video == 'op_tiraDuvida_2') {
+        tl.to(video_11, {
+            display: 'flex',
+            duration: 0.5,
+            opacity: 1
+        });
+        div_op_11.classList.add('highlight_op_outros');
+        titulo.innerHTML = "Evento Tira Duvidas";
+    }
+    else if (video == 'op_outros_1') {
+        tl.to(video_12, {
+            display: 'flex',
+            duration: 0.5,
+            opacity: 1
+        });
+        div_op_12.classList.add('highlight_op_outros');
+        titulo.innerHTML = "Outros";
     }
 }
 
@@ -181,9 +214,12 @@ function btnHoverOutros(op) {
     var img_op_5 = document.getElementById('ball_live_3');
     var img_op_6 = document.getElementById('ball_live_4');
     var img_op_7 = document.getElementById('ball_entrevista_1');
-    var img_op_8 = document.getElementById('ball_entrevista_2');
-    var img_op_9 = document.getElementById('ball_outros_1');
-    var img_op_10 = document.getElementById('ball_outros_2');
+    var img_op_8 = document.getElementById('ball_oficina_1');
+    var img_op_9 = document.getElementById('ball_oficina_2');
+    var img_op_10 = document.getElementById('ball_tiraDuvida_1');
+    var img_op_11 = document.getElementById('ball_tiraDuvida_2');
+    var img_op_12 = document.getElementById('ball_outros_1');
+
     if (op == 'op_web_1') {
         img_op_1.src = "./assets/img/marcador/play-100px.png";
     } else if (op == 'op_videocast_1') {
@@ -198,12 +234,16 @@ function btnHoverOutros(op) {
         img_op_6.src = "./assets/img/marcador/play-100px.png";
     } else if (op == 'op_entrevista_1') {
         img_op_7.src = "./assets/img/marcador/play-100px.png";
-    } else if (op == 'op_entrevista_2') {
+    } else if (op == 'op_oficina_1') {
         img_op_8.src = "./assets/img/marcador/play-100px.png";
-    } else if (op == 'op_outros_1') {
+    } else if (op == 'op_oficina_2') {
         img_op_9.src = "./assets/img/marcador/play-100px.png";
-    } else if (op == 'op_outros_2') {
+    } else if (op == 'op_tiraDuvida_1') {
         img_op_10.src = "./assets/img/marcador/play-100px.png";
+    } else if (op == 'op_tiraDuvida_2') {
+        img_op_11.src = "./assets/img/marcador/play-100px.png";
+    } else if (op == 'op_outros_1') {
+        img_op_12.src = "./assets/img/marcador/play-100px.png";
     }
 }
 
@@ -215,9 +255,13 @@ function btnBackOutros(op) {
     var img_op_5 = document.getElementById('ball_live_3');
     var img_op_6 = document.getElementById('ball_live_4');
     var img_op_7 = document.getElementById('ball_entrevista_1');
-    var img_op_8 = document.getElementById('ball_entrevista_2');
-    var img_op_9 = document.getElementById('ball_outros_1');
-    var img_op_10 = document.getElementById('ball_outros_2');
+    var img_op_8 = document.getElementById('ball_oficina_1');
+    var img_op_9 = document.getElementById('ball_oficina_2');
+    var img_op_10 = document.getElementById('ball_tiraDuvida_1');
+    var img_op_11 = document.getElementById('ball_tiraDuvida_2');
+    var img_op_12 = document.getElementById('ball_outros_1');
+
+
     if (op == 'op_web_1') {
         img_op_1.src = "./assets/img/marcador/1-100px.png";
     } else if (op == 'op_videocast_1') {
@@ -232,11 +276,15 @@ function btnBackOutros(op) {
         img_op_6.src = "./assets/img/marcador/4-100px.png";
     } else if (op == 'op_entrevista_1') {
         img_op_7.src = "./assets/img/marcador/1-100px.png";
-    } else if (op == 'op_entrevista_2') {
-        img_op_8.src = "./assets/img/marcador/2-100px.png";
+    } else if (op == 'op_oficina_1') {
+        img_op_8.src = "./assets/img/marcador/1-100px.png";
+    } else if (op == 'op_oficina_2') {
+        img_op_9.src = "./assets/img/marcador/2-100px.png";
+    } else if (op == 'op_tiraDuvida_1') {
+        img_op_10.src = "./assets/img/marcador/1-100px.png";
+    } else if (op == 'op_tiraDuvida_2') {
+        img_op_11.src = "./assets/img/marcador/2-100px.png";
     } else if (op == 'op_outros_1') {
-        img_op_9.src = "./assets/img/marcador/1-100px.png";
-    } else if (op == 'op_outros_2') {
-        img_op_10.src = "./assets/img/marcador/2-100px.png";
+        img_op_12.src = "./assets/img/marcador/1-100px.png";
     }
 }

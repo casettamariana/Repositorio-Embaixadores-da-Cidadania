@@ -35,11 +35,15 @@ $('.option_videos_outros').on("click", function () {
         $(this)[0].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' +
             '","args":""}', '*');
     });
-    $('.video_outros_1').each(function () {
+    $('.video_oficina').each(function () {
         $(this)[0].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' +
             '","args":""}', '*');
     });
-    $('.video_outros_2').each(function () {
+    $('.video_tiraDuvida').each(function () {
+        $(this)[0].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' +
+            '","args":""}', '*');
+    });
+    $('.video_outros').each(function () {
         $(this)[0].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' +
             '","args":""}', '*');
     });
@@ -78,11 +82,15 @@ $('.ul__navbar').on("click", function () {
         $(this)[0].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' +
             '","args":""}', '*');
     });
-    $('.video_outros_1').each(function () {
+    $('.video_oficina').each(function () {
         $(this)[0].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' +
             '","args":""}', '*');
     });
-    $('.video_outros_2').each(function () {
+    $('.video_tiraDuvida').each(function () {
+        $(this)[0].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' +
+            '","args":""}', '*');
+    });
+    $('.video_outros').each(function () {
         $(this)[0].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' +
             '","args":""}', '*');
     });
